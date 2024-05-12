@@ -48,7 +48,7 @@ const inactiveClasses =
   }, [darkMode]);
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="bg-white fixed top-0 left-0 right-0 z-20 border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={darkMode ? darkLogo : lightLogo} className="h-8" alt="Flowbite Logo" />

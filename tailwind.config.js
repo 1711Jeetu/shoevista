@@ -16,6 +16,9 @@ module.exports = {
           800: '#013a63',
           900: '#012a4a'
         }
+      },
+      backgroundImage: {
+        'parallax': 'url("../src/assets/shoe.avif")'
       }
     },
   },
