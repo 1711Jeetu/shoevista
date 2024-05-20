@@ -18,22 +18,5 @@ main {
   padding-bottom: 69px;
   max-width: 1200px;
   margin: auto;
-}
-
-.slick-next:before,
-.slick-prev:before {
-  color: #37be91 !important;
-  font-size: 34px !important;
-}
-.slick-dots li.slick-active button:before {
-  color: #37be91 !important; 
-}
-.slick-dots li button:before{
-  color: #90dfc5 !important;
-}
-.slick-next {
-  right: 65px!important;
-}
-.slick-prev {
-  left: 65px!important;
+  margin-top: 64px;
 }

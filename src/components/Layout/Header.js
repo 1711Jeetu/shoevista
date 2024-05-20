@@ -3,6 +3,7 @@ import lightLogo from '../../assets/lightLogo.png'
 import darkLogo from '../../assets/darkLogo.png'
 import { DropDown } from './DropDown';
 import { Link, NavLink } from 'react-router-dom';
+import './Header.css'
 
 export const Header = () => {
 
@@ -14,10 +15,10 @@ export const Header = () => {
   const dropdownRef = useRef(null);
 
   const activeClasses =
-  "block py-2 px-3 text-primary-100 hover:text-primary-1000 rounded";
+    "block py-2 px-3 activeClass rounded dark:text-white";
 
-const inactiveClasses =
-  "block py-2 px-3 dark:text-white text-black hover:text-primary-800 rounded";
+  const inactiveClasses =
+    "block py-2 px-3 inactiveClass rounded dark:text-white";
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -77,11 +78,11 @@ const inactiveClasses =
           </span>
           <Link to='/' className='hover:cursor-pointer text-xl mt-1 text-slate-800 dark:text-slate-50 mr-5 bi bi-cart'></Link>
           <span
-              onClick={() => setDropdown(!dropdown)}
-              className='hover:cursor-pointer text-xl text-slate-800 dark:text-slate-50 mr-5 mt-1 bi bi-person-circle'
-            ></span>
-            {dropdown && <DropDown setDropdown={setDropdown} refProp={dropdownRef}/>}
-            {console.log(dropdown)}
+            onClick={() => setDropdown(!dropdown)}
+            className='hover:cursor-pointer text-xl text-slate-800 dark:text-slate-50 mr-5 mt-1 bi bi-person-circle'
+          ></span>
+          {dropdown && <DropDown setDropdown={setDropdown} refProp={dropdownRef} />}
+          {console.log(dropdown)}
           <button data-collapse-toggle="navbar-search" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none   dark:text-gray-400 dark:hover:bg-gray-700" aria-controls="navbar-search" aria-expanded="false" onClick={() => setMobileMode(!mobileMode)}>
             <span className="sr-only">Open main menu</span>
             <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -98,28 +99,44 @@ const inactiveClasses =
             </div>
             <input type="text" id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50  focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search..." />
           </div>
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
+          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 items-center">
+            <li className='container flex flex-col items-center'>
               <NavLink to="/" className={({ isActive }) =>
-                    isActive ? activeClasses : inactiveClasses
-                  } aria-current="page">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/men" className={({ isActive }) =>
-                    isActive ? activeClasses : inactiveClasses
-                  } aria-current="page">Men</NavLink>
-            </li>
-            <li>
-              <NavLink to="/women" className={({ isActive }) =>
-                    isActive ? activeClasses : inactiveClasses
-                  } aria-current="page">Women</NavLink>
-            </li>
-            <li>
-              <NavLink 
-              to="/kids" 
-              className={({ isActive }) =>
                 isActive ? activeClasses : inactiveClasses
-              } aria-current="page">Kids</NavLink>
+              } aria-current="page">Home
+              <div className="bg-inherit rounded-full h-1 ml-2 homePage" style={{ width: "50px" }}>
+                <div className="h-1 rounded-full bg-black bar dark:bg-white" style={{ width: `${0}%` }}></div>
+              </div>
+              </NavLink>
+            </li>
+            <li className='container flex flex-col items-center'>
+              <NavLink to="/men" className={({ isActive }) =>
+                isActive ? activeClasses : inactiveClasses
+              } aria-current="page">Men
+              <div className="bg-inherit rounded-full h-1 ml-1 " style={{ width: "70px" }}>
+                <div className=" h-1 rounded-full bg-black men dark:bg-white" style={{ width: `${0}%` }}></div>
+              </div>
+              </NavLink>
+            </li>
+            <li className='container flex flex-col items-center'>
+              <NavLink to="/women" className={({ isActive }) =>
+                isActive ? activeClasses : inactiveClasses
+              } aria-current="page">Women
+              <div className="bg-inherit rounded-full h-1 ml-6 " style={{ width: "70px" }}>
+                <div className=" h-1 rounded-full bg-black women dark:bg-white" style={{ width: `${0}%` }}></div>
+              </div>
+              </NavLink>
+            </li>
+            <li className='container flex flex-col items-center'>
+              <NavLink
+                to="/kids"
+                className={({ isActive }) =>
+                  isActive ? activeClasses : inactiveClasses
+                } aria-current="page">Kids
+              <div className="bg-inherit rounded-full h-1 ml-3 " style={{ width: "60px" }}>
+                <div className=" h-1 rounded-full bg-black kids dark:bg-white" style={{ width: `${0}%` }}></div>
+              </div>
+              </NavLink>
             </li>
           </ul>
         </div>

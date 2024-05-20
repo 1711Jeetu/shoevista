@@ -1,0 +1,62 @@
+.container {
+    position: relative;
+    max-width: 50px!important;
+}
+
+.bar{
+    position: absolute;
+    top: 35px;
+    right: 8px;
+}
+
+.men{
+    position: absolute;
+    top: 35px;
+    right: 24px;
+}
+
+.women{
+    position: absolute;
+    top: 35px;
+    right: 10px;
+}
+.kids{
+    position: absolute;
+    top: 35px;
+    right: 20px;
+}
+
+.container:hover .bar{
+    width: 97% !important;
+    transition: width 0.1s ease-out !important;
+}
+
+.activeClass  .bar{
+    width: 97% !important;
+}
+
+.container:hover .men{
+    width: 87% !important;
+    transition: width 0.1s ease-out !important;
+}
+
+.container:hover .women{
+    width: 130% !important;
+    transition: width 0.1s ease-out !important;
+}
+
+.container:hover .kids{
+    width: 92% !important;
+    transition: width 0.1s ease-out !important;
+}
+
+.activeClass .men{
+    width: 87% !important;
+}
+
+.activeClass .women{
+    width: 130% !important;
+}
+.activeClass .kids{
+    width: 92% !important;
+}
