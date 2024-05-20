@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import lightLogo from '../../assets/lightLogo.png'
 import darkLogo from '../../assets/darkLogo.png'
 import { DropDown } from './DropDown';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import './Header.css'
 
 export const Header = () => {
@@ -19,6 +19,16 @@ export const Header = () => {
 
   const inactiveClasses =
     "block py-2 px-3 inactiveClass rounded dark:text-white";
+
+    const navigate = useNavigate();
+    const searchRef = useRef();
+  
+    const handleSearch = (event) => {
+      event.preventDefault();
+      // console.log(searchRef.current.value)
+      navigate(`/products?q=${searchRef.current.value}`);
+      event.target.reset();
+    };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -69,7 +79,9 @@ export const Header = () => {
               </svg>
               <span className="sr-only">Search icon</span>
             </div>
-            <input type="text" id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50  focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search..." />
+            <form onSubmit={handleSearch}>
+            <input ref={searchRef} type="text" id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50  focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search..." />
+            </form>
           </div>
           <span
             className={`hover:cursor-pointer text-xl text-slate-800 dark:text-slate-50 mx-5 mt-1 bi bi-${darkMode ? "sun-fill" : "moon-fill"}`}

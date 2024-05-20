@@ -1,10 +1,20 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Card } from '../../components/Elements/Card'
 import useFetch from '../../hooks/useFetch'
+import { useSearchParams } from 'react-router-dom'
 
 export const ProductPage = () => {
 
   const { data: products, error, isLoading, setUrl } = useFetch("http://localhost:8000/products")
+
+  const [searchParams] = useSearchParams();
+
+  const queryTerm = searchParams.get('q');
+  const URL = `http://localhost:8000/products${queryTerm ? '?name_like=' + queryTerm : ''}`;
+
+  useEffect(() => {
+    setUrl(URL) 
+  }, [URL, setUrl]);
 
   return (
     <main>
