@@ -5,7 +5,7 @@ import { Approutes } from "./routes/Approutes";
 
 function App() {
   return (
-    <div className="App dark:bg-slate-800" style={{overflow: "hidden"}}>
+    <div className="App dark:bg-slate-800 overflow-hidden">
       <Header />
       <Approutes />
       <Footer />

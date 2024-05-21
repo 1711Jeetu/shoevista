@@ -5,12 +5,14 @@ import { ProductPage } from '../pages/products/ProductPage'
 import { Men } from '../pages/other/Men'
 import { Women } from '../pages/other/Women'
 import { Kids } from '../pages/other/Kids'
+import { ProductDetailPage } from '../pages/products/ProductDetailPage'
 
 export const Approutes = () => {
   return (
     <Routes>
         <Route path='/' element={<HomePage />}/>
         <Route path='/products' element={<ProductPage />} />
+        <Route path='/products/:id' element={<ProductDetailPage />} />
         <Route path='/men' element={<Men />} />
         <Route path='/women' element={<Women />} />
         <Route path='/kids' element={<Kids />} />
