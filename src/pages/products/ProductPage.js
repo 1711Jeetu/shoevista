@@ -10,7 +10,7 @@ export const ProductPage = () => {
   const [searchParams] = useSearchParams();
 
   const queryTerm = searchParams.get('q');
-  const URL = `http://localhost:8000/products${queryTerm ? '?name_like=' + queryTerm : ''}`;
+  const URL = `http://localhost:8000/products${queryTerm ? '?brand_like=' + queryTerm : ''}`;
 
   useEffect(() => {
     setUrl(URL) 

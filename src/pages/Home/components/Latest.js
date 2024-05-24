@@ -26,7 +26,7 @@ export const Latest = () => {
             <h2 className='text-3xl dark:bg-gray-800 text-center font-semibold dark:text-slate-100 pb-5 pt-5 section-title'>Latest Products</h2>
             <Slider {...settings}>
                 {
-                    products && products.map(product => <Card product={product} key={product.id} />)
+                    products && products.filter(product => product.latest === 1 ).map(product => <Card product={product} key={product.id} />)
                 }
             </Slider>
         </div>
