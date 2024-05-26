@@ -34,19 +34,19 @@ export const ProductDetailPage = () => {
                             </div>
                             <div className="grid grid-cols-5 gap-4">
                                 <div>
-                                    <img className="h-auto max-w-full rounded-lg" src={product.imageURL[1].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[1].URL)} />
+                                    <img className="h-auto hover:cursor-pointer max-w-full rounded-lg" src={product.imageURL[1].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[1].URL)} />
                                 </div>
                                 <div>
-                                    <img className="h-auto max-w-full rounded-lg" src={product.imageURL[2].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[2].URL)} />
+                                    <img className="h-auto max-w-full hover:cursor-pointer rounded-lg" src={product.imageURL[2].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[2].URL)} />
                                 </div>
                                 <div>
-                                    <img className="h-auto max-w-full rounded-lg" src={product.imageURL[3].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[3].URL)} />
+                                    <img className="h-auto max-w-full hover:cursor-pointer rounded-lg" src={product.imageURL[3].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[3].URL)} />
                                 </div>
                                 <div>
-                                    <img className="h-auto max-w-full rounded-lg" src={product.imageURL[4].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[4].URL)} />
+                                    <img className="h-auto max-w-full hover:cursor-pointer rounded-lg" src={product.imageURL[4].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[4].URL)} />
                                 </div>
                                 <div>
-                                    <img className="h-auto max-w-full rounded-lg" src={product.imageURL[0].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[1].URL)} />
+                                    <img className="h-auto max-w-full hover:cursor-pointer rounded-lg" src={product.imageURL[0].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[1].URL)} />
                                 </div>
                             </div>
                         </div>
@@ -119,10 +119,12 @@ export const ProductDetailPage = () => {
                             <span>
                                 {
                                     <button
-                                        className={`inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-900`}
-                                    >
-                                        Add To Cart <i className="ml-1 bi bi-plus-lg"></i>
-                                    </button>
+                                    className={`inline-flex items-center py-3 px-5 text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-900`}
+                                >
+                                    <div className='hover:cursor-pointer text-xl mt-1 text-slate-800 justify-center dark:text-slate-50 bi bi-cart'></div>
+                                    <i className="ml-1 mt-1 bi bi-plus-lg"></i>
+                                </button>
+
                                 }
                             </span>
                         </div>

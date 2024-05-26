@@ -1,1283 +1,1611 @@
 {
-    "products": [
+  "products": [
+    {
+      "id": 1,
+      "name": "Nike React Infinity Run Flyknit",
+      "brand": "NIKE",
+      "gender": "MEN",
+      "category": "RUNNING",
+      "price": 160,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
         {
-            "id": 1,
-            "name": "Nike React Infinity Run Flyknit",
-            "brand": "NIKE",
-            "gender": "MEN",
-            "category": "RUNNING",
-            "price": 160,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1 ,
-                    "URL" : "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0cb80f11-301a-4064-914f-756ef094a13f/react-infinity-3-road-running-shoes-3Vn30D.png"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/65ea3b7c-27c5-42eb-bebb-968085dfbd75/react-infinity-3-road-running-shoes-3Vn30D.png"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ec908765-a4eb-4ab3-8d07-700167df428e/react-infinity-3-road-running-shoes-3Vn30D.png"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6a28b8ef-5998-4e34-8c64-0b4bf8202e78/react-infinity-3-road-running-shoes-3Vn30D.png"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5f81dadf-b30c-4cb6-8e93-6b529f93acf2/react-infinity-3-road-running-shoes-3Vn30D.png"
-                }
-            ],
-            "slug": "nike-react-infinity-run-flyknit",
-            "description" : "Stay on your feet with soft and supportive cushioning, built to help keep you on the run. A wider forefoot and higher foam stacks help shield you from recurring attrition, giving you the peace of mind to pound the pavement every day. The springy responsiveness will surprise you too, adding an element of pure speed to 1 of our most tested shoes to help you go longer, faster and further than ever.",
-            "featured" : 0,
-            "rating" : 4,
-            "colors": 1,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 1,
-            "best_seller": false
+          "id": 1,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0cb80f11-301a-4064-914f-756ef094a13f/react-infinity-3-road-running-shoes-3Vn30D.png"
         },
         {
-            "id": 2,
-            "name": "Nike React Miler",
-            "brand": "NIKE",
-            "gender": "MEN",
-            "category": "RUNNING",
-            "price": 130,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/575e4c0e-5bec-4dcf-a95d-e080dd91bedc/run-swift-3-road-running-shoes-BrHm16.png"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a3da2d38-2b06-4369-a8f3-ee368acb9267/run-swift-3-road-running-shoes-BrHm16.png"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/81133ece-5bfc-4819-9da6-303581a0ba8d/run-swift-3-road-running-shoes-BrHm16.png"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2b5ddbbe-1169-4e65-ad9b-eeb9a2300dfe/run-swift-3-road-running-shoes-BrHm16.png"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/65b0905f-4b43-4ebc-811a-1e59fd8f0102/run-swift-3-road-running-shoes-BrHm16.png"
-                }
-            ],
-            "slug": "nike-react-miler",
-            "description": "Whatever the run, the Nike React Miler will be there with undying support and devotion. It can help you get out the door for an easy 3 at the end of the day or an intense 2-mile there-and-back with a modified design that's supportive, durable and all-round comfortable. They'll help you conquer short distances, sure, but also get you from point A to point B as you navigate the ever-changing rhythms of everyday life.",
-            "featured" : 1,
-            "rating" : 5,
-            "colors": 5,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": true
+          "id": 2,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/65ea3b7c-27c5-42eb-bebb-968085dfbd75/react-infinity-3-road-running-shoes-3Vn30D.png"
         },
         {
-            "id": 3,
-            "name": "Nike Air Zoom Pegasus 37",
-            "brand": "NIKE",
-            "gender": "WOMEN",
-            "category": "RUNNING",
-            "price": 120,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4825a4b3-74a0-44bf-9ef0-f968bb42aebb/pegasus-41-road-running-shoes-SKDkNs.png"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a1d6a2a5-6482-44b7-ab60-d1f74684c5d1/pegasus-41-road-running-shoes-SKDkNs.png"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6f4f13a6-7ec7-45e3-9841-96aab90fc59d/pegasus-41-road-running-shoes-SKDkNs.png"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/94c606c6-1dce-428e-a093-3496067de360/pegasus-41-road-running-shoes-SKDkNs.png"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7efb26fb-b63b-40c7-b580-050000a47210/pegasus-41-road-running-shoes-SKDkNs.png"
-                }
-            ],
-            "slug": "nike-air-zoom-pegasus-37",
-            "description": "Responsive cushioning in the Pegasus provides an energised ride for everyday road running. Experience lighter-weight energy return with dual Air Zoom units and a ReactX foam midsole. Plus, improved engineered mesh on the upper decreases weight and increases breathability.",
-            "featured" : 0,
-            "rating" : 3,
-            "colors": 2,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
+          "id": 3,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ec908765-a4eb-4ab3-8d07-700167df428e/react-infinity-3-road-running-shoes-3Vn30D.png"
         },
         {
-            "id": 4,
-            "name": "Nike Joyride Run Flyknit",
-            "brand": "NIKE",
-            "gender": "WOMEN",
-            "category": "RUNNING",
-            "price": 180,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f61b3d97-8846-45cf-9946-6a46cefcb36d/custom-reactx-infinity-rn-4-by-you.png"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/8d2de0be-da49-46fd-8945-97e48c14f175/custom-reactx-infinity-rn-4-by-you.png"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/7af1e4d2-7771-4635-9f50-d3f7bafc7803/custom-reactx-infinity-rn-4-by-you.png"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/f38909c9-df73-4b62-83bb-b8b7ba1635d2/custom-reactx-infinity-rn-4-by-you.png"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/e6e32cbd-70e2-4973-9641-179cd62e73b7/custom-reactx-infinity-rn-4-by-you.png"
-                }
-            ],
-            "slug": "nike-joyride-run-flyknit",
-            "description": "Stay on your feet with soft and supportive cushioning, built to help keep you on the run. A wider forefoot and higher foam stacks help shield you from recurring attrition, giving you the peace of mind to pound the pavement every day. The springy responsiveness will surprise you too, adding an element of pure speed to 1 of our most tested shoes to help you go longer, faster and further than ever.",
-            "featured" : 0,
-            "rating" : 4,
-            "colors": 3,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 1,
-            "best_seller": true
+          "id": 4,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6a28b8ef-5998-4e34-8c64-0b4bf8202e78/react-infinity-3-road-running-shoes-3Vn30D.png"
         },
         {
-            "id": 5,
-            "name": "Nike Mercurial Vapor 13 Elite FG",
-            "brand": "NIKE",
-            "gender": "WOMEN",
-            "category": "FOOTBALL",
-            "price": 250,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/83ccaa96-74f6-4ece-b7c0-09a96f827894/custom-mercurial-vapor-15-elite-shoes-by-you.png"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/054a5111-359c-4411-8745-52bb53187684/custom-mercurial-vapor-15-elite-shoes-by-you.png"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/16b22428-c9f7-4f3f-82ce-7f92ea105655/custom-mercurial-vapor-15-elite-shoes-by-you.png"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a7e4a37f-c197-498c-8486-91b3c112f268/custom-mercurial-vapor-15-elite-shoes-by-you.png"
-                },
-                {
-                    "id": 5,
-                    "URL":"https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3e0c3f4d-676a-4d97-8df1-4427a9111ba4/custom-mercurial-vapor-15-elite-shoes-by-you.png"
-                }
-            ],
-            "slug": "nike-mercurial-vapor-13-elite-fg",
-            "description": "Express your creative side with an array of vibrant, eye-catching colours that are tuned for your distinct, brash style. With special design details from eccentric colour options to personalised messages and an updated graphic, there's no limit to your creativity on or off the pitch. Loaded with a Zoom Air unit, you can put the pedal down in the final minutes of a match—when it matters most. Fast is in the Air.",
-            "featured" : 0,
-            "rating" : 5,
-            "colors": 4,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 6,
-            "name": "Nike Phantom Vision Elite Dynamic Fit FG",
-            "brand": "NIKE",
-            "gender": "WOMEN",
-            "category": "FOOTBALL",
-            "price": 150,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2a3367c8-2dd0-42a5-8eb2-adfa2b7ed48f/phantom-gx-2-elite-fg-low-top-football-boot-8JGqj6.png"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dcfe820f-502b-4593-a52a-e997c4b756a1/phantom-gx-2-elite-fg-low-top-football-boot-8JGqj6.png"
-                },
-                {
-                    "id": 3,
-                    "URL":"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5dc4c0ca-6204-40e4-8e86-6562a67e0010/phantom-gx-2-elite-fg-low-top-football-boot-8JGqj6.png"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/acab406b-b0e6-4210-a41f-69037f4f9138/phantom-gx-2-elite-fg-low-top-football-boot-8JGqj6.png"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/934902eb-71af-41e9-ad9b-2f68c72fa72e/phantom-gx-2-elite-fg-low-top-football-boot-8JGqj6.png"
-                }
-            ],
-            "slug": "nike-phantom-vision-elite-dynamic-fit-fg",
-            "description": "Obsessed with perfecting your craft? We made this for you. In the middle of the storm, with chaos swirling all around you, you've calmly found the final third of the pitch, thanks to your uncanny mix of on-ball guile and grace. Go finish the job in the Phantom GX 2 Elite. We design Elite boots for you and the world's biggest stars to give you high-level quality, because you demand greatness from yourself and your footwear.",
-            "featured" : 0,
-            "rating" : 3,
-            "colors": 3,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 7,
-            "name": "Nike Phantom Venom Academy FG",
-            "brand": "NIKE",
-            "gender": "WOMEN",
-            "category": "FOOTBALL",
-            "price": 80,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f8e00c3f-4825-49a7-af6e-6a677f57d224/phantom-luna-2-elite-fg-high-top-football-boot-rTZ7nH.png"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/27ccb70f-9218-4210-b822-f8fc9fbd7fc7/phantom-luna-2-elite-fg-high-top-football-boot-rTZ7nH.png"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/328cc5bd-32c9-4781-9ae2-7af69140fb20/phantom-luna-2-elite-fg-high-top-football-boot-rTZ7nH.png"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0c5f6b0d-2fa4-4801-9eed-5724f58f0e6a/phantom-luna-2-elite-fg-high-top-football-boot-rTZ7nH.png"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f961fab8-6789-4d49-8777-da7d3e9d27b3/phantom-luna-2-elite-fg-high-top-football-boot-rTZ7nH.png"
-                }
-            ],
-            "slug": "nike-phantom-venom-academy-fg",
-            "description": "We make Elite football boots for those obsessed with the game, the hidden gems that grind in the shadows, behind the scenes, when nobody else is watching. This special-edition Phantom Luna 2 is no exception. Featuring a metallic Swoosh design, they will be on the feet of the best players as they take to the pitch of the world's biggest tournaments. Add in game-changing Nike Gripknit for exceptional touch and you have a championship-level boot ready for personal brilliance.",
-            "featured" : 0,
-            "rating" : 4,
-            "colors" : 3,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": true
-        },
-        {
-            "id": 8,
-            "name": "Nike Mercurial Vapor 13 Elite Tech Craft FG",
-            "brand": "NIKE",
-            "gender": "MEN",
-            "category": "FOOTBALL",
-            "price": 145,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL" : "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ca46dc04-ed84-4eda-ae3c-95d17c1264cf/mercurial-vapor-15-club-multi-ground-low-top-football-boot-jPPt6S.png"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b26ee8be-0343-4466-8ae9-96d7bc7c8d3e/mercurial-vapor-15-club-multi-ground-low-top-football-boot-jPPt6S.png"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8601d20e-3b56-48c1-9c3b-9cfe706e669c/mercurial-vapor-15-club-multi-ground-low-top-football-boot-jPPt6S.png"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5a4a1792-8f19-4c85-a235-569442cc0d51/mercurial-vapor-15-club-multi-ground-low-top-football-boot-jPPt6S.png"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5c5f39ea-8fe1-4108-80e1-192d8f9f677a/mercurial-vapor-15-club-multi-ground-low-top-football-boot-jPPt6S.png"
-                }
-            ],
-            "slug": "nike-mercurial-vapor-13-elite-tech-craft-fg",
-            "description": "The pitch is yours when you lace up in the light and low-to-the-ground Vapor 13 Club MG. Fast is in the Air.",
-            "featured" : 0,
-            "rating" : 2,
-            "colors" : 3,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 9,
-            "name": "Nike Mercurial Superfly 7 Pro MDS FG",
-            "brand": "NIKE",
-            "gender": "MEN",
-            "category": "FOOTBALL",
-            "price": 137,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/13945817-d8fd-4ccf-9084-740b0fd657f4/mercurial-vapor-15-academy-multi-ground-low-top-football-boot-DBh36g.png"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ed4625fa-516e-437b-84f1-5507c66aad8f/mercurial-vapor-15-academy-multi-ground-low-top-football-boot-DBh36g.png"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d584d878-b893-4530-a88a-884f69184fa1/mercurial-vapor-15-academy-multi-ground-low-top-football-boot-DBh36g.png"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/62ce5577-3f07-49c8-ba7d-48b1dd940b91/mercurial-vapor-15-academy-multi-ground-low-top-football-boot-DBh36g.png"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b19e4fdc-2b19-43dc-a997-083930fca4f9/mercurial-vapor-15-academy-multi-ground-low-top-football-boot-DBh36g.png"
-                }
-            ],
-            "slug": "nike-mercurial-superfly-7-pro-mds-fg",
-            "description": "The pitch is yours when you lace up in the Nike Mercurial Superfly 7 Pro MDS FG. It's loaded with a Zoom Air unit and flexible NikeSkin at the top for exceptional touch, so you can dominate in the waning minutes of a match—when it matters most. Fast is in the Air.",
-            "featured" : 0,
-            "rating" : 3,
-            "colors": 5,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 1,
-            "best_seller": true
-        },
-        {
-            "id": 10,
-            "name": "Nike Air Force 1",
-            "brand": "NIKE",
-            "gender": "KIDS",
-            "category": "CASUAL",
-            "price": 90,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/97bda33a-b474-408d-bd48-28c220462cab/air-force-1-le-older-shoes-Gmwp9p.png"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5862a219-99b2-4e60-9bf9-7c53d48b334a/air-force-1-le-older-shoes-Gmwp9p.png"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bf466b5e-ff10-4b9f-ba81-ef69cfe6516c/air-force-1-le-older-shoes-Gmwp9p.png"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e7b7c965-4738-4a2c-9f6b-b73b4aa5ba7b/air-force-1-le-older-shoes-Gmwp9p.png"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/de9809fd-db18-4741-a814-bdbccd09ac4a/air-force-1-le-older-shoes-Gmwp9p.png"
-                }
-            ],
-            "slug": "nike-air-force-1",
-            "description": "As cool today as when it first dropped more than 40 years ago, the AF-1 is a classic you can count on. Its durable construction and grippy tread will see you through breaktime after breaktime. And while they look great fresh out of the box, they remain cool even when covered in scuffs and scrapes. In fact, they might be even better.",
-            "featured" : 0,
-            "rating" : 5,
-            "colors": 2,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 11,
-            "name": "Nike Air Max 90",
-            "brand": "NIKE",
-            "gender": "KIDS",
-            "category": "CASUAL",
-            "price": 100,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7abb21b2-c063-4ed2-8360-6223d2ae9d52/air-max-90-lv8-shoes-5KhTdP.png"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/29d1f9bb-ff2a-4e56-a8e1-b15d3f2d9ce1/air-max-90-lv8-shoes-5KhTdP.png"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/826b459b-4539-480e-903e-1e12955c8881/air-max-90-lv8-shoes-5KhTdP.png"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/12ac1f01-4011-4d26-9f1c-0e2662625fba/air-max-90-lv8-shoes-5KhTdP.png"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/44df588e-887d-4466-8abd-71c3ecf1595f/air-max-90-lv8-shoes-5KhTdP.png"
-                }
-            ],
-            "slug": "nike-air-max-90",
-            "description": "The Air Max 90 LV8 takes your favourite silhouette to the next level with stacked Nike Air units. Not only do you get extra cushioning, but you get extra height, creating the perfect platform that's easy to style. Layers of mixed materials add texture and dimension, creating an elevated look you'll be reaching for again and again.",
-            "featured" : 0,
-            "rating" : 5,
-            "colors": 4,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 12,
-            "name": "Nike Air Max 90 LTR",
-            "brand": "NIKE",
-            "gender": "KIDS",
-            "category": "CASUAL",
-            "price": 110,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fece11f2-df5a-41eb-a93f-fb33daa22fb6/air-max-90-ltr-older-shoes-9xnt2B.png"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a840ffab-d199-4f97-a53a-467aab215c63/air-max-90-ltr-older-shoes-9xnt2B.png"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/95333c91-9c9b-4711-acbe-38478b814d6b/air-max-90-ltr-older-shoes-9xnt2B.png"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e68c46a8-229c-4c29-b957-724b72c8be85/air-max-90-ltr-older-shoes-9xnt2B.png"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/77c36493-c15a-4dbd-831f-db08dd964b05/air-max-90-ltr-older-shoes-9xnt2B.png"
-                }
-            ],
-            "slug": "nike-air-max-90-ltr",
-            "description": "The Nike Air Max 90 LTR returns with an even better feel for you. Cushioning is softer and more flexible, the Max Air unit is tuned for growing feet and the shape gives your toes more wiggle room. With a design and look that are still the same, it brings a '90s fave to a new generation.",
-            "featured" : 0,
-            "rating" : 4,
-            "colors": 4,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 13,
-            "name": "Nike Joyride Dual Run",
-            "brand": "NIKE",
-            "gender": "KIDS",
-            "category": "RUNNING",
-            "price": 110,
-            "is_in_inventory": false,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e7a70b03-c437-4c9f-a82a-d205cc6679f5/star-runner-4-nn-younger-shoes-LlHqf6.png"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/87ffb14b-dd7a-4e0d-9bb3-48e460248168/star-runner-4-nn-younger-shoes-LlHqf6.png"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f417e194-7e03-4a9f-b5e0-6ea796870c90/star-runner-4-nn-younger-shoes-LlHqf6.png"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d257953e-ac11-46ac-9066-eeaf12005142/star-runner-4-nn-younger-shoes-LlHqf6.png"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/62994d0a-b3ad-4079-ab80-1a9ae2d6ea5e/star-runner-4-nn-younger-shoes-LlHqf6.png"
-                }
-            ],
-            "slug": "nike-joyride-dual-run",
-            "description": "Help your little one step into adventure with the nike-joyride-dual-run. Soft cushioning in the midsole helps provide a comfortable, springy return so kids are ready for 1 more lap around the playground or 1 more game of tig. The tread grabs at pavement, grass and gravel to help give them extra grip, while a rubber-wrapped toe toughens up the construction so they can go further in the same pair of sneakers.",
-            "featured" : 0,
-            "rating" : 3,
-            "colors": 1,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 14,
-            "name": "Nike Renew Run",
-            "brand": "NIKE",
-            "gender": "KIDS",
-            "category": "RUNNING",
-            "price": 80,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/20e053fa-0f9d-4fe9-9cdd-a45130d4a203/renew-ride-3-road-running-shoes-fzS091.png"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f640cc25-53e7-4c06-af46-c2afebb83e0c/renew-ride-3-road-running-shoes-fzS091.png"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7ec66b3f-bae8-4183-8890-9be415de6b59/renew-ride-3-road-running-shoes-fzS091.png"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d0a99835-5abc-40ff-a728-e51d6821a1bb/renew-ride-3-road-running-shoes-fzS091.png"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fe6176be-77a6-47d5-9c80-a447e8267dd4/renew-ride-3-road-running-shoes-fzS091.png"
-                }
-            ],
-            "slug": "nike-renew-run",
-            "description": "When everyday runs are on the menu, the Nike Renew Ride 3 comes through with a smooth and soft ride. It's got a secure fit and a cosy feel, geared for those looking to find their running potential. The upper is clean and fresh, with touch points throughout for easy on and off. It's so comfortable, you'll want to keep wearing it after your run.",
-            "featured" : 0,
-            "rating" : 4,
-            "colors": 3,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 15,
-            "name": "Beck",
-            "brand": "HUSHPUPPIES",
-            "gender": "MEN",
-            "category": "FORMAL",
-            "price": 80,
-            "is_in_inventory": true,
-            "items_left": 5,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000575667_201_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000575667_201_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000575667_201_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000575667_201_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000575667_201_ss_05?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                }
-            ],
-            "slug": "beck",
-            "description": "The classic oxford gets a modern upgrade with the Leo. Featuring a versatile fabric upper with a sleek two-toned midsole and sporty leather heel pull loop for a pair you can dress up or down with your whole closet. Who knew tailored style could be so effortlessly handsome?",
-            "featured" : 0,
-            "rating" : 2,
-            "colors": 3,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": true
-        },
-        {
-            "id": 16,
-            "name": "Bridgport Advice",
-            "brand": "HUSHPUPPIES",
-            "gender": "MEN",
-            "category": "FORMAL",
-            "price": 30,
-            "is_in_inventory": true,
-            "items_left": 4,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_07?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_06?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                }
-            ],
-            "slug": "bridgport-advice",
-            "description": "The Gus oxford keeps you right on trend thanks to its sleek moc toe and sporty sneaker-inspired midsole. The versatile leather or suede upper makes this lace-up a breeze to dress up or down depending on the occasion while the innovative Bounce™ technology keeps you comfortable every step along the way.",
-            "featured" : 1,
-            "rating" : 3,
-            "colors": 4,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 17,
-            "name": "Fester",
-            "brand": "HUSHPUPPIES",
-            "gender": "MEN",
-            "category": "FORMAL",
-            "price": 70,
-            "is_in_inventory": true,
-            "items_left": 6,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000576850_341_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000576850_341_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000576850_341_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000576850_341_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000576850_341_ss_05?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                }
-            ],
-            "slug": "fester",
-            "description": "Part sneaker, part oxford, the Dash is versatile enough for any occasion. Have to go into the office but meet friends at happy hour afterwards? No problem. This lace-up has you covered thanks to its rich leather upper and sporty midsole with a contrasting heel accent.",
-            "featured" : 0,
-            "rating" : 1,
-            "colors": 4,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 18,
-            "name": "Pixel",
-            "brand": "HUSHPUPPIES",
-            "gender": "MEN",
-            "category": "FORMAL",
-            "price": 75,
-            "is_in_inventory": true,
-            "items_left": 7,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579722_260_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579722_260_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579722_260_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579722_260_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579722_260_ss_05?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                }
-            ],
-            "slug": "pixel",
-            "description": "Part sneaker, part oxford, the Dash is versatile enough for any occasion. Have to go into the office but meet friends at happy hour afterwards? No problem. This lace-up has you covered thanks to its handsome suede or nubuck saddle with a herringbone fabric vamp and toe.",
-            "featured" : 0,
-            "rating" : 3,
-            "colors": 2,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 19,
-            "name": "Austin",
-            "brand": "HUSHPUPPIES",
-            "gender": "MEN",
-            "category": "FORMAL",
-            "price": 75,
-            "is_in_inventory": true,
-            "items_left": 2,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579799_260_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579799_260_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579799_260_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579799_260_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579799_260_ss_05?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                }
-            ],
-            "slug": "austin",
-            "description": "The classic penny loafer gets a modern upgrade with the Leo. Featuring an unbelievably soft nubuck leather upper and a sleek two-toned midsole for a pair you can dress up or down with your whole closet. Who knew tailored style could be so effortlessly handsome?",
-            "featured" : 0,
-            "rating" : 5,
-            "colors": 3,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": true
-        },
-        {
-            "id": 20,
-            "name": "SS-HL-0135",
-            "brand": "HUSHPUPPIES",
-            "gender": "WOMEN",
-            "category": "FORMAL",
-            "price": 30,
-            "is_in_inventory": true,
-            "items_left": 6,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000526910_020_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000526910_020_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000526910_020_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000526910_020_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000526910_020_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                }
-            ],
-            "slug": "ss-hl-0135",
-            "description": "Cuddle weather wear. Cozy up to the hug-like comfort of the Sienna boot. These cuties are jam-packed with snuggle-inducing technology, like the Bounce™ Footbed, our blister-blocking Heel Pillow™, and WorryFree™ water resistance to keep your feet dry even on the rainiest of days.",
-            "featured" : 0,
-            "rating" : 4,
-            "colors": 1,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 21,
-            "name": "SS-HL-0136",
-            "brand": "HUSHPUPPIES",
-            "gender": "WOMEN",
-            "category": "FORMAL",
-            "price": 50,
-            "is_in_inventory": true,
-            "items_left": 4,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000522116_200_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000522116_200_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000522116_200_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000522116_200_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000522116_200_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                }
-            ],
-            "slug": "ss-hl-0136",
-            "description": "Elevate your classic go-to style with the Hadley bootie. This ankle bootie features a water-resistant WorryFree technology for protection, while the cushiony Bounce footbed provides daylong comfort to your feet.",
-            "featured" : 0,
-            "rating" : 3,
-            "colors": 3,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 22,
-            "name": "SS-HL-0128",
-            "brand": "HUSHPUPPIES",
-            "gender": "WOMEN",
-            "category": "FORMAL",
-            "price": 35,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000544745_410_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000544745_410_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000544745_410_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000544745_410_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000544745_410_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                }
-            ],
-            "slug": "ss-hl-0128",
-            "description": "Don't let a little rain ruin your day-or outfit! These Mazin Cayto chukka boots are crafted with WorryFree™ water-resistant suede so your feet stay dry and your kicks stay fresh. Featuring a Bounce™ cushioned footbed for all-day comfort",
-            "featured" : 0,
-            "rating" : 4,
-            "colors": 3,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 23,
-            "name": "SS-MS-0075",
-            "brand": "HUSHPUPPIES",
-            "gender": "WOMEN",
-            "category": "CASUAL",
-            "price": 25,
-            "is_in_inventory": true,
-            "items_left": 7,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573787_001_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573787_001_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573787_001_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573787_001_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573787_001_ss_05?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                }
-            ],
-            "slug": "ss-ms-0075",
-            "description": "Finally - a sneaker that does it all! The Cane has you covered with its versatile, mixed-material upper and sporty molded sole. The soft suede trim complements the breezy mesh side panels and exposed stitching along the midsole for the best of both worlds. ",
-            "featured" : 0,
-            "rating" : 4,
-            "colors": 5,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 25,
-            "name": "SS-PM-0093",
-            "brand": "HUSHPUPPIES",
-            "gender": "WOMEN",
-            "category": "CASUAL",
-            "price": 30,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573788_040_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573788_040_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573788_040_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573788_040_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573788_040_ss_05?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
-                }
-            ],
-            "slug": "ss-pm-0093",
-            "description": "Upgrade your sneaker collection with the streamlined design of the Roxy sneaker. The knit-mesh upper, center-zip closure, and sporty foam midsole create a twist on the classic trainer. Our new and improved Bounce™ footbed is made with an innovative, new foam to deliver instant gooshy comfort that lasts all day long. ",
-            "featured" : 0,
-            "rating" : 3,
-            "colors": 3,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": true
-        },
-        {
-            "id": 26,
-            "name": "Nizza X Disney",
-            "brand": "ADIDAS",
-            "gender": "KIDS",
-            "category": "CASUAL",
-            "price": 55,
-            "is_in_inventory": true,
-            "items_left": 6,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5ba94fa75fd54e60b5a60bf8807af555_9366/adidas_Suru365_x_Disney_Mickey_Mouse_Shoes_Kids_Blue_IG7178_01_standard.jpg"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/201c41da0f634a969b1f05870b4c655e_9366/adidas_Suru365_x_Disney_Mickey_Mouse_Shoes_Kids_Blue_IG7178_02_standard_hover.jpg"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5bd6ed6f09ec47ceb81dd502e3c3a1a1_9366/adidas_Suru365_x_Disney_Mickey_Mouse_Shoes_Kids_Blue_IG7178_03_standard.jpg"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e7f1c422adcf4b95bc0255171b5e0ded_9366/adidas_Suru365_x_Disney_Mickey_Mouse_Shoes_Kids_Blue_IG7178_04_standard.jpg"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c510a14fc71a4de28ba95b3f3be928e0_9366/adidas_Suru365_x_Disney_Mickey_Mouse_Shoes_Kids_Blue_IG7178_05_standard.jpg"
-                }
-            ],
-            "slug": "nizza-x-disney",
-            "description": "Get your young one ready for adventure with these kids' adidas x Disney shoes. Featuring Disney's Mickey Mouse in an allover print, these trainers inspire fun in everything kids do. A hook-and-loop strap makes getting them ready a breeze. The breezy silhouette and 3-Stripes keep them looking fresh.",
-            "featured" : 0,
-            "rating" : 4,
-            "colors": 1,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 27,
-            "name": "X_PLR",
-            "brand": "ADIDAS",
-            "gender": "KIDS",
-            "category": "CASUAL",
-            "price": 65,
-            "is_in_inventory": true,
-            "items_left": 5,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/02085018d51c4b40bef431a81f05d875_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_01_standard.jpg"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c40ef1177870405db6a95f41537367f7_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_02_standard_hover.jpg"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6ce9b79bcc15406c9d9f62634c1440c9_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_03_standard.jpg"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/452878676bf0442ba4f1efbd3a553451_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_04_standard.jpg"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1c874275ce38423886a7942067023d23_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_05_standard.jpg"
-                }
-            ],
-            "slug": "x_plr",
-            "description": "Your little explorer will love the adventure in these shoes. With a soft EVA midsole and rubber outsole, these sneakers are inspired iconic adult styles so tiny feet stay cushioned while matching the look of the rest of the family.",
-            "featured" : 1,
-            "rating" : 5,
-            "colors": 2,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": true
-        },
-        {
-            "id": 28,
-            "name": "Stan Smith",
-            "brand": "ADIDAS",
-            "gender": "KIDS",
-            "category": "CASUAL",
-            "price": 55,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0a60a136c5ac444daf5aac1d010779b0_9366/Stan_Smith_Shoes_White_FX7534_01_standard.jpg"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ec590863ef874026a0dfac1d01078976_9366/Stan_Smith_Shoes_White_FX7534_02_standard_hover.jpg"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78970f3b05ca4539afa9ac1d0107910f_9366/Stan_Smith_Shoes_White_FX7534_03_standard.jpg"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c145bf72456748129094ac1d0107978a_9366/Stan_Smith_Shoes_White_FX7534_04_standard.jpg"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d08ce3553d1d43be885dac1d0107a0fc_9366/Stan_Smith_Shoes_White_FX7534_05_standard.jpg"
-                }
-            ],
-            "slug": "stan-smith",
-            "description": "Childhood is full of firsts. First steps. First day of school. First lost tooth. And now, first Stan Smiths. These kids' shoes are part of another first, too: adidas' first big steps towards reducing waste using recycled materials. ",
-            "featured" : 0,
-            "rating" : 5,
-            "colors": 2,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 29,
-            "name": "NMD_R1",
-            "brand": "ADIDAS",
-            "gender": "KIDS",
-            "category": "RUNNING",
-            "price": 120,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7f02a349b8e143e5a43baf47014ef576_9366/NMD_Shoes_Black_HQ6116_01_standard.jpg"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1a7f34e17fc04e34a3d5af47014f1046_9366/NMD_Shoes_Black_HQ6116_02_standard_hover.jpg"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e86d38764b9d4e559c7faf47014f1a80_9366/NMD_Shoes_Black_HQ6116_03_standard.jpg"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f201401f47ab4ec6bbe2af47014f24cb_9366/NMD_Shoes_Black_HQ6116_04_standard.jpg"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d808bcd31b8e4e9eaa70af47014f2f6d_9366/NMD_Shoes_Black_HQ6116_05_standard.jpg"
-                }
-            ],
-            "slug": "nmd_r1",
-            "description": "These adidas NMD Shoes use design elements from the iconic runners to provide comfort for infants' feet. The upper and outsole are made of soft textile, and elastic laces help them slip on and off with ease.",
-            "featured" : 0,
-            "rating" : 4,
-            "colors": 2,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 30,
-            "name": "NMD_R1 Flash Red",
-            "brand": "ADIDAS",
-            "gender": "WOMEN",
-            "category": "CASUAL",
-            "price": 140,
-            "is_in_inventory": true,
-            "items_left": 5,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7877e293f30c46d8a8cdaf23010058a0_9366/NMD_R1_SHOES_Burgundy_IE4749_01_standard.jpg"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d569b1bf8b6f4214a39faf23010145b2_9366/NMD_R1_SHOES_Burgundy_IE4749_02_standard_hover.jpg"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5e1483bd3f784dbfbf4faf2301010469_9366/NMD_R1_SHOES_Burgundy_IE4749_03_standard.jpg"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2ba1a3bdcf604ae287beaf2301024d1c_9366/NMD_R1_SHOES_Burgundy_IE4749_04_standard.jpg"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f40c1a11d64e49b7b39daf230100c0ef_9366/NMD_R1_SHOES_Burgundy_IE4749_05_standard.jpg"
-                }
-            ],
-            "slug": "nmd_r1-flash-red",
-            "description": "Since the beginning, the adidas NMD franchise has been focused on the future. It's about evolution. It's about progress. Inspired by our constantly connected world of streaming data, these adidas NMD_R1 Shoes put a fresh spin on classic NMD style.",
-            "featured" : 0,
-            "rating" : 3,
-            "colors": 1,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": true
-        },
-        {
-            "id": 31,
-            "name": "Superstar",
-            "brand": "ADIDAS",
-            "gender": "WOMEN",
-            "category": "CASUAL",
-            "price": 90,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c35214f6104c4a288bfed0c7c88dd94c_9366/Superstar_XLG_Shoes_White_IF9995_01_standard.jpg"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d3c609326e3848249403dbb3d63c0433_9366/Superstar_XLG_Shoes_White_IF9995_02_standard_hover.jpg"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/511b5860ab674dd8995bc4b98aa09a7d_9366/Superstar_XLG_Shoes_White_IF9995_03_standard.jpg"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/53714b65802843f5aaadf841ec4f26cd_9366/Superstar_XLG_Shoes_White_IF9995_04_standard.jpg"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/67876ba98a5a4ddfaff15eb1b0d83f2c_9366/Superstar_XLG_Shoes_White_IF9995_05_standard.jpg"
-                }
-            ],
-            "slug": "superstar",
-            "featured" : 0,
-            "rating" : 5,
-            "colors": 3,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 32,
-            "name": "Club C Revenge Mens",
-            "brand": "Reebok",
-            "gender": "MEN",
-            "category": "CASUAL",
-            "price": 70,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://imagescdn.reebok.in/img/app/product/9/944109-12101167.jpg?q=75&auto=format&w=342"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://imagescdn.reebok.in/img/app/product/9/944109-12101168.jpg?q=75&auto=format&w=342"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://imagescdn.reebok.in/img/app/product/9/944109-12101169.jpg?q=75&auto=format&w=342"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://imagescdn.reebok.in/img/app/product/9/944109-12101170.jpg?q=75&auto=format&w=342"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://imagescdn.reebok.in/img/app/product/9/944109-12101171.jpg?q=75&auto=format&w=342"
-                }
-            ],
-            "slug": "club-c-revenge-mens",
-            "description": "Club C Revenge - Evergreen:Full Rubber Midsole & Outsole For Durable Traction",
-            "featured" : 0,
-            "rating" : 4,
-            "colors": 3,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": false
-        },
-        {
-            "id": 33,
-            "name": "SK80-Low",
-            "brand": "Vans",
-            "gender": "MEN",
-            "category": "CASUAL",
-            "price": 60,
-            "is_in_inventory": true,
-            "items_left": 3,
-            "imageURL": [
-                {
-                    "id": 1,
-                    "URL": "https://m.media-amazon.com/images/I/71v+tmHdO1L._SX695_.jpg"
-                },
-                {
-                    "id": 2,
-                    "URL": "https://m.media-amazon.com/images/I/71WA2rrGHEL._SX695_.jpg"
-                },
-                {
-                    "id": 3,
-                    "URL": "https://m.media-amazon.com/images/I/71wrSnSRFkL._SX695_.jpg"
-                },
-                {
-                    "id": 4,
-                    "URL": "https://m.media-amazon.com/images/I/717vwUAArUL._SX695_.jpg"
-                },
-                {
-                    "id": 5,
-                    "URL": "https://m.media-amazon.com/images/I/71v+tmHdO1L._SX695_.jpg"
-                }
-            ],
-            "slug": "sk80-low",
-            "description": "One of the most popular designs, Vans’ Classic Slip-On shoes are the perfect middle ground between style and convenience.",
-            "featured" : 0,
-            "rating" : 3,
-            "colors": 6,
-            "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0,
-            "best_seller": true
+          "id": 5,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5f81dadf-b30c-4cb6-8e93-6b529f93acf2/react-infinity-3-road-running-shoes-3Vn30D.png"
         }
-    ]
+      ],
+      "slug": "nike-react-infinity-run-flyknit",
+      "description": "Stay on your feet with soft and supportive cushioning, built to help keep you on the run. A wider forefoot and higher foam stacks help shield you from recurring attrition, giving you the peace of mind to pound the pavement every day. The springy responsiveness will surprise you too, adding an element of pure speed to 1 of our most tested shoes to help you go longer, faster and further than ever.",
+      "featured": 0,
+      "rating": 4,
+      "colors": 1,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 1,
+      "best_seller": false
+    },
+    {
+      "id": 2,
+      "name": "Nike React Miler",
+      "brand": "NIKE",
+      "gender": "MEN",
+      "category": "RUNNING",
+      "price": 130,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/575e4c0e-5bec-4dcf-a95d-e080dd91bedc/run-swift-3-road-running-shoes-BrHm16.png"
+        },
+        {
+          "id": 2,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a3da2d38-2b06-4369-a8f3-ee368acb9267/run-swift-3-road-running-shoes-BrHm16.png"
+        },
+        {
+          "id": 3,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/81133ece-5bfc-4819-9da6-303581a0ba8d/run-swift-3-road-running-shoes-BrHm16.png"
+        },
+        {
+          "id": 4,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2b5ddbbe-1169-4e65-ad9b-eeb9a2300dfe/run-swift-3-road-running-shoes-BrHm16.png"
+        },
+        {
+          "id": 5,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/65b0905f-4b43-4ebc-811a-1e59fd8f0102/run-swift-3-road-running-shoes-BrHm16.png"
+        }
+      ],
+      "slug": "nike-react-miler",
+      "description": "Whatever the run, the Nike React Miler will be there with undying support and devotion. It can help you get out the door for an easy 3 at the end of the day or an intense 2-mile there-and-back with a modified design that's supportive, durable and all-round comfortable. They'll help you conquer short distances, sure, but also get you from point A to point B as you navigate the ever-changing rhythms of everyday life.",
+      "featured": 1,
+      "rating": 5,
+      "colors": 5,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": true
+    },
+    {
+      "id": 3,
+      "name": "Nike Air Zoom Pegasus 37",
+      "brand": "NIKE",
+      "gender": "WOMEN",
+      "category": "RUNNING",
+      "price": 120,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4825a4b3-74a0-44bf-9ef0-f968bb42aebb/pegasus-41-road-running-shoes-SKDkNs.png"
+        },
+        {
+          "id": 2,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a1d6a2a5-6482-44b7-ab60-d1f74684c5d1/pegasus-41-road-running-shoes-SKDkNs.png"
+        },
+        {
+          "id": 3,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6f4f13a6-7ec7-45e3-9841-96aab90fc59d/pegasus-41-road-running-shoes-SKDkNs.png"
+        },
+        {
+          "id": 4,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/94c606c6-1dce-428e-a093-3496067de360/pegasus-41-road-running-shoes-SKDkNs.png"
+        },
+        {
+          "id": 5,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7efb26fb-b63b-40c7-b580-050000a47210/pegasus-41-road-running-shoes-SKDkNs.png"
+        }
+      ],
+      "slug": "nike-air-zoom-pegasus-37",
+      "description": "Responsive cushioning in the Pegasus provides an energised ride for everyday road running. Experience lighter-weight energy return with dual Air Zoom units and a ReactX foam midsole. Plus, improved engineered mesh on the upper decreases weight and increases breathability.",
+      "featured": 0,
+      "rating": 3,
+      "colors": 2,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 4,
+      "name": "Nike Joyride Run Flyknit",
+      "brand": "NIKE",
+      "gender": "WOMEN",
+      "category": "RUNNING",
+      "price": 180,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f61b3d97-8846-45cf-9946-6a46cefcb36d/custom-reactx-infinity-rn-4-by-you.png"
+        },
+        {
+          "id": 2,
+          "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/8d2de0be-da49-46fd-8945-97e48c14f175/custom-reactx-infinity-rn-4-by-you.png"
+        },
+        {
+          "id": 3,
+          "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/7af1e4d2-7771-4635-9f50-d3f7bafc7803/custom-reactx-infinity-rn-4-by-you.png"
+        },
+        {
+          "id": 4,
+          "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/f38909c9-df73-4b62-83bb-b8b7ba1635d2/custom-reactx-infinity-rn-4-by-you.png"
+        },
+        {
+          "id": 5,
+          "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/e6e32cbd-70e2-4973-9641-179cd62e73b7/custom-reactx-infinity-rn-4-by-you.png"
+        }
+      ],
+      "slug": "nike-joyride-run-flyknit",
+      "description": "Stay on your feet with soft and supportive cushioning, built to help keep you on the run. A wider forefoot and higher foam stacks help shield you from recurring attrition, giving you the peace of mind to pound the pavement every day. The springy responsiveness will surprise you too, adding an element of pure speed to 1 of our most tested shoes to help you go longer, faster and further than ever.",
+      "featured": 0,
+      "rating": 4,
+      "colors": 3,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 1,
+      "best_seller": true
+    },
+    {
+      "id": 5,
+      "name": "Nike Mercurial Vapor 13 Elite FG",
+      "brand": "NIKE",
+      "gender": "WOMEN",
+      "category": "FOOTBALL",
+      "price": 250,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/83ccaa96-74f6-4ece-b7c0-09a96f827894/custom-mercurial-vapor-15-elite-shoes-by-you.png"
+        },
+        {
+          "id": 2,
+          "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/054a5111-359c-4411-8745-52bb53187684/custom-mercurial-vapor-15-elite-shoes-by-you.png"
+        },
+        {
+          "id": 3,
+          "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/16b22428-c9f7-4f3f-82ce-7f92ea105655/custom-mercurial-vapor-15-elite-shoes-by-you.png"
+        },
+        {
+          "id": 4,
+          "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a7e4a37f-c197-498c-8486-91b3c112f268/custom-mercurial-vapor-15-elite-shoes-by-you.png"
+        },
+        {
+          "id": 5,
+          "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3e0c3f4d-676a-4d97-8df1-4427a9111ba4/custom-mercurial-vapor-15-elite-shoes-by-you.png"
+        }
+      ],
+      "slug": "nike-mercurial-vapor-13-elite-fg",
+      "description": "Express your creative side with an array of vibrant, eye-catching colours that are tuned for your distinct, brash style. With special design details from eccentric colour options to personalised messages and an updated graphic, there's no limit to your creativity on or off the pitch. Loaded with a Zoom Air unit, you can put the pedal down in the final minutes of a match—when it matters most. Fast is in the Air.",
+      "featured": 0,
+      "rating": 5,
+      "colors": 4,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 6,
+      "name": "Nike Phantom Vision Elite Dynamic Fit FG",
+      "brand": "NIKE",
+      "gender": "WOMEN",
+      "category": "FOOTBALL",
+      "price": 150,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2a3367c8-2dd0-42a5-8eb2-adfa2b7ed48f/phantom-gx-2-elite-fg-low-top-football-boot-8JGqj6.png"
+        },
+        {
+          "id": 2,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dcfe820f-502b-4593-a52a-e997c4b756a1/phantom-gx-2-elite-fg-low-top-football-boot-8JGqj6.png"
+        },
+        {
+          "id": 3,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5dc4c0ca-6204-40e4-8e86-6562a67e0010/phantom-gx-2-elite-fg-low-top-football-boot-8JGqj6.png"
+        },
+        {
+          "id": 4,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/acab406b-b0e6-4210-a41f-69037f4f9138/phantom-gx-2-elite-fg-low-top-football-boot-8JGqj6.png"
+        },
+        {
+          "id": 5,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/934902eb-71af-41e9-ad9b-2f68c72fa72e/phantom-gx-2-elite-fg-low-top-football-boot-8JGqj6.png"
+        }
+      ],
+      "slug": "nike-phantom-vision-elite-dynamic-fit-fg",
+      "description": "Obsessed with perfecting your craft? We made this for you. In the middle of the storm, with chaos swirling all around you, you've calmly found the final third of the pitch, thanks to your uncanny mix of on-ball guile and grace. Go finish the job in the Phantom GX 2 Elite. We design Elite boots for you and the world's biggest stars to give you high-level quality, because you demand greatness from yourself and your footwear.",
+      "featured": 0,
+      "rating": 3,
+      "colors": 3,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 7,
+      "name": "Nike Phantom Venom Academy FG",
+      "brand": "NIKE",
+      "gender": "WOMEN",
+      "category": "FOOTBALL",
+      "price": 80,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f8e00c3f-4825-49a7-af6e-6a677f57d224/phantom-luna-2-elite-fg-high-top-football-boot-rTZ7nH.png"
+        },
+        {
+          "id": 2,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/27ccb70f-9218-4210-b822-f8fc9fbd7fc7/phantom-luna-2-elite-fg-high-top-football-boot-rTZ7nH.png"
+        },
+        {
+          "id": 3,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/328cc5bd-32c9-4781-9ae2-7af69140fb20/phantom-luna-2-elite-fg-high-top-football-boot-rTZ7nH.png"
+        },
+        {
+          "id": 4,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0c5f6b0d-2fa4-4801-9eed-5724f58f0e6a/phantom-luna-2-elite-fg-high-top-football-boot-rTZ7nH.png"
+        },
+        {
+          "id": 5,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f961fab8-6789-4d49-8777-da7d3e9d27b3/phantom-luna-2-elite-fg-high-top-football-boot-rTZ7nH.png"
+        }
+      ],
+      "slug": "nike-phantom-venom-academy-fg",
+      "description": "We make Elite football boots for those obsessed with the game, the hidden gems that grind in the shadows, behind the scenes, when nobody else is watching. This special-edition Phantom Luna 2 is no exception. Featuring a metallic Swoosh design, they will be on the feet of the best players as they take to the pitch of the world's biggest tournaments. Add in game-changing Nike Gripknit for exceptional touch and you have a championship-level boot ready for personal brilliance.",
+      "featured": 0,
+      "rating": 4,
+      "colors": 3,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": true
+    },
+    {
+      "id": 8,
+      "name": "Nike Mercurial Vapor 13 Elite Tech Craft FG",
+      "brand": "NIKE",
+      "gender": "MEN",
+      "category": "FOOTBALL",
+      "price": 145,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ca46dc04-ed84-4eda-ae3c-95d17c1264cf/mercurial-vapor-15-club-multi-ground-low-top-football-boot-jPPt6S.png"
+        },
+        {
+          "id": 2,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b26ee8be-0343-4466-8ae9-96d7bc7c8d3e/mercurial-vapor-15-club-multi-ground-low-top-football-boot-jPPt6S.png"
+        },
+        {
+          "id": 3,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8601d20e-3b56-48c1-9c3b-9cfe706e669c/mercurial-vapor-15-club-multi-ground-low-top-football-boot-jPPt6S.png"
+        },
+        {
+          "id": 4,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5a4a1792-8f19-4c85-a235-569442cc0d51/mercurial-vapor-15-club-multi-ground-low-top-football-boot-jPPt6S.png"
+        },
+        {
+          "id": 5,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5c5f39ea-8fe1-4108-80e1-192d8f9f677a/mercurial-vapor-15-club-multi-ground-low-top-football-boot-jPPt6S.png"
+        }
+      ],
+      "slug": "nike-mercurial-vapor-13-elite-tech-craft-fg",
+      "description": "The pitch is yours when you lace up in the light and low-to-the-ground Vapor 13 Club MG. Fast is in the Air.",
+      "featured": 0,
+      "rating": 2,
+      "colors": 3,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 9,
+      "name": "Nike Mercurial Superfly 7 Pro MDS FG",
+      "brand": "NIKE",
+      "gender": "MEN",
+      "category": "FOOTBALL",
+      "price": 137,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/13945817-d8fd-4ccf-9084-740b0fd657f4/mercurial-vapor-15-academy-multi-ground-low-top-football-boot-DBh36g.png"
+        },
+        {
+          "id": 2,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ed4625fa-516e-437b-84f1-5507c66aad8f/mercurial-vapor-15-academy-multi-ground-low-top-football-boot-DBh36g.png"
+        },
+        {
+          "id": 3,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d584d878-b893-4530-a88a-884f69184fa1/mercurial-vapor-15-academy-multi-ground-low-top-football-boot-DBh36g.png"
+        },
+        {
+          "id": 4,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/62ce5577-3f07-49c8-ba7d-48b1dd940b91/mercurial-vapor-15-academy-multi-ground-low-top-football-boot-DBh36g.png"
+        },
+        {
+          "id": 5,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b19e4fdc-2b19-43dc-a997-083930fca4f9/mercurial-vapor-15-academy-multi-ground-low-top-football-boot-DBh36g.png"
+        }
+      ],
+      "slug": "nike-mercurial-superfly-7-pro-mds-fg",
+      "description": "The pitch is yours when you lace up in the Nike Mercurial Superfly 7 Pro MDS FG. It's loaded with a Zoom Air unit and flexible NikeSkin at the top for exceptional touch, so you can dominate in the waning minutes of a match—when it matters most. Fast is in the Air.",
+      "featured": 0,
+      "rating": 3,
+      "colors": 5,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 1,
+      "best_seller": true
+    },
+    {
+      "id": 10,
+      "name": "Nike Air Force 1",
+      "brand": "NIKE",
+      "gender": "KIDS",
+      "category": "CASUAL",
+      "price": 90,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/97bda33a-b474-408d-bd48-28c220462cab/air-force-1-le-older-shoes-Gmwp9p.png"
+        },
+        {
+          "id": 2,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5862a219-99b2-4e60-9bf9-7c53d48b334a/air-force-1-le-older-shoes-Gmwp9p.png"
+        },
+        {
+          "id": 3,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bf466b5e-ff10-4b9f-ba81-ef69cfe6516c/air-force-1-le-older-shoes-Gmwp9p.png"
+        },
+        {
+          "id": 4,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e7b7c965-4738-4a2c-9f6b-b73b4aa5ba7b/air-force-1-le-older-shoes-Gmwp9p.png"
+        },
+        {
+          "id": 5,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/de9809fd-db18-4741-a814-bdbccd09ac4a/air-force-1-le-older-shoes-Gmwp9p.png"
+        }
+      ],
+      "slug": "nike-air-force-1",
+      "description": "As cool today as when it first dropped more than 40 years ago, the AF-1 is a classic you can count on. Its durable construction and grippy tread will see you through breaktime after breaktime. And while they look great fresh out of the box, they remain cool even when covered in scuffs and scrapes. In fact, they might be even better.",
+      "featured": 0,
+      "rating": 5,
+      "colors": 2,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 11,
+      "name": "Nike Air Max 90",
+      "brand": "NIKE",
+      "gender": "KIDS",
+      "category": "CASUAL",
+      "price": 100,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7abb21b2-c063-4ed2-8360-6223d2ae9d52/air-max-90-lv8-shoes-5KhTdP.png"
+        },
+        {
+          "id": 2,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/29d1f9bb-ff2a-4e56-a8e1-b15d3f2d9ce1/air-max-90-lv8-shoes-5KhTdP.png"
+        },
+        {
+          "id": 3,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/826b459b-4539-480e-903e-1e12955c8881/air-max-90-lv8-shoes-5KhTdP.png"
+        },
+        {
+          "id": 4,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/12ac1f01-4011-4d26-9f1c-0e2662625fba/air-max-90-lv8-shoes-5KhTdP.png"
+        },
+        {
+          "id": 5,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/44df588e-887d-4466-8abd-71c3ecf1595f/air-max-90-lv8-shoes-5KhTdP.png"
+        }
+      ],
+      "slug": "nike-air-max-90",
+      "description": "The Air Max 90 LV8 takes your favourite silhouette to the next level with stacked Nike Air units. Not only do you get extra cushioning, but you get extra height, creating the perfect platform that's easy to style. Layers of mixed materials add texture and dimension, creating an elevated look you'll be reaching for again and again.",
+      "featured": 0,
+      "rating": 5,
+      "colors": 4,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 12,
+      "name": "Nike Air Max 90 LTR",
+      "brand": "NIKE",
+      "gender": "KIDS",
+      "category": "CASUAL",
+      "price": 110,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fece11f2-df5a-41eb-a93f-fb33daa22fb6/air-max-90-ltr-older-shoes-9xnt2B.png"
+        },
+        {
+          "id": 2,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a840ffab-d199-4f97-a53a-467aab215c63/air-max-90-ltr-older-shoes-9xnt2B.png"
+        },
+        {
+          "id": 3,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/95333c91-9c9b-4711-acbe-38478b814d6b/air-max-90-ltr-older-shoes-9xnt2B.png"
+        },
+        {
+          "id": 4,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e68c46a8-229c-4c29-b957-724b72c8be85/air-max-90-ltr-older-shoes-9xnt2B.png"
+        },
+        {
+          "id": 5,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/77c36493-c15a-4dbd-831f-db08dd964b05/air-max-90-ltr-older-shoes-9xnt2B.png"
+        }
+      ],
+      "slug": "nike-air-max-90-ltr",
+      "description": "The Nike Air Max 90 LTR returns with an even better feel for you. Cushioning is softer and more flexible, the Max Air unit is tuned for growing feet and the shape gives your toes more wiggle room. With a design and look that are still the same, it brings a '90s fave to a new generation.",
+      "featured": 0,
+      "rating": 4,
+      "colors": 4,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 13,
+      "name": "Nike Joyride Dual Run",
+      "brand": "NIKE",
+      "gender": "KIDS",
+      "category": "RUNNING",
+      "price": 110,
+      "is_in_inventory": false,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e7a70b03-c437-4c9f-a82a-d205cc6679f5/star-runner-4-nn-younger-shoes-LlHqf6.png"
+        },
+        {
+          "id": 2,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/87ffb14b-dd7a-4e0d-9bb3-48e460248168/star-runner-4-nn-younger-shoes-LlHqf6.png"
+        },
+        {
+          "id": 3,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f417e194-7e03-4a9f-b5e0-6ea796870c90/star-runner-4-nn-younger-shoes-LlHqf6.png"
+        },
+        {
+          "id": 4,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d257953e-ac11-46ac-9066-eeaf12005142/star-runner-4-nn-younger-shoes-LlHqf6.png"
+        },
+        {
+          "id": 5,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/62994d0a-b3ad-4079-ab80-1a9ae2d6ea5e/star-runner-4-nn-younger-shoes-LlHqf6.png"
+        }
+      ],
+      "slug": "nike-joyride-dual-run",
+      "description": "Help your little one step into adventure with the nike-joyride-dual-run. Soft cushioning in the midsole helps provide a comfortable, springy return so kids are ready for 1 more lap around the playground or 1 more game of tig. The tread grabs at pavement, grass and gravel to help give them extra grip, while a rubber-wrapped toe toughens up the construction so they can go further in the same pair of sneakers.",
+      "featured": 0,
+      "rating": 3,
+      "colors": 1,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 14,
+      "name": "Nike Renew Run",
+      "brand": "NIKE",
+      "gender": "KIDS",
+      "category": "RUNNING",
+      "price": 80,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/20e053fa-0f9d-4fe9-9cdd-a45130d4a203/renew-ride-3-road-running-shoes-fzS091.png"
+        },
+        {
+          "id": 2,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f640cc25-53e7-4c06-af46-c2afebb83e0c/renew-ride-3-road-running-shoes-fzS091.png"
+        },
+        {
+          "id": 3,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7ec66b3f-bae8-4183-8890-9be415de6b59/renew-ride-3-road-running-shoes-fzS091.png"
+        },
+        {
+          "id": 4,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d0a99835-5abc-40ff-a728-e51d6821a1bb/renew-ride-3-road-running-shoes-fzS091.png"
+        },
+        {
+          "id": 5,
+          "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fe6176be-77a6-47d5-9c80-a447e8267dd4/renew-ride-3-road-running-shoes-fzS091.png"
+        }
+      ],
+      "slug": "nike-renew-run",
+      "description": "When everyday runs are on the menu, the Nike Renew Ride 3 comes through with a smooth and soft ride. It's got a secure fit and a cosy feel, geared for those looking to find their running potential. The upper is clean and fresh, with touch points throughout for easy on and off. It's so comfortable, you'll want to keep wearing it after your run.",
+      "featured": 0,
+      "rating": 4,
+      "colors": 3,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 15,
+      "name": "Beck",
+      "brand": "HUSHPUPPIES",
+      "gender": "MEN",
+      "category": "FORMAL",
+      "price": 80,
+      "is_in_inventory": true,
+      "items_left": 5,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000575667_201_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000575667_201_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000575667_201_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000575667_201_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000575667_201_ss_05?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        }
+      ],
+      "slug": "beck",
+      "description": "The classic oxford gets a modern upgrade with the Leo. Featuring a versatile fabric upper with a sleek two-toned midsole and sporty leather heel pull loop for a pair you can dress up or down with your whole closet. Who knew tailored style could be so effortlessly handsome?",
+      "featured": 0,
+      "rating": 2,
+      "colors": 3,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": true
+    },
+    {
+      "id": 16,
+      "name": "Bridgport Advice",
+      "brand": "HUSHPUPPIES",
+      "gender": "MEN",
+      "category": "FORMAL",
+      "price": 30,
+      "is_in_inventory": true,
+      "items_left": 4,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_07?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_06?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        }
+      ],
+      "slug": "bridgport-advice",
+      "description": "The Gus oxford keeps you right on trend thanks to its sleek moc toe and sporty sneaker-inspired midsole. The versatile leather or suede upper makes this lace-up a breeze to dress up or down depending on the occasion while the innovative Bounce™ technology keeps you comfortable every step along the way.",
+      "featured": 1,
+      "rating": 3,
+      "colors": 4,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 17,
+      "name": "Fester",
+      "brand": "HUSHPUPPIES",
+      "gender": "MEN",
+      "category": "FORMAL",
+      "price": 70,
+      "is_in_inventory": true,
+      "items_left": 6,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000576850_341_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000576850_341_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000576850_341_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000576850_341_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000576850_341_ss_05?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        }
+      ],
+      "slug": "fester",
+      "description": "Part sneaker, part oxford, the Dash is versatile enough for any occasion. Have to go into the office but meet friends at happy hour afterwards? No problem. This lace-up has you covered thanks to its rich leather upper and sporty midsole with a contrasting heel accent.",
+      "featured": 0,
+      "rating": 1,
+      "colors": 4,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 18,
+      "name": "Pixel",
+      "brand": "HUSHPUPPIES",
+      "gender": "MEN",
+      "category": "FORMAL",
+      "price": 75,
+      "is_in_inventory": true,
+      "items_left": 7,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579722_260_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579722_260_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579722_260_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579722_260_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579722_260_ss_05?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        }
+      ],
+      "slug": "pixel",
+      "description": "Part sneaker, part oxford, the Dash is versatile enough for any occasion. Have to go into the office but meet friends at happy hour afterwards? No problem. This lace-up has you covered thanks to its handsome suede or nubuck saddle with a herringbone fabric vamp and toe.",
+      "featured": 0,
+      "rating": 3,
+      "colors": 2,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 19,
+      "name": "Austin",
+      "brand": "HUSHPUPPIES",
+      "gender": "MEN",
+      "category": "FORMAL",
+      "price": 75,
+      "is_in_inventory": true,
+      "items_left": 2,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579799_260_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579799_260_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579799_260_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579799_260_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579799_260_ss_05?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        }
+      ],
+      "slug": "austin",
+      "description": "The classic penny loafer gets a modern upgrade with the Leo. Featuring an unbelievably soft nubuck leather upper and a sleek two-toned midsole for a pair you can dress up or down with your whole closet. Who knew tailored style could be so effortlessly handsome?",
+      "featured": 0,
+      "rating": 5,
+      "colors": 3,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": true
+    },
+    {
+      "id": 20,
+      "name": "SS-HL-0135",
+      "brand": "HUSHPUPPIES",
+      "gender": "WOMEN",
+      "category": "FORMAL",
+      "price": 30,
+      "is_in_inventory": true,
+      "items_left": 6,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000526910_020_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000526910_020_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000526910_020_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000526910_020_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000526910_020_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        }
+      ],
+      "slug": "ss-hl-0135",
+      "description": "Cuddle weather wear. Cozy up to the hug-like comfort of the Sienna boot. These cuties are jam-packed with snuggle-inducing technology, like the Bounce™ Footbed, our blister-blocking Heel Pillow™, and WorryFree™ water resistance to keep your feet dry even on the rainiest of days.",
+      "featured": 0,
+      "rating": 4,
+      "colors": 1,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 21,
+      "name": "SS-HL-0136",
+      "brand": "HUSHPUPPIES",
+      "gender": "WOMEN",
+      "category": "FORMAL",
+      "price": 50,
+      "is_in_inventory": true,
+      "items_left": 4,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000522116_200_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000522116_200_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000522116_200_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000522116_200_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000522116_200_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        }
+      ],
+      "slug": "ss-hl-0136",
+      "description": "Elevate your classic go-to style with the Hadley bootie. This ankle bootie features a water-resistant WorryFree technology for protection, while the cushiony Bounce footbed provides daylong comfort to your feet.",
+      "featured": 0,
+      "rating": 3,
+      "colors": 3,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 22,
+      "name": "SS-HL-0128",
+      "brand": "HUSHPUPPIES",
+      "gender": "WOMEN",
+      "category": "FORMAL",
+      "price": 35,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000544745_410_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000544745_410_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000544745_410_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000544745_410_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000544745_410_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        }
+      ],
+      "slug": "ss-hl-0128",
+      "description": "Don't let a little rain ruin your day-or outfit! These Mazin Cayto chukka boots are crafted with WorryFree™ water-resistant suede so your feet stay dry and your kicks stay fresh. Featuring a Bounce™ cushioned footbed for all-day comfort",
+      "featured": 0,
+      "rating": 4,
+      "colors": 3,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 23,
+      "name": "SS-MS-0075",
+      "brand": "HUSHPUPPIES",
+      "gender": "WOMEN",
+      "category": "CASUAL",
+      "price": 25,
+      "is_in_inventory": true,
+      "items_left": 7,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573787_001_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573787_001_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573787_001_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573787_001_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573787_001_ss_05?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        }
+      ],
+      "slug": "ss-ms-0075",
+      "description": "Finally - a sneaker that does it all! The Cane has you covered with its versatile, mixed-material upper and sporty molded sole. The soft suede trim complements the breezy mesh side panels and exposed stitching along the midsole for the best of both worlds. ",
+      "featured": 0,
+      "rating": 4,
+      "colors": 5,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 25,
+      "name": "SS-PM-0093",
+      "brand": "HUSHPUPPIES",
+      "gender": "WOMEN",
+      "category": "CASUAL",
+      "price": 30,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573788_040_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573788_040_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573788_040_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573788_040_ss_04?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000573788_040_ss_05?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+        }
+      ],
+      "slug": "ss-pm-0093",
+      "description": "Upgrade your sneaker collection with the streamlined design of the Roxy sneaker. The knit-mesh upper, center-zip closure, and sporty foam midsole create a twist on the classic trainer. Our new and improved Bounce™ footbed is made with an innovative, new foam to deliver instant gooshy comfort that lasts all day long. ",
+      "featured": 0,
+      "rating": 3,
+      "colors": 3,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": true
+    },
+    {
+      "id": 26,
+      "name": "Nizza X Disney",
+      "brand": "ADIDAS",
+      "gender": "KIDS",
+      "category": "CASUAL",
+      "price": 55,
+      "is_in_inventory": true,
+      "items_left": 6,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5ba94fa75fd54e60b5a60bf8807af555_9366/adidas_Suru365_x_Disney_Mickey_Mouse_Shoes_Kids_Blue_IG7178_01_standard.jpg"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/201c41da0f634a969b1f05870b4c655e_9366/adidas_Suru365_x_Disney_Mickey_Mouse_Shoes_Kids_Blue_IG7178_02_standard_hover.jpg"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5bd6ed6f09ec47ceb81dd502e3c3a1a1_9366/adidas_Suru365_x_Disney_Mickey_Mouse_Shoes_Kids_Blue_IG7178_03_standard.jpg"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e7f1c422adcf4b95bc0255171b5e0ded_9366/adidas_Suru365_x_Disney_Mickey_Mouse_Shoes_Kids_Blue_IG7178_04_standard.jpg"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c510a14fc71a4de28ba95b3f3be928e0_9366/adidas_Suru365_x_Disney_Mickey_Mouse_Shoes_Kids_Blue_IG7178_05_standard.jpg"
+        }
+      ],
+      "slug": "nizza-x-disney",
+      "description": "Get your young one ready for adventure with these kids' adidas x Disney shoes. Featuring Disney's Mickey Mouse in an allover print, these trainers inspire fun in everything kids do. A hook-and-loop strap makes getting them ready a breeze. The breezy silhouette and 3-Stripes keep them looking fresh.",
+      "featured": 0,
+      "rating": 4,
+      "colors": 1,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 27,
+      "name": "X_PLR",
+      "brand": "ADIDAS",
+      "gender": "KIDS",
+      "category": "CASUAL",
+      "price": 65,
+      "is_in_inventory": true,
+      "items_left": 5,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/02085018d51c4b40bef431a81f05d875_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_01_standard.jpg"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c40ef1177870405db6a95f41537367f7_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_02_standard_hover.jpg"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6ce9b79bcc15406c9d9f62634c1440c9_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_03_standard.jpg"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/452878676bf0442ba4f1efbd3a553451_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_04_standard.jpg"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1c874275ce38423886a7942067023d23_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_05_standard.jpg"
+        }
+      ],
+      "slug": "x_plr",
+      "description": "Your little explorer will love the adventure in these shoes. With a soft EVA midsole and rubber outsole, these sneakers are inspired iconic adult styles so tiny feet stay cushioned while matching the look of the rest of the family.",
+      "featured": 1,
+      "rating": 5,
+      "colors": 2,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": true
+    },
+    {
+      "id": 28,
+      "name": "Stan Smith",
+      "brand": "ADIDAS",
+      "gender": "KIDS",
+      "category": "CASUAL",
+      "price": 55,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0a60a136c5ac444daf5aac1d010779b0_9366/Stan_Smith_Shoes_White_FX7534_01_standard.jpg"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ec590863ef874026a0dfac1d01078976_9366/Stan_Smith_Shoes_White_FX7534_02_standard_hover.jpg"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78970f3b05ca4539afa9ac1d0107910f_9366/Stan_Smith_Shoes_White_FX7534_03_standard.jpg"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c145bf72456748129094ac1d0107978a_9366/Stan_Smith_Shoes_White_FX7534_04_standard.jpg"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d08ce3553d1d43be885dac1d0107a0fc_9366/Stan_Smith_Shoes_White_FX7534_05_standard.jpg"
+        }
+      ],
+      "slug": "stan-smith",
+      "description": "Childhood is full of firsts. First steps. First day of school. First lost tooth. And now, first Stan Smiths. These kids' shoes are part of another first, too: adidas' first big steps towards reducing waste using recycled materials. ",
+      "featured": 0,
+      "rating": 5,
+      "colors": 2,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 29,
+      "name": "NMD_R1",
+      "brand": "ADIDAS",
+      "gender": "KIDS",
+      "category": "RUNNING",
+      "price": 120,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7f02a349b8e143e5a43baf47014ef576_9366/NMD_Shoes_Black_HQ6116_01_standard.jpg"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1a7f34e17fc04e34a3d5af47014f1046_9366/NMD_Shoes_Black_HQ6116_02_standard_hover.jpg"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e86d38764b9d4e559c7faf47014f1a80_9366/NMD_Shoes_Black_HQ6116_03_standard.jpg"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f201401f47ab4ec6bbe2af47014f24cb_9366/NMD_Shoes_Black_HQ6116_04_standard.jpg"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d808bcd31b8e4e9eaa70af47014f2f6d_9366/NMD_Shoes_Black_HQ6116_05_standard.jpg"
+        }
+      ],
+      "slug": "nmd_r1",
+      "description": "These adidas NMD Shoes use design elements from the iconic runners to provide comfort for infants' feet. The upper and outsole are made of soft textile, and elastic laces help them slip on and off with ease.",
+      "featured": 0,
+      "rating": 4,
+      "colors": 2,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 30,
+      "name": "NMD_R1 Flash Red",
+      "brand": "ADIDAS",
+      "gender": "WOMEN",
+      "category": "CASUAL",
+      "price": 140,
+      "is_in_inventory": true,
+      "items_left": 5,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7877e293f30c46d8a8cdaf23010058a0_9366/NMD_R1_SHOES_Burgundy_IE4749_01_standard.jpg"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d569b1bf8b6f4214a39faf23010145b2_9366/NMD_R1_SHOES_Burgundy_IE4749_02_standard_hover.jpg"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5e1483bd3f784dbfbf4faf2301010469_9366/NMD_R1_SHOES_Burgundy_IE4749_03_standard.jpg"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2ba1a3bdcf604ae287beaf2301024d1c_9366/NMD_R1_SHOES_Burgundy_IE4749_04_standard.jpg"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f40c1a11d64e49b7b39daf230100c0ef_9366/NMD_R1_SHOES_Burgundy_IE4749_05_standard.jpg"
+        }
+      ],
+      "slug": "nmd_r1-flash-red",
+      "description": "Since the beginning, the adidas NMD franchise has been focused on the future. It's about evolution. It's about progress. Inspired by our constantly connected world of streaming data, these adidas NMD_R1 Shoes put a fresh spin on classic NMD style.",
+      "featured": 0,
+      "rating": 3,
+      "colors": 1,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": true
+    },
+    {
+      "id": 31,
+      "name": "Superstar",
+      "brand": "ADIDAS",
+      "gender": "WOMEN",
+      "category": "CASUAL",
+      "price": 90,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c35214f6104c4a288bfed0c7c88dd94c_9366/Superstar_XLG_Shoes_White_IF9995_01_standard.jpg"
+        },
+        {
+          "id": 2,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d3c609326e3848249403dbb3d63c0433_9366/Superstar_XLG_Shoes_White_IF9995_02_standard_hover.jpg"
+        },
+        {
+          "id": 3,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/511b5860ab674dd8995bc4b98aa09a7d_9366/Superstar_XLG_Shoes_White_IF9995_03_standard.jpg"
+        },
+        {
+          "id": 4,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/53714b65802843f5aaadf841ec4f26cd_9366/Superstar_XLG_Shoes_White_IF9995_04_standard.jpg"
+        },
+        {
+          "id": 5,
+          "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/67876ba98a5a4ddfaff15eb1b0d83f2c_9366/Superstar_XLG_Shoes_White_IF9995_05_standard.jpg"
+        }
+      ],
+      "slug": "superstar",
+      "featured": 0,
+      "rating": 5,
+      "colors": 3,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 32,
+      "name": "Club C Revenge Mens",
+      "brand": "Reebok",
+      "gender": "MEN",
+      "category": "CASUAL",
+      "price": 70,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://imagescdn.reebok.in/img/app/product/9/944109-12101167.jpg?q=75&auto=format&w=342"
+        },
+        {
+          "id": 2,
+          "URL": "https://imagescdn.reebok.in/img/app/product/9/944109-12101168.jpg?q=75&auto=format&w=342"
+        },
+        {
+          "id": 3,
+          "URL": "https://imagescdn.reebok.in/img/app/product/9/944109-12101169.jpg?q=75&auto=format&w=342"
+        },
+        {
+          "id": 4,
+          "URL": "https://imagescdn.reebok.in/img/app/product/9/944109-12101170.jpg?q=75&auto=format&w=342"
+        },
+        {
+          "id": 5,
+          "URL": "https://imagescdn.reebok.in/img/app/product/9/944109-12101171.jpg?q=75&auto=format&w=342"
+        }
+      ],
+      "slug": "club-c-revenge-mens",
+      "description": "Club C Revenge - Evergreen:Full Rubber Midsole & Outsole For Durable Traction",
+      "featured": 0,
+      "rating": 4,
+      "colors": 3,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": false
+    },
+    {
+      "id": 33,
+      "name": "SK80-Low",
+      "brand": "Vans",
+      "gender": "MEN",
+      "category": "CASUAL",
+      "price": 60,
+      "is_in_inventory": true,
+      "items_left": 3,
+      "imageURL": [
+        {
+          "id": 1,
+          "URL": "https://m.media-amazon.com/images/I/71v+tmHdO1L._SX695_.jpg"
+        },
+        {
+          "id": 2,
+          "URL": "https://m.media-amazon.com/images/I/71WA2rrGHEL._SX695_.jpg"
+        },
+        {
+          "id": 3,
+          "URL": "https://m.media-amazon.com/images/I/71wrSnSRFkL._SX695_.jpg"
+        },
+        {
+          "id": 4,
+          "URL": "https://m.media-amazon.com/images/I/717vwUAArUL._SX695_.jpg"
+        },
+        {
+          "id": 5,
+          "URL": "https://m.media-amazon.com/images/I/71v+tmHdO1L._SX695_.jpg"
+        }
+      ],
+      "slug": "sk80-low",
+      "description": "One of the most popular designs, Vans’ Classic Slip-On shoes are the perfect middle ground between style and convenience.",
+      "featured": 0,
+      "rating": 3,
+      "colors": 6,
+      "size": [
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6,
+        6.5,
+        7,
+        7.5
+      ],
+      "latest": 0,
+      "best_seller": true
+    }
+  ],
+  "users": [
+    {
+      "email": "khushi@gmail.com",
+      "password": "$2a$10$KvL1DC4h1SUufKU1DEUOhe0moJ8LV8mJfCLG.dw4hJypS1v8GAL52",
+      "name": "khushi",
+      "id": 1
+    }
+  ]
 }

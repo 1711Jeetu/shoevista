@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import lightLogo from '../../assets/lightLogo.png'
 import darkLogo from '../../assets/darkLogo.png'
-import { DropDown } from './DropDown';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import './Header.css'
 import {DropDownFilter} from '../../pages/products/components/DropDownFilter';
+import { DropdownLoggedIn } from './DropDownLoggedIn';
+import { DropdownLoggedOut } from './DropDownLoggedOut';
 
 export const Header = () => {
 
@@ -20,6 +21,7 @@ export const Header = () => {
   const filterMenRef = useRef(null);
   const filterWomenRef = useRef(null);
   const filterKidsRef = useRef(null);
+  const token = JSON.parse(sessionStorage.getItem('token'));
 
   const activeClasses =
     "block py-2 px-3 activeClass rounded dark:text-white";
@@ -160,7 +162,10 @@ export const Header = () => {
             onClick={() => setDropdown(!dropdown)}
             className='hover:cursor-pointer text-xl text-slate-800 dark:text-slate-50 mr-5 mt-1 bi bi-person-circle'
           ></span>
-          {dropdown && <DropDown setDropdown={setDropdown} refProp={dropdownRef} />}
+          {/* {dropdown && <DropDown setDropdown={setDropdown} refProp={dropdownRef} />} */}
+          {
+              dropdown && (token ? <DropdownLoggedIn setDropdown={setDropdown} refProp = {dropdownRef} /> : <DropdownLoggedOut setDropdown={setDropdown} refProp = {dropdownRef}  />)
+            }
           {console.log(dropdown)}
           <button data-collapse-toggle="navbar-search" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none   dark:text-gray-400 dark:hover:bg-gray-700" aria-controls="navbar-search" aria-expanded="false" onClick={() => setMobileMode(!mobileMode)}>
             <span className="sr-only">Open main menu</span>

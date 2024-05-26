@@ -14,13 +14,13 @@ export const ProductPage = () => {
   const URL = `http://localhost:8000/products${queryTerm ? '?brand_like=' + queryTerm : ''}`;
   console.log(URL);
 
-  // function onProductFetch(data) {
+  // function onProductFetch(data) {  
   //   setInitialProductList(data);
   // }
   // const {isLoading,setUrl } = useFetch(URL, onProductFetch);
 
   useEffect(() => {
-    setUrl(`http://localhost:8000/products${queryTerm ? '?name_like=' + queryTerm : ""}`)
+    setUrl(`http://localhost:8000/products${queryTerm ? '?brand_like=' + queryTerm : ""}`)
   }, [queryTerm, setUrl]);
   
 

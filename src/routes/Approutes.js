@@ -6,6 +6,8 @@ import { Men } from '../pages/other/Men'
 import { Women } from '../pages/other/Women'
 import { Kids } from '../pages/other/Kids'
 import { ProductDetailPage } from '../pages/products/ProductDetailPage'
+import { Login } from '../pages/Auth/Login'
+import { Register } from '../pages/Auth/Register'
 
 export const Approutes = () => {
   return (
@@ -16,6 +18,8 @@ export const Approutes = () => {
         <Route path='/men' element={<Men />} />
         <Route path='/women' element={<Women />} />
         <Route path='/kids' element={<Kids />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
     </Routes>
   )
 }
