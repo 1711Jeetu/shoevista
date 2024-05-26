@@ -34,21 +34,21 @@ export const ProductDetailPage = () => {
                             </div>
                             <div className="grid grid-cols-5 gap-4">
                                 <div>
-                                    <img className="h-auto hover:cursor-pointer max-w-full rounded-lg" src={product.imageURL[1].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[1].URL)} />
+                                    <img className=" hover:cursor-pointer hover:scale max-w-full rounded-lg" src={product.imageURL[1].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[1].URL)} />
                                 </div>
                                 <div>
-                                    <img className="h-auto max-w-full hover:cursor-pointer rounded-lg" src={product.imageURL[2].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[2].URL)} />
+                                    <img className=" max-w-full hover:cursor-pointer rounded-lg" src={product.imageURL[2].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[2].URL)} />
                                 </div>
                                 <div>
-                                    <img className="h-auto max-w-full hover:cursor-pointer rounded-lg" src={product.imageURL[3].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[3].URL)} />
+                                    <img className=" max-w-full hover:cursor-pointer rounded-lg" src={product.imageURL[3].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[3].URL)} />
                                 </div>
                                 <div>
-                                    <img className="h-auto max-w-full hover:cursor-pointer rounded-lg" src={product.imageURL[4].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[4].URL)} />
+                                    <img className=" max-w-full hover:cursor-pointer rounded-lg" src={product.imageURL[4].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[4].URL)} />
                                 </div>
                                 <div>
-                                    <img className="h-auto max-w-full hover:cursor-pointer rounded-lg" src={product.imageURL[0].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[1].URL)} />
+                                    <img className=" max-w-full hover:cursor-pointer rounded-lg" src={product.imageURL[0].URL} alt="" onMouseEnter={() => setActiveImg(product.imageURL[1].URL)} />
                                 </div>
-                            </div>
+                            </div>  
                         </div>
                         <div className="my-3 ml-12">
                             <p className="text-3xl font-bold text-gray-900 dark:text-slate-200">

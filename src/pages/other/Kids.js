@@ -8,7 +8,7 @@ export const Kids = () => {
 
   return (
     <main>
-    <div className="flex justify-center pt-4">
+    <div className="flex justify-center pt-7">
       <h2 className='text-2xl font-semibold dark:text-slate-100 mb-5 section-title'>Kids's Section</h2>
     </div>
     <div className='flex flex-wrap justify-center lg:flex-row'>
