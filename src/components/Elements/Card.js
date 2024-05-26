@@ -11,7 +11,7 @@ export const Card = ({ product }) => {
             <div className="px-5 pb-5">
                 <h2 className='text-xl text-center font-bold tracking-tight text-gray-900 dark:text-white'>{product.brand}</h2>
                 <Link to={`/products/${product.id}`}>
-                    <h5 className="text-xl text-center font-semibold tracking-tight text-gray-900 dark:text-white mb-4">{product.name}</h5>
+                    <h5 className="text-xl text-center font-semibold tracking-tight text-gray-900 dark:text-white mb-4">{product.name.substring(0,23)}...</h5>
                 </Link>
                 <Rating rating={product.rating} />
                 <div className="flex items-center justify-between">

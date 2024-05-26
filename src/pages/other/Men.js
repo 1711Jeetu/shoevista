@@ -1,11 +1,26 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import useFetch from '../../hooks/useFetch'
 import { Card } from '../../components/Elements/Card'
+import { useFilter } from '../../context/FilterContext'
+import { useSearchParams } from 'react-router-dom';
+
 
 export const Men = () => {
 
-    const { data: products, error, isLoading, setUrl } = useFetch("http://localhost:8000/products")
+  const { products, setInitialProductList } = useFilter();
+  const [searchParams] = useSearchParams();
 
+  const queryTerm = searchParams.get('q');
+  const URL = `http://localhost:8000/products${queryTerm ? '?name_like=' + queryTerm : ''}`;
+
+  function onProductFetch(data) {
+    setInitialProductList(data);
+  }
+  const { isLoading,setUrl } = useFetch(URL, onProductFetch);
+
+  useEffect(() => {
+    setUrl(`http://localhost:8000/products${queryTerm ? '?name_like=' + queryTerm : ""}`)
+  }, [queryTerm, setUrl]);
   return (
     <main>
     <div className="flex justify-center pt-7">

@@ -18,6 +18,9 @@ export const ProductDetailPage = () => {
     }, [product])
     return (
         <main>
+            {
+                isLoading && <p>Loading...</p>
+            }
             {product &&
 
                 <section className='py-2 my-2 '>
@@ -119,10 +122,10 @@ export const ProductDetailPage = () => {
                             <span>
                                 {
                                     <button
-                                    className={`inline-flex items-center py-3 px-5 text-sm font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-900`}
+                                    className={`inline-flex items-center py-3 px-5 text-sm font-medium text-center text-white bg-slate-100 bg-primary-100 dark:bg-primary-700 rounded-lg `}
                                 >
                                     <div className='hover:cursor-pointer text-xl mt-1 text-slate-800 justify-center dark:text-slate-50 bi bi-cart'></div>
-                                    <i className="ml-1 mt-1 bi bi-plus-lg"></i>
+                                    <i className="ml-1 mt-1 bi bi-plus-lg dark:text-slate-50 text-slate-800"></i>
                                 </button>
 
                                 }

@@ -9,39 +9,39 @@ export const DropDownSortBy = ({ setSortBy, refProp }) => {
         <div
             ref={refProp}
             id='dropdownAvtar'
-            style={{ left: "176px" }}
+            style={{ left: "176px"}}
             className='select-none absolute pl-1 top-7 w-44 z-10 bg-white rounded divide-gray-100 mt-3 shadow dark:bg-gray-700 dark:divide-gray-600'
         >
             <ul
-                className='py-1  text-sm text-gray-700 dark:text-gray-200'
+                className='py-1 text-sm text-gray-700 dark:text-gray-200'
                 aria-labelledby='dropdownuserAvatarButton'
             >
                 <div className="py-4 overflow-y-auto">
+                    <div>
                     <h2 className="font-bold dark:text-slate-100 pl-2">Price</h2>
                     <div className="form-control dark:text-slate-100">
-                        <label htmlFor="lowToHigh">
+                        <label htmlFor="lowtohigh">
                             <span className="ml-2"></span>
-                            <input type="radio" id="lowToHigh" name="sortByPrice"
-                                onChange={() => { dispatch({ type: "SORT_BY_PRICE", payload: { sortByprice: "lowtohigh" } }) }}
-                            //    checked={state.sortByPrice==="lowtohigh"}
+                            <input type="radio" id="lowtohigh" name="sortByPrice"
+                                onChange={() =>  dispatch({ type: "SORT_BY_PRICE", payload: { sortByPrice: "lowtohigh" } }) }
+                                checked={state.sortByPrice==="lowtohigh"}
                             />
                             <span className="ml-2"></span>
                             Price - Low to High
                         </label>
                     </div>
                     <div className="form-control dark:text-slate-100">
-                        <label htmlFor="highToLow">
+                        <label htmlFor="hightolow">
                             <span className="ml-2"></span>
-                            <input type="radio" id="highToLow" name="sortByPrice"
-                                onChange={() => { dispatch({ type: "SORT_BY_PRICE", payload: { sortByprice: "hightolow" } }) }}
-                            //    checked={state.sortByPrice==="hightolow"} 
+                            <input type="radio" id="hightolow" name="sortByPrice"
+                                onChange={() => { dispatch({ type: "SORT_BY_PRICE", payload: { sortByPrice: "hightolow" } }) }}
+                                checked={state.sortByPrice==="hightolow"} 
                             />
                             <span className="ml-2"></span>
                             Price - High to Low
                         </label>
                     </div>
-
-
+                    </div>
                     <div className="mt-5">
                         <h2 className="font-bold dark:text-slate-100 pl-2">Rating</h2>
                         <div className="form-control dark:text-slate-100">
@@ -83,52 +83,53 @@ export const DropDownSortBy = ({ setSortBy, refProp }) => {
                             </label>
                         </div>
                     </div>
-
                     <div className="mt-5">
-                        <h2 className="font-bold dark:text-slate-100 pl-2">Brand</h2>
+                        <h2 className="font-bold dark:text-slate-100 pl-2">Category</h2>
                         <div className="form-control dark:text-slate-100">
-                            <label htmlFor="Nike">
+                            <label htmlFor="sortByCategory">
                                 <span className="ml-2"></span>
-                                <input type="checkbox" id="Nike" className='w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800'
+                                <input type="radio" id="sortByCategory" className='w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800'
+                                onChange={()=>dispatch({type:"SORT_BY_CATEGORY",payload: {sortByCategory: "RUNNING"}})}
+                                checked={state.sortByCategory === "RUNNING"}
                                 />
                                 <span className="ml-2"></span>
-                                Nike
+                                Running
                             </label>
                         </div>
                         <div className="form-control dark:text-slate-100">
-                            <label htmlFor="Adidas">
+                            <label htmlFor="Football">
                                 <span className="ml-2"></span>
-                                <input type="checkbox" id="Adidas" className='w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800' />
+                                <input type="radio" id="Football" className='w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800' 
+                                onChange={()=>dispatch({type:"SORT_BY_CATEGORY",payload: {sortByCategory: "FOOTBALL"}})}
+                                checked={state.sortByCategory === "FOOTBALL"}
+                                />
                                 <span className="ml-2"></span>
-                                Adidas
+                                Football
                             </label>
                         </div>
                         <div className="form-control dark:text-slate-100">
-                            <label htmlFor="Vans">
+                            <label htmlFor="Casual">
                                 <span className="ml-2"></span>
-                                <input type="checkbox" id="Vans" className='w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800' />
+                                <input type="radio" id="Casual" className='w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800'
+                                onChange={()=>dispatch({type:"SORT_BY_CATEGORY",payload: {sortByCategory: "CASUAL"}})}
+                                checked={state.sortByCategory === "CASUAL"}
+                                />
                                 <span className="ml-2"></span>
-                                Vans
+                                Casual
                             </label>
                         </div>
                         <div className="form-control dark:text-slate-100">
-                            <label htmlFor="HushPuppies">
+                            <label htmlFor="Formal">
                                 <span className="ml-2"></span>
-                                <input type="checkbox" id="HushPuppies" className='w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800' />
+                                <input type="radio" id="Formal" className='w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800' 
+                                onChange={()=>dispatch({type:"SORT_BY_CATEGORY",payload: {sortByCategory: "FORMAL"}})}
+                                checked={state.sortByCategory === "FORMAL"}
+                                />
                                 <span className="ml-2"></span>
-                                HushPuppies
+                                Formal
                             </label>
                         </div>
                     </div>
-                    <div className="form-control dark:text-slate-100">
-                        <label htmlFor="Reebok">
-                            <span className="ml-2"></span>
-                            <input type="checkbox" id="Reebok" className='w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800' />
-                            <span className="ml-2"></span>
-                            Reebok
-                        </label>
-                    </div>
-
                 </div>
             </ul>
         </div>

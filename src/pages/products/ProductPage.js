@@ -6,18 +6,19 @@ import { useFilter } from '../../context/FilterContext'
 
 export const ProductPage = () => {
 
-  const { data: products, error, isLoading, setUrl } = useFetch("http://localhost:8000/products")
-  // const { products, setInitialProductList } = useFilter();
+
+  const { products, setInitialProductList } = useFilter();
   const [searchParams] = useSearchParams();
 
   const queryTerm = searchParams.get('q');
   const URL = `http://localhost:8000/products${queryTerm ? '?brand_like=' + queryTerm : ''}`;
   console.log(URL);
 
-  // function onProductFetch(data) {  
-  //   setInitialProductList(data);
-  // }
-  // const {isLoading,setUrl } = useFetch(URL, onProductFetch);
+  function onProductFetch(data) {  
+    console.log(data);
+    setInitialProductList(data);
+  }
+  const {isLoading,setUrl } = useFetch(URL, onProductFetch);
 
   useEffect(() => {
     setUrl(`http://localhost:8000/products${queryTerm ? '?brand_like=' + queryTerm : ""}`)

@@ -17,10 +17,10 @@
                     ...state,
                     sortByRatings: payload.sortByRatings
                 }
-            case "SORT_BY_BRAND":
+            case "SORT_BY_CATEGORY":
                 return{
                     ...state,
-                    sortByBrand: payload.sortByBrand
+                    sortByCategory: payload.sortByCategory
                 }
             case "BEST_SELLER":
                 return{
@@ -30,7 +30,7 @@
             case "IS_IN_INVENTORY":
                 return{
                     ...state,
-                    isInInventory: payload.isInInventory
+                    is_in_inventory: payload.is_in_inventory
                 }
             default:
                 return state

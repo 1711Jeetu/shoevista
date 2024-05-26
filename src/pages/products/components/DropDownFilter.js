@@ -61,7 +61,7 @@ export const DropDownFilter = ({ setDropdown, refProp }) => {
                 <li>
                     <div
                         // onClick={() => setDropdown(false)}
-                        onClick={()=>dispatch({type:"BEST_SELLER",payload:{bestSeller:!state.bestSeller}})}
+                        onClick={()=>dispatch({type:"BEST_SELLER",payload:{bestSeller:true}})}
                         // to="/products"
                         className='block py-2 px-4 hover:bg-slate-800 hover:text-primary-100 dark:hover:bg-primary-100 dark:hover:text-slate-800'
                     >
@@ -70,8 +70,9 @@ export const DropDownFilter = ({ setDropdown, refProp }) => {
                 </li>
                 <li>
                     <Link
-                        onClick={() => setDropdown(false)}
-                        to="/"
+                        
+                        onClick={()=>dispatch({type:"IS_IN_INVENTORY",payload:{is_in_inventory:true}})}
+                        checked={state.is_in_inventory}
                         className='block py-2 px-4 hover:bg-slate-800 hover:text-primary-100 dark:hover:bg-primary-100 dark:hover:text-slate-800'
                     >
                         In-Stock

@@ -1,6 +1,5 @@
 import { createContext, useContext, useReducer } from "react";
 import { FilterReducer } from "../reducers/FilterReducer";
-import useFetch from "../hooks/useFetch";
 
 const initialState = {
     productList: [],
@@ -8,7 +7,7 @@ const initialState = {
     bestSeller: false,
     sortByPrice: null,
     sortByRatings: null,
-    sortByBrand: null
+    sortByCategory: null
 }
 
 const FilterContext = createContext(initialState);
@@ -17,7 +16,7 @@ export const FilterProvider = ({children}) => {
     const [state,dispatch] = useReducer(FilterReducer, initialState);
 
     function bestSellerFunction(products){
-        return state.best_seller ? products.filter(product => product.best_seller) : products
+        return state.bestSeller ? products.filter(product => product.best_seller) : products
     }
 
     function isInInventoryFunction(products){
@@ -25,6 +24,7 @@ export const FilterProvider = ({children}) => {
     }
 
     function sortByPriceFunction(products){
+        console.log(state.sortByPrice);
         if(state.sortByPrice === "lowtohigh"){
             console.log('lowtohigh');
             return products.sort((a , b) => Number(a.price) - Number(b.price));
@@ -53,25 +53,24 @@ export const FilterProvider = ({children}) => {
         return products;
     }
 
-    function sortByBrandFunction(products){
-        if(state.sortByBrand === "NIKE"){
-            return products.filter(product => product.brand === "NIKE");
+    function sortByCategoryFunction(products){
+        if(state.sortByCategory === "RUNNING"){
+            console.log('run');
+            return products.filter(product => product.category === "RUNNING");
         }
-        if(state.sortByBrand === "ADIDAS"){
-            return products.filter(product => product.brand === "ADIDAS");
+        if(state.sortByCategory === "FOOTBALL"){
+            return products.filter(product => product.category === "FOOTBALL");
         }
-        if(state.sortByBrand === "VANS"){
-            return products.filter(product => product.brand === "Vans");
+        if(state.sortByCategory === "CASUAL"){
+            return products.filter(product => product.category === "CASUAL");
         }
-        if(state.sortByBrand === "HUSHPUPPIES"){
-            return products.filter(product => product.brand === "HUSHPUPPIES");
+        if(state.sortByCategory === "FORMAL"){
+            return products.filter(product => product.category === "FORMAL");
         }
-        if(state.sortByBrand === "REEBOK"){
-            return products.filter(product => product.brand === "Reebok");
-        }
+        return products;
     }
 
-    const filteredProductList = bestSellerFunction(isInInventoryFunction(sortByRatingsFunction(sortByPriceFunction(sortByBrandFunction(state.productList)))));
+    const filteredProductList = bestSellerFunction(isInInventoryFunction(sortByRatingsFunction(sortByPriceFunction(sortByCategoryFunction(state.productList)))));
     function setInitialProductList(products) {
         dispatch ({
             type: "PRODUCT_LIST",
