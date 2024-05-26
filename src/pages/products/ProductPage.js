@@ -2,19 +2,27 @@ import React, {useEffect} from 'react'
 import { Card } from '../../components/Elements/Card'
 import useFetch from '../../hooks/useFetch'
 import { useSearchParams } from 'react-router-dom'
+import { useFilter } from '../../context/FilterContext'
 
 export const ProductPage = () => {
 
   const { data: products, error, isLoading, setUrl } = useFetch("http://localhost:8000/products")
-
+  // const { products, setInitialProductList } = useFilter();
   const [searchParams] = useSearchParams();
 
   const queryTerm = searchParams.get('q');
   const URL = `http://localhost:8000/products${queryTerm ? '?brand_like=' + queryTerm : ''}`;
+  console.log(URL);
+
+  // function onProductFetch(data) {
+  //   setInitialProductList(data);
+  // }
+  // const {isLoading,setUrl } = useFetch(URL, onProductFetch);
 
   useEffect(() => {
-    setUrl(URL) 
-  }, [URL, setUrl]);
+    setUrl(`http://localhost:8000/products${queryTerm ? '?name_like=' + queryTerm : ""}`)
+  }, [queryTerm, setUrl]);
+  
 
   return (
     <main>

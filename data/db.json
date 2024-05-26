@@ -37,7 +37,8 @@
             "rating" : 4,
             "colors": 1,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 1
+            "latest": 1,
+            "best_seller": false
         },
         {
             "id": 2,
@@ -76,7 +77,8 @@
             "rating" : 5,
             "colors": 5,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": true
         },
         {
             "id": 3,
@@ -115,7 +117,8 @@
             "rating" : 3,
             "colors": 2,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 4,
@@ -154,7 +157,8 @@
             "rating" : 4,
             "colors": 3,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 1
+            "latest": 1,
+            "best_seller": true
         },
         {
             "id": 5,
@@ -193,7 +197,8 @@
             "rating" : 5,
             "colors": 4,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 6,
@@ -232,7 +237,8 @@
             "rating" : 3,
             "colors": 3,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 7,
@@ -271,7 +277,8 @@
             "rating" : 4,
             "colors" : 3,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": true
         },
         {
             "id": 8,
@@ -310,7 +317,8 @@
             "rating" : 2,
             "colors" : 3,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 9,
@@ -349,7 +357,8 @@
             "rating" : 3,
             "colors": 5,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 1
+            "latest": 1,
+            "best_seller": true
         },
         {
             "id": 10,
@@ -388,7 +397,8 @@
             "rating" : 5,
             "colors": 2,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 11,
@@ -427,7 +437,8 @@
             "rating" : 5,
             "colors": 4,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 12,
@@ -466,7 +477,8 @@
             "rating" : 4,
             "colors": 4,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 13,
@@ -505,7 +517,8 @@
             "rating" : 3,
             "colors": 1,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 14,
@@ -544,7 +557,8 @@
             "rating" : 4,
             "colors": 3,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 15,
@@ -583,7 +597,8 @@
             "rating" : 2,
             "colors": 3,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": true
         },
         {
             "id": 16,
@@ -622,7 +637,8 @@
             "rating" : 3,
             "colors": 4,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 17,
@@ -661,7 +677,8 @@
             "rating" : 1,
             "colors": 4,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 18,
@@ -700,7 +717,8 @@
             "rating" : 3,
             "colors": 2,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 19,
@@ -739,7 +757,8 @@
             "rating" : 5,
             "colors": 3,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": true
         },
         {
             "id": 20,
@@ -778,7 +797,8 @@
             "rating" : 4,
             "colors": 1,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 21,
@@ -817,7 +837,8 @@
             "rating" : 3,
             "colors": 3,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 22,
@@ -856,7 +877,8 @@
             "rating" : 4,
             "colors": 3,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 23,
@@ -895,7 +917,8 @@
             "rating" : 4,
             "colors": 5,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 25,
@@ -934,7 +957,8 @@
             "rating" : 3,
             "colors": 3,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": true
         },
         {
             "id": 26,
@@ -973,7 +997,8 @@
             "rating" : 4,
             "colors": 1,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 27,
@@ -1012,7 +1037,8 @@
             "rating" : 5,
             "colors": 2,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": true
         },
         {
             "id": 28,
@@ -1051,7 +1077,8 @@
             "rating" : 5,
             "colors": 2,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 29,
@@ -1090,7 +1117,8 @@
             "rating" : 4,
             "colors": 2,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 30,
@@ -1129,7 +1157,8 @@
             "rating" : 3,
             "colors": 1,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": true
         },
         {
             "id": 31,
@@ -1167,7 +1196,8 @@
             "rating" : 5,
             "colors": 3,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 32,
@@ -1206,7 +1236,8 @@
             "rating" : 4,
             "colors": 3,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": false
         },
         {
             "id": 33,
@@ -1245,7 +1276,8 @@
             "rating" : 3,
             "colors": 6,
             "size":[3.5,4,4.5,5,5.5,6,6.5,7,7.5],
-            "latest": 0
+            "latest": 0,
+            "best_seller": true
         }
     ]
 }

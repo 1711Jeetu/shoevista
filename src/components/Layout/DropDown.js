@@ -16,7 +16,7 @@ export const DropDown = ({ setDropdown, refProp }) => {
                 <li>
                     <Link
                         onClick={() => setDropdown(false)}
-                        to="/"
+                        to="/products"
                         className='block py-2 px-4 hover:bg-slate-800 hover:text-primary-100 dark:hover:bg-primary-100 dark:hover:text-slate-800'
                     >
                         All Products
