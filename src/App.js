@@ -1,7 +1,7 @@
 import { Footer } from "./components/Layout/Footer";
 import { Header } from "./components/Layout/Header";
 import { Approutes } from "./routes/Approutes";
-import 'react-toastify/dist/ReactToastify.css';
+
 
 
 function App() {

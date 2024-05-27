@@ -31,6 +31,11 @@ export const Login = () => {
   }
   return (
     <main>
+      <div className="flex">
+      <div style={{maxWidth: '50%', marginTop: '90px'}}>
+        <video src='/videos/shoeVideo.mp4' autoPlay loop muted className='rounded-lg'/>
+      </div>
+      <div style={{maxWidth: '50%'}} className='ml-7 w-full'>
       <section className='pt-5'>
         <p className="text-2xl text-center font-semibold dark:text-slate-100 my-12 underline underline-offset-8">
           Login
@@ -78,6 +83,8 @@ export const Login = () => {
           Log In
         </button>
       </form>
+      </div>
+      </div>
     </main>
 
 

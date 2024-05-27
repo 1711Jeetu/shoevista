@@ -56,23 +56,23 @@ export const Header = () => {
 
   }, [dropdownRef]);
 
-  // useEffect(() => {
-  //   const handleMouseLeave = (event) => {
-  //     if (filterMenRef.current && !filterMenRef.current.contains(event.relatedTarget)) {
-  //       setFilterMen(false);
-  //     }
-  //   };
+  useEffect(() => {
+    const handleMouseLeave = (event) => {
+      if (filterMenRef.current && !filterMenRef.current.contains(event.relatedTarget)) {
+        setFilterMen(false);
+      }
+    };
   
-  //   if (filterMen) {
-  //     filterMenRef.current.addEventListener("mouseleave", handleMouseLeave);
-  //   }
+    if (filterMen) {
+      filterMenRef.current.addEventListener("mouseleave", handleMouseLeave);
+    }
   
-  //   return () => {
-  //     if (filterMenRef.current) {
-  //       filterMenRef.current.removeEventListener("mouseleave", handleMouseLeave);
-  //     }
-  //   };
-  // }, [filterMen, filterMenRef]);
+    return () => {
+      if (filterMenRef.current) {
+        filterMenRef.current.removeEventListener("mouseleave", handleMouseLeave);
+      }
+    };
+  }, [filterMen, filterMenRef]);
   useEffect(() => {
     const handleMouseLeave = (event) => {
       if (
@@ -198,7 +198,8 @@ export const Header = () => {
             <li className='container flex flex-col items-center'>
               <NavLink to="/men" className={({ isActive }) =>
                 isActive ? activeClasses : inactiveClasses
-              } aria-current="page" onMouseEnter={() => setFilterMen(!filterMen)}>Men
+              } aria-current="page" onMouseEnter={() => setFilterMen(!filterMen)}
+              >Men
               <div className="bg-inherit rounded-full h-1 ml-1 " style={{ width: "70px" }}>
                 <div className=" h-1 rounded-full bg-black men dark:bg-white" style={{ width: `${0}%` }}></div>
               </div>
@@ -208,7 +209,7 @@ export const Header = () => {
             <li className='container flex flex-col items-center'>
               <NavLink to="/women" className={({ isActive }) =>
                 isActive ? activeClasses : inactiveClasses
-              } aria-current="page" onMouseEnter={() => setFilterWomen(!filterWomen)}>Women
+              } aria-current="page" onMouseEnter={() => setFilterWomen(!filterWomen)} >Women
               <div className="bg-inherit rounded-full h-1 ml-6 " style={{ width: "70px" }}>
                 <div className=" h-1 rounded-full bg-black women dark:bg-white" style={{ width: `${0}%` }}></div>
               </div>
@@ -220,7 +221,7 @@ export const Header = () => {
                 to="/kids"
                 className={({ isActive }) =>
                   isActive ? activeClasses : inactiveClasses
-                } aria-current="page" onMouseEnter={() => setFilterKids(!filterKids)}>Kids
+                } aria-current="page" onMouseEnter={() => setFilterKids(!filterKids)} >Kids
               <div className="bg-inherit rounded-full h-1 ml-3 " style={{ width: "60px" }}>
                 <div className=" h-1 rounded-full bg-black kids dark:bg-white" style={{ width: `${0}%` }}>
                 </div>
