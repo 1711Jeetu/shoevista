@@ -58,23 +58,6 @@ export const Header = () => {
 
   useEffect(() => {
     const handleMouseLeave = (event) => {
-      if (filterMenRef.current && !filterMenRef.current.contains(event.relatedTarget)) {
-        setFilterMen(false);
-      }
-    };
-  
-    if (filterMen) {
-      filterMenRef.current.addEventListener("mouseleave", handleMouseLeave);
-    }
-  
-    return () => {
-      if (filterMenRef.current) {
-        filterMenRef.current.removeEventListener("mouseleave", handleMouseLeave);
-      }
-    };
-  }, [filterMen, filterMenRef]);
-  useEffect(() => {
-    const handleMouseLeave = (event) => {
       if (
         filterMenRef.current &&
         !filterMenRef.current.contains(event.relatedTarget)

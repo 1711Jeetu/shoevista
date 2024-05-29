@@ -18,7 +18,7 @@ module.exports = {
         }
       },
       backgroundImage: {
-        'parallax': 'url("../src/assets/shoe1.avif")'
+        'parallax': 'url("../src/assets/jorden1.jpg")'
       }
     },
   },

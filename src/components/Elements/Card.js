@@ -11,11 +11,6 @@ export const Card = ({ product }) => {
                         Best Seller
                     </span>
                 }
-                {
-                    product.is_in_inventory && <span className={`absolute p-2 bg-green-900 ${product.best_seller ? `top-10` : `top-0`}  text-white rounded`}>
-                        In Stock
-                    </span>
-                }
                 <img className="p-8 rounded-t-lg h-96 w-full hover:p-3 hover:rounded-lg" src={product.imageURL[0].URL} alt="product" />
             </Link>
             <div className="px-5 pb-5">
@@ -23,7 +18,7 @@ export const Card = ({ product }) => {
                 <Link to={`/products/${product.id}`}>
                     <h5 className="text-xl text-center font-semibold tracking-tight text-gray-900 dark:text-white mb-4">{product.name.substring(0, 23)}...</h5>
                 </Link>
-                <div className='text-xl text-center tracking-tight text-gray-900 dark:text-white'>{product.gender} SHOES</div>
+                <div className='text-xl text-center capitalize tracking-tight text-gray-900 dark:text-white'>{product.gender} SHOES </div>
                 <Rating rating={product.rating} />
                 <div className="flex items-center justify-between">
                     <span className="text-3xl font-bold text-gray-900 dark:text-white">${product.price}</span>
