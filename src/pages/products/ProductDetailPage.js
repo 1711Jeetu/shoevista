@@ -83,48 +83,48 @@ export const ProductDetailPage = () => {
                                 </p>
                             }
                             </div>
-                            <div class="relative overflow-x-auto shadow-md sm:rounded-lg mb-12">
-                                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 text-center max-w-sm mx-auto">
-                                    <thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
+                            <div className="relative overflow-x-auto shadow-md sm:rounded-lg mb-12">
+                                <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 text-center max-w-sm mx-auto">
+                                    <thead className="text-xs text-gray-700 uppercase dark:text-gray-400">
                                         <tr>
-                                            <th scope="col" class="py-3">
+                                            <th scope="col" className="py-3">
                                                 Size Chart
                                             </th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="border-b border-gray-200 dark:border-gray-700">
-                                            <td class="px-6 py-4 cursor-pointer">
+                                        <tr className="border-b border-gray-200 dark:border-gray-700">
+                                            <td className="px-6 py-4 cursor-pointer">
                                                 {product.size[0]}
                                             </td>
-                                            <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800 cursor-pointer">
+                                            <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800 cursor-pointer">
                                                 {product.size[1]}
 
                                             </td>
-                                            <td class="px-6 py-4 cursor-pointer">
+                                            <td className="px-6 py-4 cursor-pointer">
                                                 {product.size[2]}
 
                                             </td>
                                         </tr>
-                                        <tr class="border-b border-gray-200 dark:border-gray-700 cursor-pointer">
-                                            <td class="px-6 py-4">
+                                        <tr className="border-b border-gray-200 dark:border-gray-700 cursor-pointer">
+                                            <td className="px-6 py-4">
                                             {product.size[3]}
                                             </td>
-                                            <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800 cursor-pointer">
+                                            <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800 cursor-pointer">
                                             {product.size[4]}
                                             </td>
-                                            <td class="px-6 py-4 cursor-pointer">
+                                            <td className="px-6 py-4 cursor-pointer">
                                             {product.size[5]}
                                             </td>
                                         </tr>
-                                        <tr class="border-b border-gray-200 dark:border-gray-700">
-                                            <td class="px-6 py-4 cursor-pointer">
+                                        <tr className="border-b border-gray-200 dark:border-gray-700">
+                                            <td className="px-6 py-4 cursor-pointer">
                                             {product.size[6]}
                                             </td>
-                                            <td class="px-6 py-4 bg-gray-50 dark:bg-gray-800 cursor-pointer">
+                                            <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800 cursor-pointer">
                                             {product.size[7]}
                                             </td>
-                                            <td class="px-6 py-4 cursor-pointer">
+                                            <td className="px-6 py-4 cursor-pointer">
                                             {product.size[8]}
                                             </td>
                                         </tr>

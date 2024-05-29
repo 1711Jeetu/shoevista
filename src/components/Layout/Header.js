@@ -140,7 +140,7 @@ export const Header = () => {
             onClick={() => setDarkMode(!darkMode)}
           >
           </span>
-          <Link to='/' className='hover:cursor-pointer text-xl mt-1 text-slate-800 dark:text-slate-50 mr-5 bi bi-cart'></Link>
+          <Link to='/cart' className='hover:cursor-pointer text-xl mt-1 text-slate-800 dark:text-slate-50 mr-5 bi bi-cart'></Link>
           <span
             onClick={() => setDropdown(!dropdown)}
             className='hover:cursor-pointer text-xl text-slate-800 dark:text-slate-50 mr-5 mt-1 bi bi-person-circle'
@@ -148,8 +148,8 @@ export const Header = () => {
           {/* {dropdown && <DropDown setDropdown={setDropdown} refProp={dropdownRef} />} */}
           {
               dropdown && (token ? <DropdownLoggedIn setDropdown={setDropdown} refProp = {dropdownRef} /> : <DropdownLoggedOut setDropdown={setDropdown} refProp = {dropdownRef}  />)
-            }
-          {console.log(dropdown)}
+          }
+          {/* {console.log(dropdown)} */}
           <button data-collapse-toggle="navbar-search" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none   dark:text-gray-400 dark:hover:bg-gray-700" aria-controls="navbar-search" aria-expanded="false" onClick={() => setMobileMode(!mobileMode)}>
             <span className="sr-only">Open main menu</span>
             <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">

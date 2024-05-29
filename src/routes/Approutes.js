@@ -8,6 +8,7 @@ import { Kids } from '../pages/other/Kids'
 import { ProductDetailPage } from '../pages/products/ProductDetailPage'
 import { Login } from '../pages/Auth/Login'
 import { Register } from '../pages/Auth/Register'
+import { CartPage } from '../pages/cart/CartPage'
 
 export const Approutes = () => {
   return (
@@ -20,6 +21,7 @@ export const Approutes = () => {
         <Route path='/kids' element={<Kids />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/cart' element={<CartPage />} />
     </Routes>
   )
 }

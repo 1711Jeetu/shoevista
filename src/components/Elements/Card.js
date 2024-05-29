@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Rating } from './Rating'
+import { useCart } from '../../context/CartContext'
 
 export const Card = ({ product }) => {
+
+    const { cartList, addToCart, increaseCount, decreaseCount, count } = useCart();
+    // console.log(addToCart);
+    const [inCart, setInCart] = useState();
+
+    useEffect(() => {
+        const productInCart = cartList.find(item => item.id === product.id);
+        if (productInCart) {
+            setInCart(true)
+        } else {
+            setInCart(false);
+        }
+    }, [cartList, product.id]);
+
     return (
         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-2 relative">
             <Link to={`/products/${product.id}`}>
@@ -22,13 +37,38 @@ export const Card = ({ product }) => {
                 <Rating rating={product.rating} />
                 <div className="flex items-center justify-between">
                     <span className="text-3xl font-bold text-gray-900 dark:text-white">${product.price}</span>
-                    <Link to="/" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart
-                    <i className="ml-2 mt-1 bi bi-plus-lg dark:text-slate-50 text-slate-800"></i>
-                    </Link>
+                    {
+                        ( !inCart || count===0 )&& <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onClick={() => addToCart(product)}>Add to cart
+                            <i className="ml-2 mt-1 bi bi-plus-lg dark:text-slate-50 text-slate-800"></i>
+                        </button>
+                    }
+                    {
+                        inCart && count>0 && <div className="flex items-center">
+                            {
+                                <button className={`inline-flex items-center justify-center p-1 me-3 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full hover:bg-gray-100 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600`} disabled={count === 0 ? true : false} type="button" onClick={() => {decreaseCount(product)
+                                                product.count--;
+                                }}>
+                                    <span className="sr-only">Quantity button</span>
+                                    <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16" />
+                                    </svg>
+                                </button>
+                            }
+                            <div>
+                                <input type="number" id="first_product" className="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg block px-2.5 py-1 dark:bg-gray-700 text-center dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder={product.count} required />
+                            </div>
+                            <button className="inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full hover:bg-gray-100 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600" type="button" onClick={() => {increaseCount(product)
+                                product.count++
+                            }}>
+                                <span className="sr-only">Quantity button</span>
+                                <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16" />
+                                </svg>
+                            </button>
+                        </div>
+                    }
                 </div>
             </div>
         </div>
-
-
     )
 }
