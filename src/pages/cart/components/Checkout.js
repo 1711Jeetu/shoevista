@@ -3,9 +3,10 @@ import { useCart } from '../../../context/CartContext';
 import { createOrder, getUser } from '../../../services/dataService';
 import { useNavigate } from 'react-router-dom';
 import { toast } from "react-toastify";
+import { useDynamicTitle } from '../../../hooks/useDynamicTitle';
 
-export const Checkout = () => {
-
+export const Checkout = ({title}) => {
+  useDynamicTitle(title);
   const { cartList, total, clearCart } = useCart();
   const [user, setUser] = useState({});
 

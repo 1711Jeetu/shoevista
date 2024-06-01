@@ -2,9 +2,11 @@ import React, { useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { register } from '../../services/authService';
 import { toast } from 'react-toastify';
+import { useDynamicTitle } from '../../hooks/useDynamicTitle';
 // import video from '../../assets/'
 
-export const Register = () => {
+export const Register = ({title}) => {
+  useDynamicTitle(title);
   const navigate = useNavigate();
 
   const nameRef = useRef();

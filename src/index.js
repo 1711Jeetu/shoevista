@@ -7,10 +7,12 @@ import { FilterProvider } from './context/FilterContext';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import { CartProvider } from './context/CartContext';
+import { ScrollToTop } from './components/Misc/ScrollToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Router>
+        <ScrollToTop />
         <CartProvider>
             <FilterProvider>
                 <ToastContainer />

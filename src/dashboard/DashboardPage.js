@@ -3,8 +3,11 @@ import { DashboardCard } from "./components/DashboardCard";
 import { DashboardEmpty } from "./components/DashboardEmpty"
 import { toast } from "react-toastify";
 import { getOrders } from "../services/dataService";
+import { useDynamicTitle } from "../hooks/useDynamicTitle";
 
-export const DashboardPage = () => {
+export const DashboardPage = ({title}) => {
+
+  useDynamicTitle(title);  
   const [orders, setOrders] = useState({});
 
   useEffect(() => {

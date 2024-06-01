@@ -3,9 +3,10 @@ import useFetch from '../../hooks/useFetch'
 import { Card } from '../../components/Elements/Card'
 import { useFilter } from '../../context/FilterContext'
 import { useSearchParams } from 'react-router-dom';
+import { useDynamicTitle } from '../../hooks/useDynamicTitle';
 
-export const Women = () => {
-
+export const Women = ({title}) => {
+  useDynamicTitle(title);
   const { products, setInitialProductList, dispatch } = useFilter();
   const [searchParams] = useSearchParams();
 
@@ -24,7 +25,7 @@ export const Women = () => {
     <main>
     <div className="flex justify-between pt-7">
       <h2 className='text-2xl font-semibold dark:text-slate-100 mb-5 section-title pl-2 mt-2'>Women's Section</h2>
-      <button type="button" class="px-1 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 dark:focus:ring-blue-800 me-2" onClick={()=>dispatch({type:"CLEAR_FILTER"})}>Clear All Filters</button>
+      <button type="button" class="px-1 font-medium text-center text-white dark:bg-primary-700 rounded-lg hover:bg-primary-800 me-2" onClick={()=>dispatch({type:"CLEAR_FILTER"})}>Clear All Filters</button>
     </div>
     <div className='flex flex-wrap justify-center lg:flex-row'>
       {

@@ -3,9 +3,10 @@ import { Card } from '../../components/Elements/Card'
 import useFetch from '../../hooks/useFetch'
 import { useSearchParams } from 'react-router-dom'
 import { useFilter } from '../../context/FilterContext'
+import { useDynamicTitle } from '../../hooks/useDynamicTitle'
 
-export const ProductPage = () => {
-
+export const ProductPage = ({title}) => {
+  useDynamicTitle(title);
 
   const { products, setInitialProductList,dispatch } = useFilter();
   const [searchParams] = useSearchParams();

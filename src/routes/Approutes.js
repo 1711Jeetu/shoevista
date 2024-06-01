@@ -17,16 +17,16 @@ export const Approutes = () => {
   return (
     <Routes>
         <Route path='/' element={<HomePage />}/>
-        <Route path='/products' element={<ProductPage />} />
+        <Route path='/products' element={<ProductPage title='All Products' />} />
         <Route path='/products/:id' element={<ProductDetailPage />} />
-        <Route path='/men' element={<Men />} />
-        <Route path='/women' element={<Women />} />
-        <Route path='/kids' element={<Kids />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='/cart' element={<CartPage />} />
-        <Route path='/checkout' element={<Checkout />} />
-        <Route path='/dashboard' element={<DashboardPage />} />
+        <Route path='/men' element={<Men title="Men's Shoes" />} />
+        <Route path='/women' element={<Women title="Women's Shoes" />} />
+        <Route path='/kids' element={<Kids title="Kids Shoes" />} />
+        <Route path='/login' element={<Login title="Login" />} />
+        <Route path='/register' element={<Register title="Register" />} />
+        <Route path='/cart' element={<CartPage title="Your cart" />} />
+        <Route path='/checkout' element={<Checkout title="Checkout" />} />
+        <Route path='/dashboard' element={<DashboardPage title="Dashboard" />} />
     </Routes>
   )
 }

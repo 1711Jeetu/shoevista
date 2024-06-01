@@ -3,10 +3,11 @@ import useFetch from '../../hooks/useFetch'
 import { Card } from '../../components/Elements/Card'
 import { useFilter } from '../../context/FilterContext'
 import { useSearchParams } from 'react-router-dom';
+import { useDynamicTitle } from '../../hooks/useDynamicTitle';
 
 
-export const Men = () => {
-
+export const Men = ({title}) => {
+  useDynamicTitle(title);
   const { products, setInitialProductList, dispatch } = useFilter();
   const [searchParams] = useSearchParams();
 
@@ -28,7 +29,7 @@ export const Men = () => {
           {products && products.length === 0 && "No Products Found"}
           {!queryTerm && products && products.length !== 0 && `Men's Section`}
       </h2>
-      <button type="button" class="px-1 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 dark:focus:ring-blue-800 me-2" onClick={()=>dispatch({type:"CLEAR_FILTER"})}>Clear All Filters</button>
+      <button type="button" class="px-1 font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 me-2" onClick={()=>dispatch({type:"CLEAR_FILTER"})}>Clear All Filters</button>
     </div>
     <div className='flex flex-wrap justify-center lg:flex-row'>
       {

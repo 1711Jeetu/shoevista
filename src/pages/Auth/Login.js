@@ -2,7 +2,9 @@ import React, { useRef } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import { login } from '../../services/authService';
 import { toast } from 'react-toastify';
-export const Login = () => {
+import { useDynamicTitle } from '../../hooks/useDynamicTitle';
+export const Login = ({title}) => {
+  useDynamicTitle(title);
   const emailRef = useRef();
   const passwordRef = useRef();
 

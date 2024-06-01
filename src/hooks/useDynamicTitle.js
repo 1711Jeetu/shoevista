@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-export const useDynamicTitle = (title, defaultTitle = 'Purity Plants') => {
+export const useDynamicTitle = (title, defaultTitle = 'ShoeVista') => {
 
     useEffect(() => {
         document.title = title;
