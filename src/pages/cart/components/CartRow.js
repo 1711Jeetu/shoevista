@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const CartRow = ({product,increaseCount, decreaseCount, count, removeFromCart}) => {
+export const CartRow = ({product,increaseCount, decreaseCount, count, removeFromCart,setCountValue}) => {
     console.log(product.count);
 
     return (
@@ -15,7 +15,7 @@ export const CartRow = ({product,increaseCount, decreaseCount, count, removeFrom
                 <div className="flex items-center">
                     {
                         <button className={`inline-flex items-center justify-center p-1 me-3 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full hover:bg-gray-100 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600`} disabled={count===0 ? true: false} type="button" onClick={() => {decreaseCount(product)
-                                product.count--;
+                            setCountValue(product.count++)
                         }}>
                         <span className="sr-only">Quantity button</span>
                         <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
@@ -27,7 +27,7 @@ export const CartRow = ({product,increaseCount, decreaseCount, count, removeFrom
                         <input type="number" id="first_product" className="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg block px-2.5 py-1 dark:bg-gray-700 text-center dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder={product.count} required />
                     </div>
                     <button className="inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600" type="button" onClick={() => {increaseCount(product) 
-                        product.count++;
+                        setCountValue(product.count++)
                     }}>
                         <span className="sr-only">Quantity button</span>
                         <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">

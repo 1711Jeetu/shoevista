@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { login } from '../../services/authService';
 import { toast } from 'react-toastify';
 export const Login = () => {
@@ -75,13 +75,20 @@ export const Login = () => {
             required
           />
         </div>
-        <button
+          <div className="flex">
+          <button
           type="submit"
           className="hover:cursor-pointer text-white bg-primary-700 hover:bg-primary-900 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center "
           onClick={handleLogin}
         >
           Log In
         </button>
+          <div className='dark:text-slate-100 ml-5'>
+          No account yet? <div>
+          <Link to='/register' className='ml-1 hover:text-gray-300 hover:underline'> Register here</Link>
+          </div>
+          </div>
+          </div>
       </form>
       </div>
       </div>

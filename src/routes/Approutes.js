@@ -9,6 +9,7 @@ import { ProductDetailPage } from '../pages/products/ProductDetailPage'
 import { Login } from '../pages/Auth/Login'
 import { Register } from '../pages/Auth/Register'
 import { CartPage } from '../pages/cart/CartPage'
+import { Checkout } from '../pages/cart/components/Checkout'
 
 export const Approutes = () => {
   return (
@@ -22,6 +23,7 @@ export const Approutes = () => {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/cart' element={<CartPage />} />
+        <Route path='/checkout' element={<Checkout />} />
     </Routes>
   )
 }

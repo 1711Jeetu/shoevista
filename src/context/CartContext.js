@@ -13,6 +13,14 @@
     export const CartProvider = ({children}) => {
         const [state, dispatch] = useReducer(CartReducer, cartInitialState);
 
+        function setCountValue(value){
+            dispatch({
+                type:"CHANGE_COUNT",
+                payload:{
+                    count:value
+                }
+            })
+        }
         function addToCart(product) {
             const updatedList = state.cartList.concat(product);
             console.log(updatedList);
@@ -92,6 +100,7 @@
             clearCart,
             increaseCount,
             decreaseCount,
+            setCountValue,
             count: state.count
         }
 

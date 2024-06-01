@@ -6,6 +6,8 @@ import './Header.css'
 import {DropDownFilter} from '../../pages/products/components/DropDownFilter';
 import { DropdownLoggedIn } from './DropDownLoggedIn';
 import { DropdownLoggedOut } from './DropDownLoggedOut';
+import { getUser } from "../../services/dataService";
+import { toast } from "react-toastify";
 
 export const Header = () => {
 
@@ -17,6 +19,7 @@ export const Header = () => {
   const [filterMen, setFilterMen] = useState(false);
   const [filterWomen, setFilterWomen] = useState(false);
   const [filterKids, setFilterKids] = useState(false);
+  const [user, setUser] = useState({});
   const dropdownRef = useRef(null);
   const filterMenRef = useRef(null);
   const filterWomenRef = useRef(null);
@@ -55,6 +58,19 @@ export const Header = () => {
     };
 
   }, [dropdownRef]);
+  useEffect(() => {
+    async function fetchUserData() {
+        try {
+            const data = await getUser();
+            setUser(data);
+        } catch(e) {
+            toast.error(e.message);
+        }
+    }
+
+    fetchUserData();
+  }, []);
+
 
   useEffect(() => {
     const handleMouseLeave = (event) => {
@@ -113,8 +129,8 @@ export const Header = () => {
   return (
     <nav className="bg-white fixed top-0 left-0 right-0 z-20 border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link to="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={darkMode ? darkLogo : lightLogo} className="h-8" alt="Flowbite Logo" />
+        <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src={darkMode ? darkLogo : lightLogo} className="h-8" alt="ShoeVista"/>
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ShoeVista</span>
         </Link>
         <div className="flex md:order-2">
@@ -140,11 +156,13 @@ export const Header = () => {
             onClick={() => setDarkMode(!darkMode)}
           >
           </span>
-          <Link to='/cart' className='hover:cursor-pointer text-xl mt-1 text-slate-800 dark:text-slate-50 mr-5 bi bi-cart'></Link>
-          <span
+          <Link to={`${token ? '/cart' : '/login'}`} className='hover:cursor-pointer text-xl mt-1 text-slate-800 dark:text-slate-50 mr-5 bi bi-cart'></Link>
+          {
+            user && (token ? <span className='hover:cursor-pointer uppercase text-slate-800 dark:text-slate-50 mr-5 mt-1 border w-7 h-7 dark:text-slate-900 text-center' onClick={() => setDropdown(!dropdown)} style={{borderRadius: '100%', paddingTop: '1px', backgroundColor: 'rgb(180, 155, 200)' }}>{user && user.name && user.name.substring(0,1)}</span> : <span
             onClick={() => setDropdown(!dropdown)}
             className='hover:cursor-pointer text-xl text-slate-800 dark:text-slate-50 mr-5 mt-1 bi bi-person-circle'
-          ></span>
+          ></span>) 
+          }
           {/* {dropdown && <DropDown setDropdown={setDropdown} refProp={dropdownRef} />} */}
           {
               dropdown && (token ? <DropdownLoggedIn setDropdown={setDropdown} refProp = {dropdownRef} /> : <DropdownLoggedOut setDropdown={setDropdown} refProp = {dropdownRef}  />)

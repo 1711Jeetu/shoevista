@@ -1,0 +1,16 @@
+import { Link } from "react-router-dom"
+
+export const CartEmpty = () => {
+  return (
+    <main>
+      <section className="text-xl text-center max-w-4xl mx-auto my-12 pt-16 dark:text-slate-100 rounded">
+        <div className="my-5">
+          <p className="bi bi-cart underline text-primary-800 text-7xl mb-5"></p>
+          <p>Oops! Your cart looks empty!</p>
+          <p>Add Shoes to your cart from our store collection.</p>
+        </div>
+        <Link to="/products" type="button" className="text-white bg-primary-800 hover:bg-primary-900 rounded-lg text-lg px-5 py-2.5 mr-2 mb-2 focus:outline-none">Continue Shopping <i className="ml-2 bi bi-cart"></i></Link>
+      </section>
+    </main>
+  )
+}

@@ -99,9 +99,9 @@
         7.5
       ],
       "latest": 0,
-      "best_seller": true
-,
-"count": 1    },
+      "best_seller": true,
+      "count": 1
+    },
     {
       "id": 3,
       "name": "Nike Air Zoom Pegasus 37",
@@ -201,9 +201,9 @@
         7.5
       ],
       "latest": 1,
-      "best_seller": true
-,
-"count": 1    },
+      "best_seller": true,
+      "count": 1
+    },
     {
       "id": 5,
       "name": "Nike Mercurial Vapor 13 Elite FG",
@@ -354,9 +354,9 @@
         7.5
       ],
       "latest": 0,
-      "best_seller": true
-,
-"count": 1    },
+      "best_seller": true,
+      "count": 1
+    },
     {
       "id": 8,
       "name": "Nike Mercurial Vapor 13 Elite Tech Craft FG",
@@ -456,9 +456,9 @@
         7.5
       ],
       "latest": 1,
-      "best_seller": true
-,
-"count": 1    },
+      "best_seller": true,
+      "count": 1
+    },
     {
       "id": 10,
       "name": "Nike Air Force 1",
@@ -762,9 +762,9 @@
         7.5
       ],
       "latest": 0,
-      "best_seller": true
-,
-"count": 1    },
+      "best_seller": true,
+      "count": 1
+    },
     {
       "id": 16,
       "name": "Bridgport Advice",
@@ -966,9 +966,9 @@
         7.5
       ],
       "latest": 0,
-      "best_seller": true
-,
-"count": 1    },
+      "best_seller": true,
+      "count": 1
+    },
     {
       "id": 20,
       "name": "SS-HL-0135",
@@ -1221,9 +1221,9 @@
         7.5
       ],
       "latest": 0,
-      "best_seller": true
-,
-"count": 1    },
+      "best_seller": true,
+      "count": 1
+    },
     {
       "id": 26,
       "name": "Nizza X Disney",
@@ -1323,9 +1323,9 @@
         7.5
       ],
       "latest": 0,
-      "best_seller": true
-,
-"count": 1    },
+      "best_seller": true,
+      "count": 1
+    },
     {
       "id": 28,
       "name": "Stan Smith",
@@ -1476,9 +1476,9 @@
         7.5
       ],
       "latest": 0,
-      "best_seller": true
-,
-"count": 1    },
+      "best_seller": true,
+      "count": 1
+    },
     {
       "id": 31,
       "name": "Superstar",
@@ -1628,15 +1628,93 @@
         7.5
       ],
       "latest": 0,
-      "best_seller": true
-,
-"count": 1    }
+      "best_seller": true,
+      "count": 1
+    }
   ],
   "users": [
     {
       "email": "khushi@gmail.com",
       "password": "$2a$10$KvL1DC4h1SUufKU1DEUOhe0moJ8LV8mJfCLG.dw4hJypS1v8GAL52",
       "name": "khushi",
+      "id": 1
+    },
+    {
+      "email": "harshi@gamil.com",
+      "password": "$2a$10$5xn5nCWbGEfgc3OLKjje1eQir/Y91lp8leuKzKnOd2GoanlPPcMQ2",
+      "name": "harshi",
+      "id": 2
+    },
+    {
+      "email": "harshi1@gmail.com",
+      "password": "$2a$10$ydP83AijHVPPHnUK4moPIecQrCsHd.38diTRm5/3CxheGC32n7eka",
+      "name": "harshi",
+      "id": 3
+    }
+  ],
+  "orders": [
+    {
+      "cartList": [
+        {
+          "id": 27,
+          "name": "X_PLR",
+          "brand": "ADIDAS",
+          "gender": "KIDS",
+          "category": "CASUAL",
+          "price": 65,
+          "is_in_inventory": true,
+          "items_left": 5,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/02085018d51c4b40bef431a81f05d875_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_01_standard.jpg"
+            },
+            {
+              "id": 2,
+              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c40ef1177870405db6a95f41537367f7_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_02_standard_hover.jpg"
+            },
+            {
+              "id": 3,
+              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6ce9b79bcc15406c9d9f62634c1440c9_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_03_standard.jpg"
+            },
+            {
+              "id": 4,
+              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/452878676bf0442ba4f1efbd3a553451_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_04_standard.jpg"
+            },
+            {
+              "id": 5,
+              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1c874275ce38423886a7942067023d23_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_05_standard.jpg"
+            }
+          ],
+          "slug": "x_plr",
+          "description": "Your little explorer will love the adventure in these shoes. With a soft EVA midsole and rubber outsole, these sneakers are inspired iconic adult styles so tiny feet stay cushioned while matching the look of the rest of the family.",
+          "featured": 1,
+          "rating": 5,
+          "colors": 2,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": true,
+          "count": 1
+        }
+      ],
+      "amount_paid": 65,
+      "quantity": 1,
+      "userId": 1,
+      "user": {
+        "name": "khushi",
+        "email": "khushi@gmail.com",
+        "id": 1
+      },
       "id": 1
     }
   ]
