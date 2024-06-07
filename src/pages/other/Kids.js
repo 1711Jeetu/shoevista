@@ -4,6 +4,7 @@ import { Card } from '../../components/Elements/Card'
 import { useFilter } from '../../context/FilterContext'
 import { useSearchParams } from 'react-router-dom';
 import { useDynamicTitle } from '../../hooks/useDynamicTitle';
+import { CardSkeleton } from '../../components/Layout/CardSkeleton';
 
 export const Kids = ({title}) => {
   useDynamicTitle(title);
@@ -22,6 +23,13 @@ export const Kids = ({title}) => {
     setUrl(`http://localhost:8000/products${queryTerm ? '?name_like=' + queryTerm : ""}`)
       dispatch({type:"CLEAR_FILTER"})
   }, [queryTerm, setUrl]);
+  function renderSkeleton(count) {
+    const skeletons = [];
+    for(let i=1; i<=count; i++){
+      skeletons.push(<CardSkeleton key = {i}/>)
+    }
+    return skeletons;
+  }
 
   return (
     <main>
@@ -30,6 +38,9 @@ export const Kids = ({title}) => {
       <button type="button" class="px-1 font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 me-2" onClick={()=>dispatch({type:"CLEAR_FILTER"})}>Clear Filters</button>
     </div>
     <div className='flex flex-wrap justify-center mt-5 lg:flex-row'>
+      {
+          isLoading && renderSkeleton(6)
+      }
       {
         products && products.filter(product => product.gender==="KIDS").map(product => <Card key={product.id} product= { product } />
         )

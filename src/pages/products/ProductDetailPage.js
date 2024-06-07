@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
 import { Rating } from '../../components/Elements/Rating';
 import { useCart } from '../../context/CartContext';
+import { DetailSkeleton } from './components/DetailSkeleton';
 
 export const ProductDetailPage = () => {
     const { id } = useParams();
@@ -32,9 +33,9 @@ export const ProductDetailPage = () => {
     }, [product])
     return (
         <main>
-            {
-                isLoading && <p>Loading...</p>
-            }
+
+            { isLoading && <DetailSkeleton />}
+
             {product &&
 
                 <section className='py-2 my-2 '>
@@ -97,7 +98,7 @@ export const ProductDetailPage = () => {
                                     </p>
                                 }
                             </div>
-                            <div className="relative mb-5 overflow-x-auto shadow-md sm:rounded-lg"   style={{maxWidth: '300px'}}>
+                            <div className="relative mb-5 overflow-x-auto shadow-md sm:rounded-lg" style={{ maxWidth: '300px' }}>
                                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 max-w-sm">
                                     <thead className="text-xs text-gray-700 uppercase dark:text-gray-400">
                                         <tr>
@@ -160,7 +161,7 @@ export const ProductDetailPage = () => {
                                     inCart && <button
                                         className={`inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-slate-100 bg-primary-100 dark:bg-red-800 bg-red-600 rounded-lg `} disabled={product.is_in_inventory ? false : true}
                                         onClick={() => removeFromCart(product)}
-                                    
+
                                     >
                                         <div className={`hover:cursor-pointer text-xl mt-1 text-slate-800 justify-center dark:text-slate-50 bi bi-cart`}></div>
                                         <i className="ml-1 mt-1 bi bi-dash-lg dark:text-slate-50 text-slate-800"></i>

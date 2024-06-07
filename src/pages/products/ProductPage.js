@@ -5,6 +5,7 @@ import { useSearchParams } from 'react-router-dom'
 import { useFilter } from '../../context/FilterContext'
 import { useDynamicTitle } from '../../hooks/useDynamicTitle'
 import { DropDownProduct } from './components/DropDownProduct'
+import { CardSkeleton } from '../../components/Layout/CardSkeleton'
 
 export const ProductPage = ({title}) => {
   useDynamicTitle(title);
@@ -17,6 +18,14 @@ export const ProductPage = ({title}) => {
   const queryTerm = searchParams.get('q');
   const URL = `http://localhost:8000/products${queryTerm ? '?brand_like=' + queryTerm : ''}`;
   console.log(URL);
+
+  function renderSkeleton(count) {
+    const skeletons = [];
+    for(let i=1; i<=count; i++){
+      skeletons.push(<CardSkeleton key = {i}/>)
+    }
+    return skeletons;
+  }
 
   function onProductFetch(data) {  
     console.log(data);
@@ -59,6 +68,9 @@ export const ProductPage = ({title}) => {
         }
       </div>
       <div className='flex flex-wrap justify-center mt-2 lg:flex-row'>
+        {
+           isLoading && renderSkeleton(6)
+        }
         {
           products && products.map(product => <Card key={product.id} product= { product } />
           )
