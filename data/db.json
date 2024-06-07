@@ -7,7 +7,7 @@
       "gender": "MEN",
       "category": "RUNNING",
       "price": 160,
-      "is_in_inventory": true,
+      "is_in_inventory": false,
       "items_left": 3,
       "imageURL": [
         {
@@ -109,7 +109,7 @@
       "gender": "WOMEN",
       "category": "RUNNING",
       "price": 120,
-      "is_in_inventory": true,
+      "is_in_inventory": false,
       "items_left": 3,
       "imageURL": [
         {

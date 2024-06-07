@@ -97,11 +97,11 @@ export const ProductDetailPage = () => {
                                     </p>
                                 }
                             </div>
-                            <div className="relative mb-5 overflow-x-auto shadow-md sm:rounded-lg">
+                            <div className="relative mb-5 overflow-x-auto shadow-md sm:rounded-lg"   style={{maxWidth: '300px'}}>
                                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 max-w-sm">
                                     <thead className="text-xs text-gray-700 uppercase dark:text-gray-400">
                                         <tr>
-                                            <th scope="col" className='pt-2'>
+                                            <th scope="col" className='pt-2 pl-2'>
                                                 Size Chart
                                             </th>
                                         </tr>
@@ -111,7 +111,7 @@ export const ProductDetailPage = () => {
                                             <td className="px-6 py-4 cursor-pointer">
                                                 {product.size[0]}
                                             </td>
-                                            <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800 cursor-pointer">
+                                            <td className="px-6 py-4 cursor-pointer">
                                                 {product.size[1]}
 
                                             </td>
@@ -124,7 +124,7 @@ export const ProductDetailPage = () => {
                                             <td className="px-6 py-4">
                                                 {product.size[3]}
                                             </td>
-                                            <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800 cursor-pointer">
+                                            <td className="px-6 py-4 cursor-pointer">
                                                 {product.size[4]}
                                             </td>
                                             <td className="px-6 py-4 cursor-pointer">
@@ -135,7 +135,7 @@ export const ProductDetailPage = () => {
                                             <td className="px-6 py-4 cursor-pointer">
                                                 {product.size[6]}
                                             </td>
-                                            <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800 cursor-pointer">
+                                            <td className="px-6 py-4 cursor-pointer">
                                                 {product.size[7]}
                                             </td>
                                             <td className="px-6 py-4 cursor-pointer">
@@ -152,17 +152,17 @@ export const ProductDetailPage = () => {
                                         className={`inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-slate-100 bg-primary-100 dark:bg-primary-700 rounded-lg `} disabled={product.is_in_inventory ? false : true}
                                         onClick={() => addToCart(product)}
                                     >
-                                        <div className='hover:cursor-pointer text-xl mt-1 text-slate-800 justify-center dark:text-slate-50 bi bi-cart'></div>
+                                        <div className={` ${product.is_in_inventory ? 'hover:cursor-pointer' : ''}  text-xl mt-1 text-slate-800 justify-center dark:text-slate-50 bi bi-cart`}></div>
                                         <i className="ml-1 mt-1 bi bi-plus-lg dark:text-slate-50 text-slate-800"></i>
                                     </button>
                                 }
                                 {
                                     inCart && <button
-                                        className={`inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-slate-100 bg-primary-100 dark:bg-red-800 rounded-lg `} disabled={product.is_in_inventory ? false : true}
+                                        className={`inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-slate-100 bg-primary-100 dark:bg-red-800 bg-red-600 rounded-lg `} disabled={product.is_in_inventory ? false : true}
                                         onClick={() => removeFromCart(product)}
                                     
                                     >
-                                        <div className='hover:cursor-pointer text-xl mt-1 text-slate-800 justify-center dark:text-slate-50 bi bi-cart'></div>
+                                        <div className={`hover:cursor-pointer text-xl mt-1 text-slate-800 justify-center dark:text-slate-50 bi bi-cart`}></div>
                                         <i className="ml-1 mt-1 bi bi-dash-lg dark:text-slate-50 text-slate-800"></i>
                                     </button>
                                 }

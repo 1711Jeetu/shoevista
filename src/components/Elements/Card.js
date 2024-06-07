@@ -22,7 +22,7 @@ export const Card = ({ product }) => {
         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-2 relative">
             <Link to={`/products/${product.id}`}>
                 {
-                    product.best_seller && <span className="absolute p-2 bg-red-900  text-white rounded">
+                    product.best_seller && <span className="absolute p-2 dark:bg-red-900 bg-red-800  text-white rounded">
                         Best Seller
                     </span>
                 }
@@ -49,11 +49,11 @@ export const Card = ({ product }) => {
                     }
                     {
                         inCart && <button
-                        className={`inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-slate-100 bg-primary-100 dark:bg-red-800 rounded-lg `} disabled={product.is_in_inventory ? false : true}
+                        className={`inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-slate-100 bg-primary-100 dark:bg-red-800 bg-red-800 rounded-lg `} disabled={product.is_in_inventory ? false : true}
                         onClick={() => removeFromCart(product)}
                     >
-                        <div className='hover:cursor-pointer text-xl mt-1 text-slate-800 justify-center dark:text-slate-50 bi bi-cart'></div>
-                        <i className="ml-1 mt-1 bi bi-dash-lg dark:text-slate-50 text-slate-800"></i>
+                        <div className='hover:cursor-pointer text-xl mt-1 text-slate-800 justify-center dark:text-slate-50 bi bi-cart text-white'></div>
+                        <i className="ml-1 mt-1 bi bi-dash-lg dark:text-slate-50 text-slate-800 text-white"></i>
                     </button>
                     }
                 </div>
