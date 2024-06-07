@@ -874,7 +874,7 @@
       "gender": "MEN",
       "category": "FORMAL",
       "price": 75,
-      "is_in_inventory": true,
+      "is_in_inventory": false,
       "items_left": 7,
       "imageURL": [
         {
@@ -1650,6 +1650,24 @@
       "password": "$2a$10$ydP83AijHVPPHnUK4moPIecQrCsHd.38diTRm5/3CxheGC32n7eka",
       "name": "harshi",
       "id": 3
+    },
+    {
+      "email": "harshita@gmail.com",
+      "password": "$2a$10$Vfowsf41Yi6tef9crHbFzus2VPBPcqkRFROvxFtb2zleLj0OuiY7e",
+      "name": "harshi",
+      "id": 4
+    },
+    {
+      "email": "tishajeswani@gmail.com",
+      "password": "$2a$10$nE2b6wyAZL9HLtaePvsf2OZDrH66eRPhObEP5xFOW7Ggs0RoVM746",
+      "name": "tisha",
+      "id": 5
+    },
+    {
+      "email": "vanshi@gmail.com",
+      "password": "$2a$10$ctHkY6B.bk6qvaOEGUnMUeOvKq6X8ZXZRKWAYTC45oC14AP3P/KuG",
+      "name": "vanshi",
+      "id": 6
     }
   ],
   "orders": [
@@ -1831,6 +1849,708 @@
         "id": 1
       },
       "id": 2
+    },
+    {
+      "cartList": [
+        {
+          "id": 2,
+          "name": "Nike React Miler",
+          "brand": "NIKE",
+          "gender": "MEN",
+          "category": "RUNNING",
+          "price": 130,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/575e4c0e-5bec-4dcf-a95d-e080dd91bedc/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 2,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a3da2d38-2b06-4369-a8f3-ee368acb9267/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 3,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/81133ece-5bfc-4819-9da6-303581a0ba8d/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 4,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2b5ddbbe-1169-4e65-ad9b-eeb9a2300dfe/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 5,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/65b0905f-4b43-4ebc-811a-1e59fd8f0102/run-swift-3-road-running-shoes-BrHm16.png"
+            }
+          ],
+          "slug": "nike-react-miler",
+          "description": "Whatever the run, the Nike React Miler will be there with undying support and devotion. It can help you get out the door for an easy 3 at the end of the day or an intense 2-mile there-and-back with a modified design that's supportive, durable and all-round comfortable. They'll help you conquer short distances, sure, but also get you from point A to point B as you navigate the ever-changing rhythms of everyday life.",
+          "featured": 1,
+          "rating": 5,
+          "colors": 5,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": true,
+          "count": 1
+        },
+        {
+          "id": 8,
+          "name": "Nike Mercurial Vapor 13 Elite Tech Craft FG",
+          "brand": "NIKE",
+          "gender": "MEN",
+          "category": "FOOTBALL",
+          "price": 145,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ca46dc04-ed84-4eda-ae3c-95d17c1264cf/mercurial-vapor-15-club-multi-ground-low-top-football-boot-jPPt6S.png"
+            },
+            {
+              "id": 2,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b26ee8be-0343-4466-8ae9-96d7bc7c8d3e/mercurial-vapor-15-club-multi-ground-low-top-football-boot-jPPt6S.png"
+            },
+            {
+              "id": 3,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8601d20e-3b56-48c1-9c3b-9cfe706e669c/mercurial-vapor-15-club-multi-ground-low-top-football-boot-jPPt6S.png"
+            },
+            {
+              "id": 4,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5a4a1792-8f19-4c85-a235-569442cc0d51/mercurial-vapor-15-club-multi-ground-low-top-football-boot-jPPt6S.png"
+            },
+            {
+              "id": 5,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5c5f39ea-8fe1-4108-80e1-192d8f9f677a/mercurial-vapor-15-club-multi-ground-low-top-football-boot-jPPt6S.png"
+            }
+          ],
+          "slug": "nike-mercurial-vapor-13-elite-tech-craft-fg",
+          "description": "The pitch is yours when you lace up in the light and low-to-the-ground Vapor 13 Club MG. Fast is in the Air.",
+          "featured": 0,
+          "rating": 2,
+          "colors": 3,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": false,
+          "count": 1
+        }
+      ],
+      "amount_paid": 275,
+      "quantity": 2,
+      "userId": 1,
+      "user": {
+        "name": "khushi",
+        "email": "khushi@gmail.com",
+        "id": 1
+      },
+      "id": 3
+    },
+    {
+      "cartList": [
+        {
+          "id": 2,
+          "name": "Nike React Miler",
+          "brand": "NIKE",
+          "gender": "MEN",
+          "category": "RUNNING",
+          "price": 130,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/575e4c0e-5bec-4dcf-a95d-e080dd91bedc/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 2,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a3da2d38-2b06-4369-a8f3-ee368acb9267/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 3,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/81133ece-5bfc-4819-9da6-303581a0ba8d/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 4,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2b5ddbbe-1169-4e65-ad9b-eeb9a2300dfe/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 5,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/65b0905f-4b43-4ebc-811a-1e59fd8f0102/run-swift-3-road-running-shoes-BrHm16.png"
+            }
+          ],
+          "slug": "nike-react-miler",
+          "description": "Whatever the run, the Nike React Miler will be there with undying support and devotion. It can help you get out the door for an easy 3 at the end of the day or an intense 2-mile there-and-back with a modified design that's supportive, durable and all-round comfortable. They'll help you conquer short distances, sure, but also get you from point A to point B as you navigate the ever-changing rhythms of everyday life.",
+          "featured": 1,
+          "rating": 5,
+          "colors": 5,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": true,
+          "count": 2
+        },
+        {
+          "id": 11,
+          "name": "Nike Air Max 90",
+          "brand": "NIKE",
+          "gender": "KIDS",
+          "category": "CASUAL",
+          "price": 100,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7abb21b2-c063-4ed2-8360-6223d2ae9d52/air-max-90-lv8-shoes-5KhTdP.png"
+            },
+            {
+              "id": 2,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/29d1f9bb-ff2a-4e56-a8e1-b15d3f2d9ce1/air-max-90-lv8-shoes-5KhTdP.png"
+            },
+            {
+              "id": 3,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/826b459b-4539-480e-903e-1e12955c8881/air-max-90-lv8-shoes-5KhTdP.png"
+            },
+            {
+              "id": 4,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/12ac1f01-4011-4d26-9f1c-0e2662625fba/air-max-90-lv8-shoes-5KhTdP.png"
+            },
+            {
+              "id": 5,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/44df588e-887d-4466-8abd-71c3ecf1595f/air-max-90-lv8-shoes-5KhTdP.png"
+            }
+          ],
+          "slug": "nike-air-max-90",
+          "description": "The Air Max 90 LV8 takes your favourite silhouette to the next level with stacked Nike Air units. Not only do you get extra cushioning, but you get extra height, creating the perfect platform that's easy to style. Layers of mixed materials add texture and dimension, creating an elevated look you'll be reaching for again and again.",
+          "featured": 0,
+          "rating": 5,
+          "colors": 4,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": false,
+          "count": 3
+        },
+        {
+          "id": 12,
+          "name": "Nike Air Max 90 LTR",
+          "brand": "NIKE",
+          "gender": "KIDS",
+          "category": "CASUAL",
+          "price": 110,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fece11f2-df5a-41eb-a93f-fb33daa22fb6/air-max-90-ltr-older-shoes-9xnt2B.png"
+            },
+            {
+              "id": 2,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a840ffab-d199-4f97-a53a-467aab215c63/air-max-90-ltr-older-shoes-9xnt2B.png"
+            },
+            {
+              "id": 3,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/95333c91-9c9b-4711-acbe-38478b814d6b/air-max-90-ltr-older-shoes-9xnt2B.png"
+            },
+            {
+              "id": 4,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e68c46a8-229c-4c29-b957-724b72c8be85/air-max-90-ltr-older-shoes-9xnt2B.png"
+            },
+            {
+              "id": 5,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/77c36493-c15a-4dbd-831f-db08dd964b05/air-max-90-ltr-older-shoes-9xnt2B.png"
+            }
+          ],
+          "slug": "nike-air-max-90-ltr",
+          "description": "The Nike Air Max 90 LTR returns with an even better feel for you. Cushioning is softer and more flexible, the Max Air unit is tuned for growing feet and the shape gives your toes more wiggle room. With a design and look that are still the same, it brings a '90s fave to a new generation.",
+          "featured": 0,
+          "rating": 4,
+          "colors": 4,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": false,
+          "count": 2
+        },
+        {
+          "id": 10,
+          "name": "Nike Air Force 1",
+          "brand": "NIKE",
+          "gender": "KIDS",
+          "category": "CASUAL",
+          "price": 90,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/97bda33a-b474-408d-bd48-28c220462cab/air-force-1-le-older-shoes-Gmwp9p.png"
+            },
+            {
+              "id": 2,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5862a219-99b2-4e60-9bf9-7c53d48b334a/air-force-1-le-older-shoes-Gmwp9p.png"
+            },
+            {
+              "id": 3,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bf466b5e-ff10-4b9f-ba81-ef69cfe6516c/air-force-1-le-older-shoes-Gmwp9p.png"
+            },
+            {
+              "id": 4,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e7b7c965-4738-4a2c-9f6b-b73b4aa5ba7b/air-force-1-le-older-shoes-Gmwp9p.png"
+            },
+            {
+              "id": 5,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/de9809fd-db18-4741-a814-bdbccd09ac4a/air-force-1-le-older-shoes-Gmwp9p.png"
+            }
+          ],
+          "slug": "nike-air-force-1",
+          "description": "As cool today as when it first dropped more than 40 years ago, the AF-1 is a classic you can count on. Its durable construction and grippy tread will see you through breaktime after breaktime. And while they look great fresh out of the box, they remain cool even when covered in scuffs and scrapes. In fact, they might be even better.",
+          "featured": 0,
+          "rating": 5,
+          "colors": 2,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": false,
+          "count": 2
+        }
+      ],
+      "amount_paid": 960,
+      "quantity": 4,
+      "userId": 1,
+      "user": {
+        "name": "khushi",
+        "email": "khushi@gmail.com",
+        "id": 1
+      },
+      "id": 4
+    },
+    {
+      "cartList": [
+        {
+          "id": 2,
+          "name": "Nike React Miler",
+          "brand": "NIKE",
+          "gender": "MEN",
+          "category": "RUNNING",
+          "price": 130,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/575e4c0e-5bec-4dcf-a95d-e080dd91bedc/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 2,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a3da2d38-2b06-4369-a8f3-ee368acb9267/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 3,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/81133ece-5bfc-4819-9da6-303581a0ba8d/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 4,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2b5ddbbe-1169-4e65-ad9b-eeb9a2300dfe/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 5,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/65b0905f-4b43-4ebc-811a-1e59fd8f0102/run-swift-3-road-running-shoes-BrHm16.png"
+            }
+          ],
+          "slug": "nike-react-miler",
+          "description": "Whatever the run, the Nike React Miler will be there with undying support and devotion. It can help you get out the door for an easy 3 at the end of the day or an intense 2-mile there-and-back with a modified design that's supportive, durable and all-round comfortable. They'll help you conquer short distances, sure, but also get you from point A to point B as you navigate the ever-changing rhythms of everyday life.",
+          "featured": 1,
+          "rating": 5,
+          "colors": 5,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": true,
+          "count": 1
+        },
+        {
+          "id": 16,
+          "name": "Bridgport Advice",
+          "brand": "HUSHPUPPIES",
+          "gender": "MEN",
+          "category": "FORMAL",
+          "price": 30,
+          "is_in_inventory": true,
+          "items_left": 4,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+            },
+            {
+              "id": 2,
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+            },
+            {
+              "id": 3,
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+            },
+            {
+              "id": 4,
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_07?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+            },
+            {
+              "id": 5,
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_06?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+            }
+          ],
+          "slug": "bridgport-advice",
+          "description": "The Gus oxford keeps you right on trend thanks to its sleek moc toe and sporty sneaker-inspired midsole. The versatile leather or suede upper makes this lace-up a breeze to dress up or down depending on the occasion while the innovative Bounce™ technology keeps you comfortable every step along the way.",
+          "featured": 1,
+          "rating": 3,
+          "colors": 4,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": false,
+          "count": 1
+        }
+      ],
+      "amount_paid": 160,
+      "quantity": 2,
+      "userId": 1,
+      "user": {
+        "name": "khushi",
+        "email": "khushi@gmail.com",
+        "id": 1
+      },
+      "id": 5
+    },
+    {
+      "cartList": [
+        {
+          "id": 4,
+          "name": "Nike Joyride Run Flyknit",
+          "brand": "NIKE",
+          "gender": "WOMEN",
+          "category": "RUNNING",
+          "price": 180,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f61b3d97-8846-45cf-9946-6a46cefcb36d/custom-reactx-infinity-rn-4-by-you.png"
+            },
+            {
+              "id": 2,
+              "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/8d2de0be-da49-46fd-8945-97e48c14f175/custom-reactx-infinity-rn-4-by-you.png"
+            },
+            {
+              "id": 3,
+              "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/7af1e4d2-7771-4635-9f50-d3f7bafc7803/custom-reactx-infinity-rn-4-by-you.png"
+            },
+            {
+              "id": 4,
+              "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/f38909c9-df73-4b62-83bb-b8b7ba1635d2/custom-reactx-infinity-rn-4-by-you.png"
+            },
+            {
+              "id": 5,
+              "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/e6e32cbd-70e2-4973-9641-179cd62e73b7/custom-reactx-infinity-rn-4-by-you.png"
+            }
+          ],
+          "slug": "nike-joyride-run-flyknit",
+          "description": "Stay on your feet with soft and supportive cushioning, built to help keep you on the run. A wider forefoot and higher foam stacks help shield you from recurring attrition, giving you the peace of mind to pound the pavement every day. The springy responsiveness will surprise you too, adding an element of pure speed to 1 of our most tested shoes to help you go longer, faster and further than ever.",
+          "featured": 0,
+          "rating": 4,
+          "colors": 3,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 1,
+          "best_seller": true,
+          "count": 3
+        },
+        {
+          "id": 5,
+          "name": "Nike Mercurial Vapor 13 Elite FG",
+          "brand": "NIKE",
+          "gender": "WOMEN",
+          "category": "FOOTBALL",
+          "price": 250,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/83ccaa96-74f6-4ece-b7c0-09a96f827894/custom-mercurial-vapor-15-elite-shoes-by-you.png"
+            },
+            {
+              "id": 2,
+              "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/054a5111-359c-4411-8745-52bb53187684/custom-mercurial-vapor-15-elite-shoes-by-you.png"
+            },
+            {
+              "id": 3,
+              "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/16b22428-c9f7-4f3f-82ce-7f92ea105655/custom-mercurial-vapor-15-elite-shoes-by-you.png"
+            },
+            {
+              "id": 4,
+              "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a7e4a37f-c197-498c-8486-91b3c112f268/custom-mercurial-vapor-15-elite-shoes-by-you.png"
+            },
+            {
+              "id": 5,
+              "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3e0c3f4d-676a-4d97-8df1-4427a9111ba4/custom-mercurial-vapor-15-elite-shoes-by-you.png"
+            }
+          ],
+          "slug": "nike-mercurial-vapor-13-elite-fg",
+          "description": "Express your creative side with an array of vibrant, eye-catching colours that are tuned for your distinct, brash style. With special design details from eccentric colour options to personalised messages and an updated graphic, there's no limit to your creativity on or off the pitch. Loaded with a Zoom Air unit, you can put the pedal down in the final minutes of a match—when it matters most. Fast is in the Air.",
+          "featured": 0,
+          "rating": 5,
+          "colors": 4,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": false,
+          "count": 2
+        }
+      ],
+      "amount_paid": 1040,
+      "quantity": 2,
+      "userId": 4,
+      "user": {
+        "name": "harshi",
+        "email": "harshita@gmail.com",
+        "id": 4
+      },
+      "id": 6
+    },
+    {
+      "cartList": [
+        {
+          "id": 5,
+          "name": "Nike Mercurial Vapor 13 Elite FG",
+          "brand": "NIKE",
+          "gender": "WOMEN",
+          "category": "FOOTBALL",
+          "price": 250,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/83ccaa96-74f6-4ece-b7c0-09a96f827894/custom-mercurial-vapor-15-elite-shoes-by-you.png"
+            },
+            {
+              "id": 2,
+              "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/054a5111-359c-4411-8745-52bb53187684/custom-mercurial-vapor-15-elite-shoes-by-you.png"
+            },
+            {
+              "id": 3,
+              "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/16b22428-c9f7-4f3f-82ce-7f92ea105655/custom-mercurial-vapor-15-elite-shoes-by-you.png"
+            },
+            {
+              "id": 4,
+              "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a7e4a37f-c197-498c-8486-91b3c112f268/custom-mercurial-vapor-15-elite-shoes-by-you.png"
+            },
+            {
+              "id": 5,
+              "URL": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3e0c3f4d-676a-4d97-8df1-4427a9111ba4/custom-mercurial-vapor-15-elite-shoes-by-you.png"
+            }
+          ],
+          "slug": "nike-mercurial-vapor-13-elite-fg",
+          "description": "Express your creative side with an array of vibrant, eye-catching colours that are tuned for your distinct, brash style. With special design details from eccentric colour options to personalised messages and an updated graphic, there's no limit to your creativity on or off the pitch. Loaded with a Zoom Air unit, you can put the pedal down in the final minutes of a match—when it matters most. Fast is in the Air.",
+          "featured": 0,
+          "rating": 5,
+          "colors": 4,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": false,
+          "count": 1
+        }
+      ],
+      "amount_paid": 250,
+      "quantity": 1,
+      "userId": 5,
+      "user": {
+        "name": "tisha",
+        "email": "tishajeswani@gmail.com",
+        "id": 5
+      },
+      "id": 7
+    },
+    {
+      "cartList": [],
+      "amount_paid": 0,
+      "quantity": 0,
+      "userId": 5,
+      "user": {
+        "name": "tisha",
+        "email": "tishajeswani@gmail.com",
+        "id": 5
+      },
+      "id": 8
+    },
+    {
+      "cartList": [
+        {
+          "id": 9,
+          "name": "Nike Mercurial Superfly 7 Pro MDS FG",
+          "brand": "NIKE",
+          "gender": "MEN",
+          "category": "FOOTBALL",
+          "price": 137,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/13945817-d8fd-4ccf-9084-740b0fd657f4/mercurial-vapor-15-academy-multi-ground-low-top-football-boot-DBh36g.png"
+            },
+            {
+              "id": 2,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ed4625fa-516e-437b-84f1-5507c66aad8f/mercurial-vapor-15-academy-multi-ground-low-top-football-boot-DBh36g.png"
+            },
+            {
+              "id": 3,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d584d878-b893-4530-a88a-884f69184fa1/mercurial-vapor-15-academy-multi-ground-low-top-football-boot-DBh36g.png"
+            },
+            {
+              "id": 4,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/62ce5577-3f07-49c8-ba7d-48b1dd940b91/mercurial-vapor-15-academy-multi-ground-low-top-football-boot-DBh36g.png"
+            },
+            {
+              "id": 5,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b19e4fdc-2b19-43dc-a997-083930fca4f9/mercurial-vapor-15-academy-multi-ground-low-top-football-boot-DBh36g.png"
+            }
+          ],
+          "slug": "nike-mercurial-superfly-7-pro-mds-fg",
+          "description": "The pitch is yours when you lace up in the Nike Mercurial Superfly 7 Pro MDS FG. It's loaded with a Zoom Air unit and flexible NikeSkin at the top for exceptional touch, so you can dominate in the waning minutes of a match—when it matters most. Fast is in the Air.",
+          "featured": 0,
+          "rating": 3,
+          "colors": 5,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 1,
+          "best_seller": true,
+          "count": 3
+        }
+      ],
+      "amount_paid": 411,
+      "quantity": 1,
+      "userId": 6,
+      "user": {
+        "name": "vanshi",
+        "email": "vanshi@gmail.com",
+        "id": 6
+      },
+      "id": 9
     }
   ]
 }

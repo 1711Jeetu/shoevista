@@ -21,17 +21,18 @@ export const Men = ({title}) => {
 
   useEffect(() => {
     setUrl(`http://localhost:8000/products${queryTerm ? '?name_like=' + queryTerm : ""}`)
+      dispatch({type:"CLEAR_FILTER"})
   }, [queryTerm, setUrl]);
   return (
     <main>
     <div className="flex justify-between pt-7">
-      <h2 className='text-2xl font-semibold dark:text-slate-100 mb-5 section-title pl-2 mt-2'>
+      <h2 className='text-2xl font-semibold dark:text-slate-100 section-title pl-2 mt-2'>
           {products && products.length === 0 && "No Products Found"}
           {!queryTerm && products && products.length !== 0 && `Men's Section`}
       </h2>
-      <button type="button" class="px-1 font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 me-2" onClick={()=>dispatch({type:"CLEAR_FILTER"})}>Clear All Filters</button>
+      <button type="button" class="px-1 font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 me-2" onClick={()=>dispatch({type:"CLEAR_FILTER"})} style={{maxHeight: '70px'}}>Clear Filters</button>
     </div>
-    <div className='flex flex-wrap justify-center lg:flex-row'>
+    <div className='flex flex-wrap justify-center mt-5 lg:flex-row'>
       {
         products && products.filter(product => product.gender==="MEN").map(product => <Card key={product.id} product= { product } />
         )

@@ -111,7 +111,7 @@
         )
     }
 
-    export const    useCart = () => {
+    export const useCart = () => {
         const context = useContext(CartContext);
         return context;
     }

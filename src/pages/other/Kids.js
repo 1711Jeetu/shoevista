@@ -20,15 +20,16 @@ export const Kids = ({title}) => {
 
   useEffect(() => {
     setUrl(`http://localhost:8000/products${queryTerm ? '?name_like=' + queryTerm : ""}`)
+      dispatch({type:"CLEAR_FILTER"})
   }, [queryTerm, setUrl]);
 
   return (
     <main>
     <div className="flex justify-between pt-7">
-      <h2 className='text-2xl font-semibold dark:text-slate-100 mb-5 section-title pl-2 mt-2'>Kids's Section</h2>
-      <button type="button" class="px-1 font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 me-2" onClick={()=>dispatch({type:"CLEAR_FILTER"})}>Clear All Filters</button>
+      <h2 className='text-2xl font-semibold dark:text-slate-100 section-title pl-2 mt-2'>Kids's Section</h2>
+      <button type="button" class="px-1 font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 me-2" onClick={()=>dispatch({type:"CLEAR_FILTER"})}>Clear Filters</button>
     </div>
-    <div className='flex flex-wrap justify-center lg:flex-row'>
+    <div className='flex flex-wrap justify-center mt-5 lg:flex-row'>
       {
         products && products.filter(product => product.gender==="KIDS").map(product => <Card key={product.id} product= { product } />
         )

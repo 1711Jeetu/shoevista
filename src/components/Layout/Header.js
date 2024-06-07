@@ -76,43 +76,43 @@ export const Header = () => {
     const handleMouseLeave = (event) => {
       if (
         filterMenRef.current &&
-        !filterMenRef.current.contains(event.relatedTarget)
+        !filterMenRef.current.contains(event.target)
       ) {
         setFilterMen(false);
       }
       if (
         filterWomenRef.current &&
-        !filterWomenRef.current.contains(event.relatedTarget)
+        !filterWomenRef.current.contains(event.target)
       ) {
         setFilterWomen(false);
       }
       if (
         filterKidsRef.current &&
-        !filterKidsRef.current.contains(event.relatedTarget)
+        !filterKidsRef.current.contains(event.target)
       ) {
         setFilterKids(false);
       }
     };
 
     if (filterMen) {
-      filterMenRef.current.addEventListener('mouseleave', handleMouseLeave);
+      document.addEventListener('mousedown', handleMouseLeave);
     }
     if (filterWomen) {
-      filterWomenRef.current.addEventListener('mouseleave', handleMouseLeave);
+      document.addEventListener('mousedown', handleMouseLeave);
     }
     if (filterKids) {
-      filterKidsRef.current.addEventListener('mouseleave', handleMouseLeave);
+      document.addEventListener('mousedown', handleMouseLeave);
     }
 
     return () => {
       if (filterMenRef.current) {
-        filterMenRef.current.removeEventListener('mouseleave', handleMouseLeave);
+        document.removeEventListener('mousedown', handleMouseLeave);
       }
       if (filterWomenRef.current) {
-        filterWomenRef.current.removeEventListener('mouseleave', handleMouseLeave);
+        document.removeEventListener('mousedown', handleMouseLeave);
       }
       if (filterKidsRef.current) {
-        filterKidsRef.current.removeEventListener('mouseleave', handleMouseLeave);
+        document.removeEventListener('mousedown', handleMouseLeave);
       }
     };
   }, [filterMen, filterWomen, filterKids]);
@@ -199,36 +199,36 @@ export const Header = () => {
             <li className='container flex flex-col items-center'>
               <NavLink to="/men" className={({ isActive }) =>
                 isActive ? activeClasses : inactiveClasses
-              } aria-current="page" onMouseEnter={() => setFilterMen(!filterMen)}
+              } aria-current="page" onClick={() => setFilterMen(!filterMen)}
               >Men
               <div className="bg-inherit rounded-full h-1 ml-1 " style={{ width: "70px" }}>
                 <div className=" h-1 rounded-full bg-black men dark:bg-white" style={{ width: `${0}%` }}></div>
               </div>
               </NavLink>
-              {filterMen && <DropDownFilter setDropdown={setFilterMen} refProp={filterMenRef} />}
+              {filterMen && <DropDownFilter setDropdown={setFilterMen} refProp={filterMenRef} gender={'men'} />}
             </li>
             <li className='container flex flex-col items-center'>
               <NavLink to="/women" className={({ isActive }) =>
                 isActive ? activeClasses : inactiveClasses
-              } aria-current="page" onMouseEnter={() => setFilterWomen(!filterWomen)} >Women
+              } aria-current="page" onClick={() => setFilterWomen(!filterWomen)} >Women
               <div className="bg-inherit rounded-full h-1 ml-6 " style={{ width: "70px" }}>
                 <div className=" h-1 rounded-full bg-black women dark:bg-white" style={{ width: `${0}%` }}></div>
               </div>
               </NavLink>
-              {filterWomen && <DropDownFilter setDropdown={setFilterWomen} refProp={filterWomenRef} />}
+              {filterWomen && <DropDownFilter setDropdown={setFilterWomen} refProp={filterWomenRef} gender={'women'} />}
             </li>
             <li className='container flex flex-col items-center'>
               <NavLink
                 to="/kids"
                 className={({ isActive }) =>
                   isActive ? activeClasses : inactiveClasses
-                } aria-current="page" onMouseEnter={() => setFilterKids(!filterKids)} >Kids
+                } aria-current="page" onClick={() => setFilterKids(!filterKids)} >Kids
               <div className="bg-inherit rounded-full h-1 ml-3 " style={{ width: "60px" }}>
                 <div className=" h-1 rounded-full bg-black kids dark:bg-white" style={{ width: `${0}%` }}>
                 </div>
               </div>
               </NavLink>
-              {filterKids && <DropDownFilter setDropdown={setFilterKids} refProp={filterKidsRef}/>}
+              {filterKids && <DropDownFilter setDropdown={setFilterKids} refProp={filterKidsRef} gender={'kids'} />}
             </li>
           </ul>
         </div>

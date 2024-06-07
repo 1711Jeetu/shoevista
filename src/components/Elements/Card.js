@@ -5,7 +5,7 @@ import { useCart } from '../../context/CartContext'
 
 export const Card = ({ product }) => {
 
-    const { cartList, addToCart, increaseCount, decreaseCount, count , setCountValue } = useCart();
+    const { cartList, addToCart, removeFromCart, count} = useCart();
     // console.log(addToCart);
     const [inCart, setInCart] = useState();
 
@@ -48,31 +48,13 @@ export const Card = ({ product }) => {
                         </button>
                     }
                     {
-                        inCart && count > 0 && <div className="flex items-center">
-                            {
-                                <button className={`inline-flex items-center justify-center p-1 me-3 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full hover:bg-gray-100 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600`} disabled={count === 0 ? true : false} type="button" onClick={() => {
-                                    decreaseCount(product)
-                                    setCountValue(product.count--)
-                                }}>
-                                    <span className="sr-only">Quantity button</span>
-                                    <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16" />
-                                    </svg>
-                                </button>
-                            }
-                            <div>
-                                <input type="number" id="first_product" className="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg block px-2.5 py-1 dark:bg-gray-700 text-center dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder={product.count} required />
-                            </div>
-                            <button className="inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full hover:bg-gray-100 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600" type="button" onClick={() => {
-                                increaseCount(product)
-                                setCountValue(product.count++)
-                            }}>
-                                <span className="sr-only">Quantity button</span>
-                                <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16" />
-                                </svg>
-                            </button>
-                        </div>
+                        inCart && <button
+                        className={`inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-slate-100 bg-primary-100 dark:bg-red-800 rounded-lg `} disabled={product.is_in_inventory ? false : true}
+                        onClick={() => removeFromCart(product)}
+                    >
+                        <div className='hover:cursor-pointer text-xl mt-1 text-slate-800 justify-center dark:text-slate-50 bi bi-cart'></div>
+                        <i className="ml-1 mt-1 bi bi-dash-lg dark:text-slate-50 text-slate-800"></i>
+                    </button>
                     }
                 </div>
             </div>

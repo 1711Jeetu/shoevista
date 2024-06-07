@@ -15,7 +15,7 @@ export const CartRow = ({product,increaseCount, decreaseCount, count, removeFrom
                 <div className="flex items-center">
                     {
                         <button className={`inline-flex items-center justify-center p-1 me-3 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full hover:bg-gray-100 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600`} disabled={count===0 ? true: false} type="button" onClick={() => {decreaseCount(product)
-                            setCountValue(product.count++)
+                            setCountValue(product.count--)
                         }}>
                         <span className="sr-only">Quantity button</span>
                         <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">

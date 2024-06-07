@@ -2,9 +2,10 @@ import React, {useState, useEffect, useRef} from 'react'
 import { Link } from 'react-router-dom';
 import { DropDownSortBy } from './DropDownSortBy';
 import { useFilter } from '../../../context/FilterContext';
+import { DropDownSortProduct } from './DropDownSortProduct';
 
 // const Link = require("react-router-dom").Link;
-export const DropDownFilter = ({ setDropdown, refProp,gender }) => {
+export const DropDownProduct = ({ setDropdown, refProp,gender }) => {
     const [sortBy, setSortBy] = useState(false);
     const {state,dispatch}=useFilter();
 
@@ -32,7 +33,8 @@ export const DropDownFilter = ({ setDropdown, refProp,gender }) => {
         <div
             ref={refProp}
             id='dropdownAvtar'
-            className='select-none absolute top-10 w-44 z-10 bg-white rounded divide-gray-100 mt-3 shadow dark:bg-gray-700 dark:divide-gray-600'
+            style={{top: '115px', right: '20px'}}
+            className='select-none absolute w-44 z-10 bg-white rounded divide-gray-100 mt-3 shadow dark:bg-gray-700 dark:divide-gray-600'
         >
             <ul
                 className='py-1  text-sm text-gray-700 dark:text-gray-200'
@@ -56,7 +58,7 @@ export const DropDownFilter = ({ setDropdown, refProp,gender }) => {
                     >
                         Sort By
                     </div>
-                    {sortBy && <DropDownSortBy setSortBy={setSortBy} refProp={SearchRef}/>}
+                    {sortBy && <DropDownSortProduct setSortBy={setSortBy} refProp={SearchRef}/>}
                 </li>
                 <li>
                     <div
@@ -76,6 +78,15 @@ export const DropDownFilter = ({ setDropdown, refProp,gender }) => {
                         className='block py-2 px-4 hover:bg-slate-800 hover:text-primary-100 dark:hover:bg-primary-100 dark:hover:text-slate-800'
                     >
                         In-Stock
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        
+                        onClick={()=>dispatch({type:"CLEAR_FILTER"})}
+                        className='block py-2 px-4 hover:bg-slate-800 hover:text-primary-100 dark:hover:bg-primary-100 dark:hover:text-slate-800'
+                    >
+                        Clear All
                     </Link>
                 </li>
             </ul>
