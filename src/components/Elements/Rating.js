@@ -29,7 +29,7 @@ export const Rating = ({ rating }) => {
   });
 
   return (
-    <div className="flex items-center mt-2.5 mb-5">
+    <div className="flex items-center mt-2.5 mb-1">
       <div className="flex items-center space-x-1 rtl:space-x-reverse">
         { ratingSvgs }
       </div>

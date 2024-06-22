@@ -4,13 +4,12 @@ import useFetch from '../../hooks/useFetch'
 import { useSearchParams } from 'react-router-dom'
 import { useFilter } from '../../context/FilterContext'
 import { useDynamicTitle } from '../../hooks/useDynamicTitle'
-import { DropDownProduct } from './components/DropDownProduct'
 import { CardSkeleton } from '../../components/Layout/CardSkeleton'
 
 export const ProductPage = ({title}) => {
   useDynamicTitle(title);
 
-  const { products, setInitialProductList,dispatch } = useFilter();
+  const { products, setInitialProductList } = useFilter();
   const [searchParams] = useSearchParams();
   const [dropdown, setDropdown] = useState(false);
   const filterRef = useRef(null);
@@ -63,9 +62,6 @@ export const ProductPage = ({title}) => {
           {!queryTerm && products && products.length !== 0 && `All Products`}
         </h2>
         <button type="button" class="px-1 font-medium text-center text-white dark:bg-primary-700 rounded-lg hover:bg-primary-800 me-2" onClick={()=>setDropdown(!dropdown)}>Filters</button>
-        {
-          dropdown && <DropDownProduct setDropdown={setDropdown} refProp={filterRef} gender={'products'} />
-        }
       </div>
       <div className='flex flex-wrap justify-center mt-2 lg:flex-row'>
         {

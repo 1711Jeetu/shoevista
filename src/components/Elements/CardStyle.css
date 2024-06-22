@@ -1,0 +1,10 @@
+.image-container{
+    transition: transform 0.3s ease-out ;
+}
+.image-container:hover{
+    transform: scale(1.05);
+}
+    
+.image-container:hover .tag {
+    display: none;
+}

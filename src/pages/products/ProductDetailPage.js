@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
 import { Rating } from '../../components/Elements/Rating';
 import { useCart } from '../../context/CartContext';
@@ -7,7 +7,7 @@ import { DetailSkeleton } from './components/DetailSkeleton';
 
 export const ProductDetailPage = () => {
     const { id } = useParams();
-    const { data: product, isLoading, error, setUrl } = useFetch();
+    const { data: product, isLoading, setUrl } = useFetch();
     const { cartList, addToCart, removeFromCart, count } = useCart();
     // console.log(addToCart);
     const [inCart, setInCart] = useState();
@@ -25,7 +25,6 @@ export const ProductDetailPage = () => {
     useEffect(() => {
         setUrl(`http://localhost:8000/products/${id}`);
     }, [id]);
-    const [shoe, setShoe] = useState();
 
     const [activeImg, setActiveImg] = useState()
     useEffect(() => {

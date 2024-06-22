@@ -11,7 +11,6 @@ function getSession() {
   export async function getUser() {
     const browserData = getSession();
   
-    console.log(browserData);
     const requestOption = {
       method: "GET",
       headers: {
@@ -33,7 +32,6 @@ function getSession() {
   export async function getOrders() {
     const browserData = getSession();
   
-    console.log(browserData);
     const requestOption = {
       method: "GET",
       headers: {

@@ -3,7 +3,6 @@ import lightLogo from '../../assets/lightLogo.png'
 import darkLogo from '../../assets/darkLogo.png'
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import './Header.css'
-import {DropDownFilter} from '../../pages/products/components/DropDownFilter';
 import { DropdownLoggedIn } from './DropDownLoggedIn';
 import { DropdownLoggedOut } from './DropDownLoggedOut';
 import { getUser } from "../../services/dataService";
@@ -20,6 +19,7 @@ export const Header = () => {
   const [filterWomen, setFilterWomen] = useState(false);
   const [filterKids, setFilterKids] = useState(false);
   const [user, setUser] = useState({});
+  const [userName, setUserName] = useState('');
   const dropdownRef = useRef(null);
   const filterMenRef = useRef(null);
   const filterWomenRef = useRef(null);
@@ -59,17 +59,18 @@ export const Header = () => {
 
   }, [dropdownRef]);
   useEffect(() => {
+    console.log('entered useEffect');
     async function fetchUserData() {
         try {
             const data = await getUser();
             setUser(data);
+            console.log(data);
         } catch(e) {
             toast.error(e.message);
         }
     }
-
     fetchUserData();
-  }, []);
+  }, [token]);
 
 
   useEffect(() => {
@@ -126,6 +127,11 @@ export const Header = () => {
     }
   }, [darkMode]);
 
+  useEffect(() => {
+    console.log(user && user.name);
+    setUserName(user && user.name);
+  },[user])
+
   return (
     <nav className="bg-white fixed top-0 left-0 right-0 z-20 border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -148,7 +154,7 @@ export const Header = () => {
               <span className="sr-only">Search icon</span>
             </div>
             <form onSubmit={handleSearch}>
-            <input ref={searchRef} type="text" id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50  focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search..." />
+            <input ref={searchRef} type="text" id="search-navbar1" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50  focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search..." />
             </form>
           </div>
           <span
@@ -158,7 +164,7 @@ export const Header = () => {
           </span>
           <Link to={`${token ? '/cart' : '/login'}`} className='hover:cursor-pointer text-xl mt-1 text-slate-800 dark:text-slate-50 mr-5 bi bi-cart'></Link>
           {
-            user && (token ? <span className='hover:cursor-pointer uppercase text-slate-800 dark:text-slate-50 mr-5 mt-1 border w-7 h-7 dark:text-slate-900 text-center' onClick={() => setDropdown(!dropdown)} style={{borderRadius: '100%', paddingTop: '1px', backgroundColor: 'rgb(180, 155, 200)' }}>{user && user.name && user.name.substring(0,1)}</span> : <span
+            user && (token ? <span className='hover:cursor-pointer uppercase text-slate-800 dark:text-slate-50 mr-5 mt-1 border w-7 h-7 dark:text-slate-900 text-center' onClick={() => setDropdown(!dropdown)} style={{borderRadius: '100%', paddingTop: '1px', backgroundColor: 'rgb(180, 155, 200)' }}>{userName && userName.substring(0,1)}</span> : <span
             onClick={() => setDropdown(!dropdown)}
             className='hover:cursor-pointer text-xl text-slate-800 dark:text-slate-50 mr-5 mt-1 bi bi-person-circle'
           ></span>) 
@@ -199,36 +205,33 @@ export const Header = () => {
             <li className='container flex flex-col items-center'>
               <NavLink to="/men" className={({ isActive }) =>
                 isActive ? activeClasses : inactiveClasses
-              } aria-current="page" onClick={() => setFilterMen(!filterMen)}
+              } aria-current="page"
               >Men
               <div className="bg-inherit rounded-full h-1 ml-1 " style={{ width: "70px" }}>
                 <div className=" h-1 rounded-full bg-black men dark:bg-white" style={{ width: `${0}%` }}></div>
               </div>
               </NavLink>
-              {filterMen && <DropDownFilter setDropdown={setFilterMen} refProp={filterMenRef} gender={'men'} />}
             </li>
             <li className='container flex flex-col items-center'>
               <NavLink to="/women" className={({ isActive }) =>
                 isActive ? activeClasses : inactiveClasses
-              } aria-current="page" onClick={() => setFilterWomen(!filterWomen)} >Women
+              } aria-current="page" >Women
               <div className="bg-inherit rounded-full h-1 ml-6 " style={{ width: "70px" }}>
                 <div className=" h-1 rounded-full bg-black women dark:bg-white" style={{ width: `${0}%` }}></div>
               </div>
               </NavLink>
-              {filterWomen && <DropDownFilter setDropdown={setFilterWomen} refProp={filterWomenRef} gender={'women'} />}
             </li>
             <li className='container flex flex-col items-center'>
               <NavLink
                 to="/kids"
                 className={({ isActive }) =>
                   isActive ? activeClasses : inactiveClasses
-                } aria-current="page" onClick={() => setFilterKids(!filterKids)} >Kids
+                } aria-current="page"  >Kids
               <div className="bg-inherit rounded-full h-1 ml-3 " style={{ width: "60px" }}>
                 <div className=" h-1 rounded-full bg-black kids dark:bg-white" style={{ width: `${0}%` }}>
                 </div>
               </div>
               </NavLink>
-              {filterKids && <DropDownFilter setDropdown={setFilterKids} refProp={filterKidsRef} gender={'kids'} />}
             </li>
           </ul>
         </div>

@@ -8,19 +8,21 @@ import { useDynamicTitle } from "../hooks/useDynamicTitle";
 export const DashboardPage = ({title}) => {
 
   useDynamicTitle(title);  
-  const [orders, setOrders] = useState({});
+  const [orders, setOrders] = useState([]);
 
   useEffect(() => {
     async function fetchOrders() {
-      try {
+      try {  
         const data = await getOrders();
         setOrders(data);
+        console.log(data);
       } catch(e) {
         toast.error(e.message);
       }
     }
 
-    fetchOrders();
+    setTimeout(() => fetchOrders(), 500);
+    // fetchOrders();
   }, []);
 
   return (
