@@ -7,7 +7,9 @@ const initialState = {
     bestSeller: false,
     sortByPrice: null,
     sortByRatings: null,
-    sortByCategory: null
+    sortByCategory: null,
+    sortByBrand: [],
+    filters: []
 }
 
 const FilterContext = createContext(initialState);
@@ -53,6 +55,13 @@ export const FilterProvider = ({children}) => {
         return products;
     }
 
+    function sortByBrandFunction(products) {
+        if (state.sortByBrand.length > 0) {
+            return products.filter(product => state.sortByBrand.includes(product.brand.toUpperCase()));
+        }
+        return products;
+    }
+    
     function sortByCategoryFunction(products){
         if(state.sortByCategory === "RUNNING"){
             console.log('run');
@@ -70,7 +79,7 @@ export const FilterProvider = ({children}) => {
         return products;
     }
 
-    const filteredProductList = bestSellerFunction(isInInventoryFunction(sortByRatingsFunction(sortByPriceFunction(sortByCategoryFunction(state.productList)))));
+    const filteredProductList = sortByBrandFunction(bestSellerFunction(isInInventoryFunction(sortByRatingsFunction(sortByPriceFunction(sortByCategoryFunction(state.productList))))));
     function setInitialProductList(products) {
         dispatch ({
             type: "PRODUCT_LIST",

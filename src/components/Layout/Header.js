@@ -15,15 +15,15 @@ export const Header = () => {
   );
   const [mobileMode, setMobileMode] = useState(false);
   const [dropdown, setDropdown] = useState(false);
-  const [filterMen, setFilterMen] = useState(false);
-  const [filterWomen, setFilterWomen] = useState(false);
-  const [filterKids, setFilterKids] = useState(false);
+  // const [filterMen, setFilterMen] = useState(false);
+  // const [filterWomen, setFilterWomen] = useState(false);
+  // const [filterKids, setFilterKids] = useState(false);
   const [user, setUser] = useState({});
   const [userName, setUserName] = useState('');
   const dropdownRef = useRef(null);
-  const filterMenRef = useRef(null);
-  const filterWomenRef = useRef(null);
-  const filterKidsRef = useRef(null);
+  // const filterMenRef = useRef(null);
+  // const filterWomenRef = useRef(null);
+  // const filterKidsRef = useRef(null);
   const token = JSON.parse(sessionStorage.getItem('token'));
 
   const activeClasses =
@@ -73,50 +73,6 @@ export const Header = () => {
   }, [token]);
 
 
-  useEffect(() => {
-    const handleMouseLeave = (event) => {
-      if (
-        filterMenRef.current &&
-        !filterMenRef.current.contains(event.target)
-      ) {
-        setFilterMen(false);
-      }
-      if (
-        filterWomenRef.current &&
-        !filterWomenRef.current.contains(event.target)
-      ) {
-        setFilterWomen(false);
-      }
-      if (
-        filterKidsRef.current &&
-        !filterKidsRef.current.contains(event.target)
-      ) {
-        setFilterKids(false);
-      }
-    };
-
-    if (filterMen) {
-      document.addEventListener('mousedown', handleMouseLeave);
-    }
-    if (filterWomen) {
-      document.addEventListener('mousedown', handleMouseLeave);
-    }
-    if (filterKids) {
-      document.addEventListener('mousedown', handleMouseLeave);
-    }
-
-    return () => {
-      if (filterMenRef.current) {
-        document.removeEventListener('mousedown', handleMouseLeave);
-      }
-      if (filterWomenRef.current) {
-        document.removeEventListener('mousedown', handleMouseLeave);
-      }
-      if (filterKidsRef.current) {
-        document.removeEventListener('mousedown', handleMouseLeave);
-      }
-    };
-  }, [filterMen, filterWomen, filterKids]);
   useEffect(() => {
     localStorage.setItem("darkMode", JSON.stringify(darkMode));
 
