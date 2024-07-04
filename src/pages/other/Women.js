@@ -72,7 +72,7 @@ export const Women = ({title}) => {
   }
 
   return (
-    <main>
+    <main className='max-w-screen-xl mx-auto'>
     <div className="flex justify-center pt-7">
       <h2 className='text-4xl mb-6 font-semibold dark:text-slate-100 section-title pl-2 mt-2'>Women's Section</h2>
     </div>
@@ -96,45 +96,52 @@ export const Women = ({title}) => {
             {dropdownBrand && <i class="bi bi-chevron-up dark:text-slate-100"></i>}
             <div className='mx-3 dark:text-slate-100 hover:cursor-pointer' onClick={() => setDropdownPrice(!dropdownPrice)}>Price</div>
             {dropdownPrice && <DropDownPrice ref={dropdownPriceRef} />}
-            {!dropdownPrice && <i className="bi bi-chevron-down dark:text-slate-100 mr-3 hover:cursor-pointer" onClick={() => setDropdownPrice(!dropdownPrice)}></i>}
-            {dropdownPrice && <i class="bi bi-chevron-up hover:cursor-pointer dark:text-slate-100 mr-3" ></i>}
+            {!dropdownPrice && <i className=" mr-3 bi bi-chevron-down dark:text-slate-100 mr-3 hover:cursor-pointer" onClick={() => setDropdownPrice(!dropdownPrice)}></i>}
+            {dropdownPrice && <i class="mr-3 bi bi-chevron-up hover:cursor-pointer dark:text-slate-100 mr-3" ></i>}
           </div>
         </div>
+        {state.filters.length > 0 &&
         <div className='mx-3 bg-rounded dark:bg-gray-700 bg-gray-200 p-3 dark:text-slate-100 flex items-center justify-between'>
-          <div>
-            Filters:
-            {state.filters.map((filter, index) => (
-              <div
-                key={index}
-                id="badge-dismiss-dark"
-                className="ml-3 inline-flex items-center px-2 py-1 me-2 text-sm font-medium bg-primary-100 rounded dark:bg-primary-100 text-black"
-              >
-                {filter.label}
-                <button
-                  type="button"
-                  className="inline-flex items-center p-1 ms-2 text-sm text-black bg-transparent rounded-sm"
-                  data-dismiss-target="#badge-dismiss-dark"
-                  aria-label="Remove"
-                  onClick={() => dispatch({ type: "REMOVE_FILTER", payload: { type: filter.type } })}
-                >
-                  <svg className="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                  </svg>
-                  <span className="sr-only">Remove badge</span>
-                </button>
-              </div>
-            ))}
-          </div>
-          {state.filters.length > 0 && (
-            <button
-              type="button"
-              className="text-white bg-primary-400 hover:bg-primary-800 font-medium rounded-full text-sm px-4 py-1.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-              onClick={() => dispatch({ type: "CLEAR_FILTER" })}
+        <div>
+          Filters:
+          {state.filters.map((filter, index) => (
+            <div
+              key={index}
+              id="badge-dismiss-dark"
+              className="ml-3 inline-flex items-center px-2 py-1 me-2 text-sm font-medium bg-primary-100 rounded dark:bg-primary-100 text-black"
             >
-              Clear All
-            </button>
-          )}
+              {filter.label}
+              <button
+                type="button"
+                className="inline-flex items-center p-1 ms-2 text-sm text-black bg-transparent rounded-sm"
+                data-dismiss-target="#badge-dismiss-dark"
+                aria-label="Remove"
+                onClick={() => {
+                  if (filter.type === 'ADD_BRAND') {
+                      dispatch({ type: "REMOVE_FILTER", payload: { type: 'ADD_BRAND', brand: filter.label.trim() } });
+                  } else {
+                      dispatch({ type: "REMOVE_FILTER", payload: { type: filter.type } });
+                  }
+              }}
+              >
+                <svg className="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span className="sr-only">Remove badge</span>
+              </button>
+            </div>
+          ))}
         </div>
+        {state.filters.length > 0 && (
+          <button
+            type="button"
+            className="text-white bg-primary-400 hover:bg-primary-800 font-medium rounded-full text-sm px-4 py-1.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            onClick={() => dispatch({ type: "CLEAR_FILTER" })}
+          >
+            Clear All
+          </button>
+        )}
+      </div>}
       </section>
     <div className='flex flex-wrap mt-5 justify-center lg:flex-row'>
       {

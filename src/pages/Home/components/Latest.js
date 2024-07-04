@@ -21,7 +21,7 @@ export const Latest = () => {
   const {data:products} = useFetch("http://localhost:8000/products")
 
   return (
-    <div className="slider-container">
+    <div className="slider-container max-w-screen-xl mx-auto">
             <div className='pb-12 dark:bg-gray-800'>
             <h2 className='text-3xl dark:bg-gray-800 text-center font-semibold dark:text-slate-100 pb-5 pt-5 section-title'>Latest Products</h2>
             <Slider {...settings}>

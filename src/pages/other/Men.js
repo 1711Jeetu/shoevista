@@ -71,7 +71,7 @@ export const Men = ({ title }) => {
   }
 
   return (
-    <main>
+    <main className='max-w-screen-xl mx-auto'>
       <div className="flex justify-center pt-7">
         <h2 className='text-4xl font-semibold dark:text-slate-100 section-title pl-2 mt-2 mb-6'>
           {products && products.length === 0 && "No Products Found"}
@@ -98,12 +98,12 @@ export const Men = ({ title }) => {
             {dropdownBrand && <i class="bi bi-chevron-up dark:text-slate-100"></i>}
             <div className='mx-3 dark:text-slate-100 hover:cursor-pointer' onClick={() => setDropdownPrice(!dropdownPrice)}>Price</div>
             {dropdownPrice && <DropDownPrice ref={dropdownPriceRef} />}
-            {!dropdownPrice && <i className="bi bi-chevron-down dark:text-slate-100 hover:cursor-pointer" onClick={() => setDropdownPrice(!dropdownPrice)}></i>}
-            {dropdownPrice && <i class="bi bi-chevron-up dark:text-slate-100"></i>}
+            {!dropdownPrice && <i className=" mr-3 bi bi-chevron-down dark:text-slate-100 hover:cursor-pointer" onClick={() => setDropdownPrice(!dropdownPrice)}></i>}
+            {dropdownPrice && <i class=" mr-3 bi bi-chevron-up dark:text-slate-100"></i>}
           </div>
         </div>
       </section>
-      <div className='mx-3 bg-rounded dark:bg-gray-700 bg-gray-200 p-3 dark:text-slate-100 flex items-center justify-between'>
+      {state.filters.length > 0 && <div className='mx-3 bg-rounded dark:bg-gray-700 bg-gray-200 p-3 dark:text-slate-100 flex items-center justify-between'>
         <div>
           Filters:
           {state.filters.map((filter, index) => (
@@ -119,7 +119,13 @@ export const Men = ({ title }) => {
                 className="inline-flex items-center p-1 ms-2 text-sm text-black bg-transparent rounded-sm"
                 data-dismiss-target="#badge-dismiss-dark"
                 aria-label="Remove"
-                onClick={() => dispatch({ type: "REMOVE_FILTER", payload: { type: filter.type } })}
+                onClick={() => {
+                  if (filter.type === 'ADD_BRAND') {
+                      dispatch({ type: "REMOVE_FILTER", payload: { type: 'ADD_BRAND', brand: filter.label.trim() } });
+                  } else {
+                      dispatch({ type: "REMOVE_FILTER", payload: { type: filter.type } });
+                  }
+              }}
               >
                 <svg className="w-2 h-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
@@ -138,7 +144,7 @@ export const Men = ({ title }) => {
             Clear All
           </button>
         )}
-      </div>
+      </div>}
       <div className='flex justify-evenly flex-wrap mt-5'>
       {
           isLoading && renderSkeleton(6)

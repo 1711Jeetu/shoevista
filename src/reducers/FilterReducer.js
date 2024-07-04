@@ -56,6 +56,13 @@ export const FilterReducer = (state, action) => {
                 filters: [...state.filters, { type: 'IS_IN_INVENTORY', label: 'In-Stock' }]
             };
             case "REMOVE_FILTER":
+                if (payload.type === 'ADD_BRAND') {
+                    return {
+                        ...state,
+                        sortByBrand: state.sortByBrand.filter(brand => brand !== payload.brand),
+                        filters: state.filters.filter(filter => !(filter.type === 'ADD_BRAND' && filter.label === ` ${payload.brand}`))
+                    };
+                }
                 return {
                     ...state,
                     filters: state.filters.filter(filter => filter.type !== payload.type),
@@ -64,8 +71,6 @@ export const FilterReducer = (state, action) => {
                     ...(payload.type === 'SORT_BY_PRICE' && { sortByPrice: null }),
                     ...(payload.type === 'SORT_BY_RATINGS' && { sortByRatings: null }),
                     ...(payload.type === 'SORT_BY_CATEGORY' && { sortByCategory: null }),
-                    ...(payload.type === 'ADD_BRAND' && { sortByBrand: state.sortByBrand.filter(brand => brand !== payload.brand) }),
-                    ...(payload.type === 'REMOVE_BRAND' && {sortByBrand: state.sortByBrand.filter(brand=> brand!==payload.brand )} )
                 };
         case "CLEAR_FILTER":
             return {
