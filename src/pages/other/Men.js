@@ -103,20 +103,20 @@ export const Men = ({ title }) => {
           </div>
         </div>
       </section>
-      {state.filters.length > 0 && <div className='mx-3 bg-rounded dark:bg-gray-700 bg-gray-200 p-3 dark:text-slate-100 flex items-center justify-between'>
-        <div>
-          Filters:
+      {state.filters.length > 0 && <div className='mx-3 rounded-3xl dark:bg-gray-700 p-3 dark:text-slate-100 flex items-center justify-between bg-primary-500'>
+        <div className='my-auto'>
+          <span className='pl-2 text-slate-100'>Filters:</span>
           {state.filters.map((filter, index) => (
             <div
               key={index}
               id="badge-dismiss-dark"
-              className="ml-3 inline-flex items-center px-2 py-1 me-2 text-sm font-medium bg-primary-100 rounded dark:bg-primary-100 text-black"
+              className="ml-3 inline-flex mt-[1px] items-center px-2 py-1 me-2 text-sm font-medium bg-slate-50 rounded text-black"
             >
               {filter.label}
               {console.log(filter)}
               <button
                 type="button"
-                className="inline-flex items-center p-1 ms-2 text-sm text-black bg-transparent rounded-sm"
+                className="inline-flex hover:bg-primary-500 dark:hover:bg-gray-400 hover:text-slate-100 rounded-lg items-center p-1 ms-2 text-sm text-black bg-transparent"
                 data-dismiss-target="#badge-dismiss-dark"
                 aria-label="Remove"
                 onClick={() => {
@@ -138,7 +138,7 @@ export const Men = ({ title }) => {
         {state.filters.length > 0 && (
           <button
             type="button"
-            className="text-white bg-primary-400 hover:bg-primary-800 font-medium rounded-full text-sm px-4 py-1.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            className=" bg-primary-100 text-slate-800 dark:text-black dark:hover:bg-gray-400 dark:hover:text-slate-100 hover:bg-slate-100 hover:text-slate-800 font-medium rounded-full text-sm px-4 py-1.5 text-center"
             onClick={() => dispatch({ type: "CLEAR_FILTER" })}
           >
             Clear All

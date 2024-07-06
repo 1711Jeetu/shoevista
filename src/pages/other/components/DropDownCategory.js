@@ -17,9 +17,9 @@ export const DropDownCategory = forwardRef((props, ref) => {
                 <div className=" py-2 overflow-y-auto" >
 
                     <div>
-                        <h2 className="font-bold dark:text-slate-100 pl-2 pb-2">Category</h2>
+                        <h2 className="font-bold dark:text-slate-100 pl-2 pb-2" style={{fontSize: '17px'}}>Category</h2>
                         <div className="form-control dark:text-slate-100">
-                            <label htmlFor="sortByCategory">
+                            <label htmlFor="sortByCategory" style={{fontSize: '16px'}}>
                                 <span className="ml-2"></span>
                                 <input type="radio" id="sortByCategory" className='w-3 h-3  border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800'
                                 onChange={()=>dispatch({type:"SORT_BY_CATEGORY",payload: {sortByCategory: "RUNNING"}})}
@@ -30,7 +30,7 @@ export const DropDownCategory = forwardRef((props, ref) => {
                             </label>
                         </div>
                         <div className="form-control dark:text-slate-100">
-                            <label htmlFor="Football">
+                            <label htmlFor="Football" style={{fontSize: '16px'}}>
                                 <span className="ml-2"></span>
                                 <input type="radio" id="Football" className='w-3 h-3 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800' 
                                 onChange={()=>dispatch({type:"SORT_BY_CATEGORY",payload: {sortByCategory: "FOOTBALL"}})}
@@ -41,7 +41,7 @@ export const DropDownCategory = forwardRef((props, ref) => {
                             </label>
                         </div>
                         <div className="form-control dark:text-slate-100">
-                            <label htmlFor="Casual">
+                            <label htmlFor="Casual" style={{fontSize: '16px'}}>
                                 <span className="ml-2"></span>
                                 <input type="radio" id="Casual" className='w-3 h-3 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800'
                                 onChange={()=>dispatch({type:"SORT_BY_CATEGORY",payload: {sortByCategory: "CASUAL"}})}
@@ -52,7 +52,7 @@ export const DropDownCategory = forwardRef((props, ref) => {
                             </label>
                         </div>
                         <div className="form-control dark:text-slate-100">
-                            <label htmlFor="Formal">
+                            <label htmlFor="Formal" style={{fontSize: '16px'}}>
                                 <span className="ml-2"></span>
                                 <input type="radio" id="Formal" className='w-3 h-3 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800' 
                                 onChange={()=>dispatch({type:"SORT_BY_CATEGORY",payload: {sortByCategory: "FORMAL"}})}

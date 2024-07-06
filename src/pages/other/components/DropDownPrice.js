@@ -16,27 +16,27 @@ export const DropDownPrice = forwardRef((props,ref) => {
             >
                 <div className="py-2 overflow-y-auto">
                     <div>
-                    <h2 className="font-bold dark:text-slate-100 pl-2 pb-2">Price</h2>
+                    <h2 className="font-bold dark:text-slate-100 pl-2 pb-2" style={{fontSize: '17px'}}>Price</h2>
                     <div className="form-control dark:text-slate-100">
-                        <label htmlFor="lowtohigh">
+                        <label htmlFor="lowtohigh" style={{fontSize: '16px'}}>
                             <span className="ml-2"></span>
                             <input type="radio" id="lowtohigh" name="sortByPrice"
                                 onChange={() =>  dispatch({ type: "SORT_BY_PRICE", payload: { sortByPrice: "lowtohigh" } }) }
                                 checked={state.sortByPrice==="lowtohigh"}
                             />
                             <span className="ml-2"></span>
-                            Price - Low to High
+                            Low to High
                         </label>
                     </div>
                     <div className="form-control dark:text-slate-100">
-                        <label htmlFor="hightolow">
+                        <label htmlFor="hightolow" style={{fontSize: '16px'}}>
                             <span className="ml-2"></span>
                             <input type="radio" id="hightolow" name="sortByPrice"
                                 onChange={() => { dispatch({ type: "SORT_BY_PRICE", payload: { sortByPrice: "hightolow" } }) }}
                                 checked={state.sortByPrice==="hightolow"} 
                             />
                             <span className="ml-2"></span>
-                            Price - High to Low
+                            High to Low
                         </label>
                     </div>
                     </div>

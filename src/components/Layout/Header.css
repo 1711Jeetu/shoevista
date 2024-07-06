@@ -60,3 +60,7 @@
 .activeClass .kids{
     width: 92% !important;
 }
+.userLight{
+    background-color: black;
+    color: white;
+}

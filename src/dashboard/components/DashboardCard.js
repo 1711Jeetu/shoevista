@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom"
 
 export const DashboardCard = ({ order }) => {
+    const calculateTax = (amount) => {
+        return Math.ceil(amount / 100) * 5;
+    };
+
+    const tax = calculateTax(order.amount_paid);
+    const total = order.amount_paid + tax;
     return (
         <div className="max-w-4xl m-auto p-2 mb-5 border dark:border-slate-700">
             <div className="flex justify-between text-sm m-2 font-bold dark:text-slate-200">
@@ -8,8 +14,8 @@ export const DashboardCard = ({ order }) => {
             </div>
             {order.cartList.map((product) => (
                 <div key={product.id} className="flex flex-wrap justify-between  max-w-4xl m-auto p-2 my-5 ">
-                       <div className="flex">
-                       <Link to={`/products/${product.id}`}>
+                    <div className="flex">
+                        <Link to={`/products/${product.id}`}>
                             <img className="w-32 rounded" src={product.imageURL[0].URL} alt={product.name} />
                         </Link>
                         <div className="">
@@ -21,17 +27,17 @@ export const DashboardCard = ({ order }) => {
                                 <span>${product.price}</span>
                             </div>
                         </div>
-                       </div>
-                        
+                    </div>
+
                 </div>
             ))}
             <div className="dark:text-slate-100 text-right mb-6">
-                        <div>SubTotal: ${order.amount_paid}</div>
-                        <div>Tax: $10</div>
-                        <hr style={{width:'120px',marginLeft:'760px'}}/>
-                        <div>Total: ${order.amount_paid + 10}</div>
-                        </div>
+                <div>SubTotal: ${order.amount_paid}</div>
+                <div>Tax: ${tax}</div>
+                <hr style={{ width: '120px', marginLeft: '760px' }} />
+                <div>Total: ${total}</div>
+            </div>
         </div>
-        
+
     )
 }

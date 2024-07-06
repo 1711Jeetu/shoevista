@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
 import { Rating } from '../../components/Elements/Rating';
 import { useCart } from '../../context/CartContext';
 import { DetailSkeleton } from './components/DetailSkeleton';
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css';
+import InnerImageZoom from 'react-inner-image-zoom';
 
 export const ProductDetailPage = () => {
     const { id } = useParams();
@@ -12,6 +15,8 @@ export const ProductDetailPage = () => {
     // console.log(addToCart);
     const [inCart, setInCart] = useState();
     const temp = product && product.id;
+    const token = JSON.parse(sessionStorage.getItem('token'));
+    const navigate = useNavigate();
 
     useEffect(() => {
         const productInCart = cartList.find(item => item.id === temp);
@@ -22,6 +27,7 @@ export const ProductDetailPage = () => {
         }
     }, [cartList, temp]);
 
+
     useEffect(() => {
         setUrl(`http://localhost:8000/products/${id}`);
     }, [id]);
@@ -30,10 +36,18 @@ export const ProductDetailPage = () => {
     useEffect(() => {
         setActiveImg(product && product.imageURL[0].URL)
     }, [product])
+
+    const handleAddToCart = () => {
+        if(token){
+            addToCart(product)
+        }else{
+            navigate("/login")
+        }
+      }
     return (
         <main>
 
-            { isLoading && <DetailSkeleton />}
+            {isLoading && <DetailSkeleton />}
 
             {product &&
 
@@ -46,8 +60,13 @@ export const ProductDetailPage = () => {
                     </p>
                     <div className="flex justify-center ml-12">
                         <div className="grid gap-4 max-w-sm">
-                            <div>
-                                <img className="h-auto border max-w-full rounded-lg" src={activeImg} alt="" />
+                            <div className='main-image-container'>
+                                <InnerImageZoom
+                                    src={activeImg}
+                                    zoomSrc={activeImg}
+                                    zoomType="hover"
+                                    zoomPreload={true}
+                                />
                             </div>
                             <div className="grid grid-cols-5 gap-4">
                                 <div>
@@ -149,21 +168,21 @@ export const ProductDetailPage = () => {
                                 {
                                     (!inCart || count === 0) &&
                                     <button
-                                        className={`inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-slate-100 bg-primary-100 dark:bg-primary-700 rounded-lg `} disabled={product.is_in_inventory ? false : true}
-                                        onClick={() => addToCart(product)}
+                                        className={`inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white  ${product.is_in_inventory ? 'bg-primary-500 dark:bg-primary-700' : 'bg-gray-300 dark:bg-gray-500'} rounded-lg `} disabled={product.is_in_inventory ? false : true}
+                                        onClick={handleAddToCart}
                                     >
-                                        <div className={` ${product.is_in_inventory ? 'hover:cursor-pointer' : ''}  text-xl mt-1 text-slate-800 justify-center dark:text-slate-50 bi bi-cart`}></div>
-                                        <i className="ml-1 mt-1 bi bi-plus-lg dark:text-slate-50 text-slate-800"></i>
+                                        <div className={` ${product.is_in_inventory ? 'dark:text-slate-100 text-slate-100' : 'text-slate-800 dark:text-slate-100'}  text-xl mt-1 text-slate-100 justify-center dark:text-slate-50 bi bi-cart`}></div>
+                                        <i className={`ml-1 mt-1 ${product.is_in_inventory ? 'dark:text-slate-100 text-slate-100' : 'text-slate-800 dark:text-slate-100'} bi bi-plus-lg dark:text-slate-50 text-slate-100`}></i>
                                     </button>
                                 }
                                 {
                                     inCart && <button
-                                        className={`inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-slate-100 bg-primary-100 dark:bg-red-800 bg-red-600 rounded-lg `} disabled={product.is_in_inventory ? false : true}
+                                        className={`inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white dark:bg-red-800 bg-red-800 rounded-lg `} disabled={product.is_in_inventory ? false : true}
                                         onClick={() => removeFromCart(product)}
 
                                     >
-                                        <div className={`hover:cursor-pointer text-xl mt-1 text-slate-800 justify-center dark:text-slate-50 bi bi-cart`}></div>
-                                        <i className="ml-1 mt-1 bi bi-dash-lg dark:text-slate-50 text-slate-800"></i>
+                                        <div className={`hover:cursor-pointer text-xl mt-1 text-slate-100 justify-center dark:text-slate-50 bi bi-cart`}></div>
+                                        <i className="ml-1 mt-1 bi bi-dash-lg dark:text-slate-50 text-slate-100"></i>
                                     </button>
                                 }
                             </span>

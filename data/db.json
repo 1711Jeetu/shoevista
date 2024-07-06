@@ -1635,32 +1635,32 @@
   "users": [
     {
       "email": "khushi@gmail.com",
-      "password": "$2a$10$kJ5LRymCG.DABSZSrrYikeFd4U7V84cyPvotspe2o286ML8LecOzu",
+      "password": "$2a$10$MMBeIgpUXUrMHI6rjCCdduuyCy91haRkuYB5d3inLOzmOs.1QYE7G",
       "name": "khushi",
       "id": 1
     },
     {
       "email": "harshi@gmail.com",
-      "password": "$2a$10$XcAZDI1M3cnrbeXmsdFo7eCdw5gOA9EECCy/zYhUJB3DKhIU7QQhq",
+      "password": "$2a$10$/vDBg1kWeQ0G7q06Y5xtMuhIMD1f3ZK55dwtNKg1hncs.K/nHWcpq",
       "name": "harshi",
       "id": 2
     },
     {
-      "email": "vanshi@gmail.com",
-      "password": "$2a$10$62KoTvw8dGHY.E.6/MZ0BeYd10GPIdH/VhE0tOocvPJ6GhA99tHwG",
-      "name": "vanshi",
+      "email": "rishi@gmail.com",
+      "password": "$2a$10$HxG3yhIHkHqGhHYKaIpRuu7DcfhxoC5lRcERfVbBIzjvTktbiJCOy",
+      "name": "rishi",
       "id": 3
     },
     {
-      "email": "user@gmail.com",
-      "password": "$2a$10$qAiE4gxGfpPttO/qH1HgUO3T14NCqNJ0d5t2YozEhpgcD4RLr6jWO",
-      "name": "user",
+      "email": "vanshi@gmail.com",
+      "password": "$2a$10$T..YDCIjAW6FmPhTYwJ7K.0dlljDwh2b1O0oKePlrkpM1jASBd/JO",
+      "name": "vanshi",
       "id": 4
     },
     {
-      "email": "kj@gmail.com",
-      "password": "$2a$10$S0GKdfarxU.UmTlblOwzl.P7voDnsSJzyujVpZVTczPYu.0S6nXNS",
-      "name": "kj",
+      "email": "user@gmail.com",
+      "password": "$2a$10$vj2Y5wtBB9p5ug9LhGxkk.6Gl661PzjEsxQhNL38dlSEPgTftP8GW",
+      "name": "user",
       "id": 5
     }
   ],
@@ -1717,66 +1717,15 @@
           "latest": 0,
           "best_seller": false,
           "count": 1
-        },
-        {
-          "id": 27,
-          "name": "X_PLR",
-          "brand": "ADIDAS",
-          "gender": "KIDS",
-          "category": "CASUAL",
-          "price": 65,
-          "is_in_inventory": true,
-          "items_left": 5,
-          "imageURL": [
-            {
-              "id": 1,
-              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/02085018d51c4b40bef431a81f05d875_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_01_standard.jpg"
-            },
-            {
-              "id": 2,
-              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c40ef1177870405db6a95f41537367f7_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_02_standard_hover.jpg"
-            },
-            {
-              "id": 3,
-              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6ce9b79bcc15406c9d9f62634c1440c9_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_03_standard.jpg"
-            },
-            {
-              "id": 4,
-              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/452878676bf0442ba4f1efbd3a553451_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_04_standard.jpg"
-            },
-            {
-              "id": 5,
-              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1c874275ce38423886a7942067023d23_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_05_standard.jpg"
-            }
-          ],
-          "slug": "x_plr",
-          "description": "Your little explorer will love the adventure in these shoes. With a soft EVA midsole and rubber outsole, these sneakers are inspired iconic adult styles so tiny feet stay cushioned while matching the look of the rest of the family.",
-          "featured": 1,
-          "rating": 5,
-          "colors": 2,
-          "size": [
-            3.5,
-            4,
-            4.5,
-            5,
-            5.5,
-            6,
-            6.5,
-            7,
-            7.5
-          ],
-          "latest": 0,
-          "best_seller": true,
-          "count": 1
         }
       ],
-      "amount_paid": 95,
-      "quantity": 2,
-      "userId": 3,
+      "amount_paid": 30,
+      "quantity": 1,
+      "userId": 2,
       "user": {
-        "name": "vanshi",
-        "email": "vanshi@gmail.com",
-        "id": 3
+        "name": "harshi",
+        "email": "harshi@gmail.com",
+        "id": 2
       },
       "id": 1
     },
@@ -1831,44 +1780,44 @@
           ],
           "latest": 0,
           "best_seller": true,
-          "count": 9
+          "count": 2
         },
         {
-          "id": 2,
-          "name": "Nike React Miler",
-          "brand": "NIKE",
+          "id": 16,
+          "name": "Bridgport Advice",
+          "brand": "HUSHPUPPIES",
           "gender": "MEN",
-          "category": "RUNNING",
-          "price": 130,
+          "category": "FORMAL",
+          "price": 30,
           "is_in_inventory": true,
-          "items_left": 3,
+          "items_left": 4,
           "imageURL": [
             {
               "id": 1,
-              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/575e4c0e-5bec-4dcf-a95d-e080dd91bedc/run-swift-3-road-running-shoes-BrHm16.png"
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
             },
             {
               "id": 2,
-              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a3da2d38-2b06-4369-a8f3-ee368acb9267/run-swift-3-road-running-shoes-BrHm16.png"
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
             },
             {
               "id": 3,
-              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/81133ece-5bfc-4819-9da6-303581a0ba8d/run-swift-3-road-running-shoes-BrHm16.png"
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
             },
             {
               "id": 4,
-              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2b5ddbbe-1169-4e65-ad9b-eeb9a2300dfe/run-swift-3-road-running-shoes-BrHm16.png"
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_07?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
             },
             {
               "id": 5,
-              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/65b0905f-4b43-4ebc-811a-1e59fd8f0102/run-swift-3-road-running-shoes-BrHm16.png"
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_06?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
             }
           ],
-          "slug": "nike-react-miler",
-          "description": "Whatever the run, the Nike React Miler will be there with undying support and devotion. It can help you get out the door for an easy 3 at the end of the day or an intense 2-mile there-and-back with a modified design that's supportive, durable and all-round comfortable. They'll help you conquer short distances, sure, but also get you from point A to point B as you navigate the ever-changing rhythms of everyday life.",
+          "slug": "bridgport-advice",
+          "description": "The Gus oxford keeps you right on trend thanks to its sleek moc toe and sporty sneaker-inspired midsole. The versatile leather or suede upper makes this lace-up a breeze to dress up or down depending on the occasion while the innovative Bounce™ technology keeps you comfortable every step along the way.",
           "featured": 1,
-          "rating": 5,
-          "colors": 5,
+          "rating": 3,
+          "colors": 4,
           "size": [
             3.5,
             4,
@@ -1881,19 +1830,83 @@
             7.5
           ],
           "latest": 0,
-          "best_seller": true,
+          "best_seller": false,
           "count": 1
         }
       ],
-      "amount_paid": 715,
+      "amount_paid": 160,
       "quantity": 2,
-      "userId": 4,
+      "userId": 3,
       "user": {
-        "name": "user",
-        "email": "user@gmail.com",
-        "id": 4
+        "name": "rishi",
+        "email": "rishi@gmail.com",
+        "id": 3
       },
       "id": 2
+    },
+    {
+      "cartList": [
+        {
+          "id": 16,
+          "name": "Bridgport Advice",
+          "brand": "HUSHPUPPIES",
+          "gender": "MEN",
+          "category": "FORMAL",
+          "price": 30,
+          "is_in_inventory": true,
+          "items_left": 4,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+            },
+            {
+              "id": 2,
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+            },
+            {
+              "id": 3,
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+            },
+            {
+              "id": 4,
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_07?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+            },
+            {
+              "id": 5,
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_06?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+            }
+          ],
+          "slug": "bridgport-advice",
+          "description": "The Gus oxford keeps you right on trend thanks to its sleek moc toe and sporty sneaker-inspired midsole. The versatile leather or suede upper makes this lace-up a breeze to dress up or down depending on the occasion while the innovative Bounce™ technology keeps you comfortable every step along the way.",
+          "featured": 1,
+          "rating": 3,
+          "colors": 4,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": false,
+          "count": 1
+        }
+      ],
+      "amount_paid": 30,
+      "quantity": 1,
+      "userId": 4,
+      "user": {
+        "name": "vanshi",
+        "email": "vanshi@gmail.com",
+        "id": 4
+      },
+      "id": 3
     },
     {
       "cartList": [
@@ -1946,7 +1959,122 @@
           ],
           "latest": 0,
           "best_seller": true,
-          "count": 3
+          "count": 8
+        },
+        {
+          "id": 16,
+          "name": "Bridgport Advice",
+          "brand": "HUSHPUPPIES",
+          "gender": "MEN",
+          "category": "FORMAL",
+          "price": 30,
+          "is_in_inventory": true,
+          "items_left": 4,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+            },
+            {
+              "id": 2,
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_02?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+            },
+            {
+              "id": 3,
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_03?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+            },
+            {
+              "id": 4,
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_07?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+            },
+            {
+              "id": 5,
+              "URL": "https://assets.hushpuppies.com/is/image/hp/8200000000579723_003_ss_06?impolicy=qlt-medium-high&imwidth=640&imdensity=2"
+            }
+          ],
+          "slug": "bridgport-advice",
+          "description": "The Gus oxford keeps you right on trend thanks to its sleek moc toe and sporty sneaker-inspired midsole. The versatile leather or suede upper makes this lace-up a breeze to dress up or down depending on the occasion while the innovative Bounce™ technology keeps you comfortable every step along the way.",
+          "featured": 1,
+          "rating": 3,
+          "colors": 4,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": false,
+          "count": 1
+        }
+      ],
+      "amount_paid": 550,
+      "quantity": 2,
+      "userId": 1,
+      "user": {
+        "name": "khushi",
+        "email": "khushi@gmail.com",
+        "id": 1
+      },
+      "id": 4
+    },
+    {
+      "cartList": [
+        {
+          "id": 27,
+          "name": "X_PLR",
+          "brand": "ADIDAS",
+          "gender": "KIDS",
+          "category": "CASUAL",
+          "price": 65,
+          "is_in_inventory": true,
+          "items_left": 5,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/02085018d51c4b40bef431a81f05d875_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_01_standard.jpg"
+            },
+            {
+              "id": 2,
+              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c40ef1177870405db6a95f41537367f7_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_02_standard_hover.jpg"
+            },
+            {
+              "id": 3,
+              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6ce9b79bcc15406c9d9f62634c1440c9_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_03_standard.jpg"
+            },
+            {
+              "id": 4,
+              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/452878676bf0442ba4f1efbd3a553451_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_04_standard.jpg"
+            },
+            {
+              "id": 5,
+              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1c874275ce38423886a7942067023d23_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_05_standard.jpg"
+            }
+          ],
+          "slug": "x_plr",
+          "description": "Your little explorer will love the adventure in these shoes. With a soft EVA midsole and rubber outsole, these sneakers are inspired iconic adult styles so tiny feet stay cushioned while matching the look of the rest of the family.",
+          "featured": 1,
+          "rating": 5,
+          "colors": 2,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": true,
+          "count": 2
         },
         {
           "id": 2,
@@ -2000,15 +2128,194 @@
           "count": 1
         }
       ],
-      "amount_paid": 715,
+      "amount_paid": 260,
       "quantity": 2,
+      "userId": 3,
+      "user": {
+        "name": "rishi",
+        "email": "rishi@gmail.com",
+        "id": 3
+      },
+      "id": 5
+    },
+    {
+      "cartList": [
+        {
+          "id": 2,
+          "name": "Nike React Miler",
+          "brand": "NIKE",
+          "gender": "MEN",
+          "category": "RUNNING",
+          "price": 130,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/575e4c0e-5bec-4dcf-a95d-e080dd91bedc/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 2,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a3da2d38-2b06-4369-a8f3-ee368acb9267/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 3,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/81133ece-5bfc-4819-9da6-303581a0ba8d/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 4,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2b5ddbbe-1169-4e65-ad9b-eeb9a2300dfe/run-swift-3-road-running-shoes-BrHm16.png"
+            },
+            {
+              "id": 5,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/65b0905f-4b43-4ebc-811a-1e59fd8f0102/run-swift-3-road-running-shoes-BrHm16.png"
+            }
+          ],
+          "slug": "nike-react-miler",
+          "description": "Whatever the run, the Nike React Miler will be there with undying support and devotion. It can help you get out the door for an easy 3 at the end of the day or an intense 2-mile there-and-back with a modified design that's supportive, durable and all-round comfortable. They'll help you conquer short distances, sure, but also get you from point A to point B as you navigate the ever-changing rhythms of everyday life.",
+          "featured": 1,
+          "rating": 5,
+          "colors": 5,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": true,
+          "count": 1
+        },
+        {
+          "id": 11,
+          "name": "Nike Air Max 90",
+          "brand": "NIKE",
+          "gender": "KIDS",
+          "category": "CASUAL",
+          "price": 100,
+          "is_in_inventory": true,
+          "items_left": 3,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7abb21b2-c063-4ed2-8360-6223d2ae9d52/air-max-90-lv8-shoes-5KhTdP.png"
+            },
+            {
+              "id": 2,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/29d1f9bb-ff2a-4e56-a8e1-b15d3f2d9ce1/air-max-90-lv8-shoes-5KhTdP.png"
+            },
+            {
+              "id": 3,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/826b459b-4539-480e-903e-1e12955c8881/air-max-90-lv8-shoes-5KhTdP.png"
+            },
+            {
+              "id": 4,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/12ac1f01-4011-4d26-9f1c-0e2662625fba/air-max-90-lv8-shoes-5KhTdP.png"
+            },
+            {
+              "id": 5,
+              "URL": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/44df588e-887d-4466-8abd-71c3ecf1595f/air-max-90-lv8-shoes-5KhTdP.png"
+            }
+          ],
+          "slug": "nike-air-max-90",
+          "description": "The Air Max 90 LV8 takes your favourite silhouette to the next level with stacked Nike Air units. Not only do you get extra cushioning, but you get extra height, creating the perfect platform that's easy to style. Layers of mixed materials add texture and dimension, creating an elevated look you'll be reaching for again and again.",
+          "featured": 0,
+          "rating": 5,
+          "colors": 4,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": false,
+          "count": 1
+        }
+      ],
+      "amount_paid": 230,
+      "quantity": 2,
+      "userId": 1,
+      "user": {
+        "name": "khushi",
+        "email": "khushi@gmail.com",
+        "id": 1
+      },
+      "id": 6
+    },
+    {
+      "cartList": [
+        {
+          "id": 27,
+          "name": "X_PLR",
+          "brand": "ADIDAS",
+          "gender": "KIDS",
+          "category": "CASUAL",
+          "price": 65,
+          "is_in_inventory": true,
+          "items_left": 5,
+          "imageURL": [
+            {
+              "id": 1,
+              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/02085018d51c4b40bef431a81f05d875_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_01_standard.jpg"
+            },
+            {
+              "id": 2,
+              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c40ef1177870405db6a95f41537367f7_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_02_standard_hover.jpg"
+            },
+            {
+              "id": 3,
+              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6ce9b79bcc15406c9d9f62634c1440c9_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_03_standard.jpg"
+            },
+            {
+              "id": 4,
+              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/452878676bf0442ba4f1efbd3a553451_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_04_standard.jpg"
+            },
+            {
+              "id": 5,
+              "URL": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1c874275ce38423886a7942067023d23_9366/X_PLR_Phase_Shoes_Kids_Grey_IG1522_05_standard.jpg"
+            }
+          ],
+          "slug": "x_plr",
+          "description": "Your little explorer will love the adventure in these shoes. With a soft EVA midsole and rubber outsole, these sneakers are inspired iconic adult styles so tiny feet stay cushioned while matching the look of the rest of the family.",
+          "featured": 1,
+          "rating": 5,
+          "colors": 2,
+          "size": [
+            3.5,
+            4,
+            4.5,
+            5,
+            5.5,
+            6,
+            6.5,
+            7,
+            7.5
+          ],
+          "latest": 0,
+          "best_seller": true,
+          "count": 1
+        }
+      ],
+      "amount_paid": 65,
+      "quantity": 1,
       "userId": 5,
       "user": {
-        "name": "kj",
-        "email": "kj@gmail.com",
+        "name": "user",
+        "email": "user@gmail.com",
         "id": 5
       },
-      "id": 3
+      "id": 7
     }
   ]
 }

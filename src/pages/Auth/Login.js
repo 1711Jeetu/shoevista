@@ -87,7 +87,7 @@ export const Login = ({title}) => {
         </button>
           <div className='dark:text-slate-100 ml-5'>
           No account yet? <div>
-          <Link to='/register' className='ml-1 hover:text-gray-300 hover:underline'> Register here</Link>
+          <Link to='/register' className='ml-1 hover:text-primary-800 dark:hover:text-gray-300 hover:underline'> Register here</Link>
           </div>
           </div>
           </div>

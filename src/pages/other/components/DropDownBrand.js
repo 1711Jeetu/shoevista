@@ -25,9 +25,9 @@ export const DropDownBrand = forwardRef((props, ref) => {
             >
                 <div className="py-2 overflow-y-auto">
                     <div>
-                        <h2 className="font-bold dark:text-slate-100 pl-2 pb-2">Brand</h2>
+                        <h2 className="font-bold dark:text-slate-100 pl-2 pb-2" style={{fontSize: '17px'}}>Brand</h2>
                         {['Nike', 'Adidas', 'Reebok', 'Vans', 'HushPuppies'].map(brand => (
-                            <div key={brand} className="form-control dark:text-slate-100">
+                            <div key={brand} className="form-control dark:text-slate-100 pl-2" style={{fontSize: '16px'}}>
                                 <label htmlFor={brand}>
                                     <input
                                         type="checkbox"

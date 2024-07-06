@@ -8,7 +8,12 @@ export const CartCard = () => {
 
     const { cartList, total, increaseCount, decreaseCount, count, removeFromCart, setCountValue } = useCart();
     const [checkout, setCheckout] = useState(false);
-    const tax = total ? 10 : 0;
+
+    const calculateTax = (total) => {
+        return Math.ceil(total / 100) * 5;
+      };
+    
+      const tax = calculateTax(total);
 
     return (
         <div className='flex justify-center' style={{ marginTop: '120px' }}>

@@ -15,15 +15,9 @@ export const Header = () => {
   );
   const [mobileMode, setMobileMode] = useState(false);
   const [dropdown, setDropdown] = useState(false);
-  // const [filterMen, setFilterMen] = useState(false);
-  // const [filterWomen, setFilterWomen] = useState(false);
-  // const [filterKids, setFilterKids] = useState(false);
   const [user, setUser] = useState({});
   const [userName, setUserName] = useState('');
   const dropdownRef = useRef(null);
-  // const filterMenRef = useRef(null);
-  // const filterWomenRef = useRef(null);
-  // const filterKidsRef = useRef(null);
   const token = JSON.parse(sessionStorage.getItem('token'));
 
   const activeClasses =
@@ -89,7 +83,7 @@ export const Header = () => {
   },[user])
 
   return (
-    <nav className="bg-white fixed top-0 left-0 right-0 z-20 border-gray-200 dark:bg-gray-900">
+    <nav className="bg-white border-b-1 drop-shadow-lg border-b-slate-400 dark:border-b-gray-800 fixed top-0 left-0 right-0 z-20 border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={darkMode ? darkLogo : lightLogo} className="h-8" alt="ShoeVista"/>
@@ -120,16 +114,14 @@ export const Header = () => {
           </span>
           <Link to={`${token ? '/cart' : '/login'}`} className='hover:cursor-pointer text-xl mt-1 text-slate-800 dark:text-slate-50 mr-5 bi bi-cart'></Link>
           {
-            user && (token ? <span className='hover:cursor-pointer uppercase text-slate-800 dark:text-slate-50 mr-5 mt-1 border w-7 h-7 dark:text-slate-900 text-center' onClick={() => setDropdown(!dropdown)} style={{borderRadius: '100%', paddingTop: '1px', backgroundColor: 'rgb(180, 155, 200)' }}>{userName && userName.substring(0,1)}</span> : <span
+            user && (token ? <span className='hover:cursor-pointer uppercase dark:text-slate-50 mr-5 mt-1 border w-7 h-7 text-center userLight' onClick={() => setDropdown(!dropdown)} style={{borderRadius: '100%', paddingTop: '1px' }}>{userName && userName.substring(0,1)}</span> : <span
             onClick={() => setDropdown(!dropdown)}
             className='hover:cursor-pointer text-xl text-slate-800 dark:text-slate-50 mr-5 mt-1 bi bi-person-circle'
           ></span>) 
           }
-          {/* {dropdown && <DropDown setDropdown={setDropdown} refProp={dropdownRef} />} */}
           {
               dropdown && (token ? <DropdownLoggedIn setDropdown={setDropdown} refProp = {dropdownRef} /> : <DropdownLoggedOut setDropdown={setDropdown} refProp = {dropdownRef}  />)
           }
-          {/* {console.log(dropdown)} */}
           <button data-collapse-toggle="navbar-search" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none   dark:text-gray-400 dark:hover:bg-gray-700" aria-controls="navbar-search" aria-expanded="false" onClick={() => setMobileMode(!mobileMode)}>
             <span className="sr-only">Open main menu</span>
             <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
