@@ -29,7 +29,6 @@ export const Register = ({title}) => {
         position: "top-right"
       });
     } catch (error) {
-      console.log("hello");
       toast.error(error.message, {
         closeButton: true,
         position: "top-right"

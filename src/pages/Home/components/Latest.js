@@ -18,7 +18,7 @@ var settings = {
 
 
 export const Latest = () => {
-  const {data:products} = useFetch("http://localhost:8000/products")
+  const {data:products} = useFetch(`${process.env.REACT_APP_HOST}/products`)
 
   return (
     <div className="slider-container max-w-screen-xl mx-auto">

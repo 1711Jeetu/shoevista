@@ -25,8 +25,7 @@ export const ProductPage = ({ title }) => {
   const dropdownBrandRef = useRef(null);
 
   const queryTerm = searchParams.get('q');
-  const URL = `http://localhost:8000/products${queryTerm ? '?brand_like=' + queryTerm : ''}`;
-  console.log(URL);
+  const URL = `${process.env.REACT_APP_HOST}/products${queryTerm ? '?brand_like=' + queryTerm : ''}`;
 
   function renderSkeleton(count) {
     const skeletons = [];
@@ -37,7 +36,6 @@ export const ProductPage = ({ title }) => {
   }
 
   function onProductFetch(data) {
-    console.log(data);
     setInitialProductList(data);
   }
   const { isLoading, setUrl } = useFetch(URL, onProductFetch);
@@ -68,8 +66,8 @@ export const ProductPage = ({ title }) => {
   }, [dropdownSortRef, dropdownCategoryRef, dropdownPriceRef, dropdownBrandRef]);
 
   useEffect(() => {
-    setUrl(`http://localhost:8000/products${queryTerm ? '?brand_like=' + queryTerm : ""}`)
-  }, [queryTerm, setUrl]);
+    setUrl(`${process.env.REACT_APP_HOST}/products${queryTerm ? '?brand_like=' + queryTerm : ""}`)
+  }, [queryTerm,setUrl]);
 
 
   return (
@@ -115,7 +113,6 @@ export const ProductPage = ({ title }) => {
               className="ml-3 inline-flex items-center px-2 py-1 me-2 text-sm font-medium bg-primary-100 rounded dark:bg-primary-100 text-black"
             >
               {filter.label}
-              {console.log(filter)}
               <button
                 type="button"
                 className="inline-flex items-center p-1 ms-2 text-sm text-black bg-transparent rounded-sm"

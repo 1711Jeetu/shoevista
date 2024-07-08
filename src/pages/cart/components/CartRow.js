@@ -1,7 +1,6 @@
 import React from 'react'
 
 export const CartRow = ({product,increaseCount, decreaseCount, count, removeFromCart,setCountValue}) => {
-    console.log(product.count);
 
     return (
         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">

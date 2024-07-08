@@ -12,7 +12,6 @@ export const ProductDetailPage = () => {
     const { id } = useParams();
     const { data: product, isLoading, setUrl } = useFetch();
     const { cartList, addToCart, removeFromCart, count } = useCart();
-    // console.log(addToCart);
     const [inCart, setInCart] = useState();
     const temp = product && product.id;
     const token = JSON.parse(sessionStorage.getItem('token'));
@@ -29,7 +28,7 @@ export const ProductDetailPage = () => {
 
 
     useEffect(() => {
-        setUrl(`http://localhost:8000/products/${id}`);
+        setUrl(`${process.env.REACT_APP_HOST}/products/${id}`);
     }, [id,setUrl]);
 
     const [activeImg, setActiveImg] = useState()

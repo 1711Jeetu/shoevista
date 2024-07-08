@@ -31,7 +31,6 @@ export const Header = () => {
   
     const handleSearch = (event) => {
       event.preventDefault();
-      // console.log(searchRef.current.value)
       navigate(`/products?q=${searchRef.current.value}`);
       event.target.reset();
     };
@@ -53,12 +52,10 @@ export const Header = () => {
 
   }, [dropdownRef]);
   useEffect(() => {
-    console.log('entered useEffect');
     async function fetchUserData() {
         try {
             const data = await getUser();
             setUser(data);
-            console.log(data);
         } catch(e) {
             toast.error(e.message);
         }
@@ -78,7 +75,6 @@ export const Header = () => {
   }, [darkMode]);
 
   useEffect(() => {
-    console.log(user && user.name);
     setUserName(user && user.name);
   },[user])
 

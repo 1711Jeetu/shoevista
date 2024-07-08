@@ -23,7 +23,6 @@
         }
         function addToCart(product) {
             const updatedList = state.cartList.concat(product);
-            console.log(updatedList);
             const updatedTotal = state.total + product.price;
             const updatedCount = 1;
 

@@ -27,7 +27,6 @@ const useFetch = (initialUrl, onSucess=null) => {
         }
       } catch (error) {
         if (error.name === 'AbortError') {
-          console.log('Fetch aborted');
         } else {
           setError(error.message);
           setData(null);
@@ -42,7 +41,8 @@ const useFetch = (initialUrl, onSucess=null) => {
     return () => {
       abortController.abort();
     };
-  }, [url,onSucess]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [url]);
   
   return { data, error, isLoading, setUrl };
 };

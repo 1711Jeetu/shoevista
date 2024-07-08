@@ -26,20 +26,16 @@ export const FilterProvider = ({children}) => {
     }
 
     function sortByPriceFunction(products){
-        console.log(state.sortByPrice);
         if(state.sortByPrice === "lowtohigh"){
-            console.log('lowtohigh');
             return products.sort((a , b) => Number(a.price) - Number(b.price));
         }
         if(state.sortByPrice === "hightolow") {
-            console.log('hightolow');
             return products.sort((a , b) => Number(b.price) - Number(a.price));
         }
         return products;
     }
 
     function sortByRatingsFunction(products){
-        console.log(products);
         if(state.sortByRatings === "4STARSABOVE") {
             return products.filter(product => product.rating>=4);
         }
@@ -64,7 +60,6 @@ export const FilterProvider = ({children}) => {
     
     function sortByCategoryFunction(products){
         if(state.sortByCategory === "RUNNING"){
-            console.log('run');
             return products.filter(product => product.category === "RUNNING");
         }
         if(state.sortByCategory === "FOOTBALL"){

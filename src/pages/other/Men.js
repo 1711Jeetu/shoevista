@@ -50,7 +50,7 @@ export const Men = ({ title }) => {
   }, [dropdownSortRef, dropdownCategoryRef, dropdownPriceRef, dropdownBrandRef]);
 
   const queryTerm = searchParams.get('q');
-  const URL = `http://localhost:8000/products${queryTerm ? '?name_like=' + queryTerm : ''}`;
+  const URL = `${process.env.REACT_APP_HOST}/products${queryTerm ? '?name_like=' + queryTerm : ''}`;
 
   function onProductFetch(data) {
     setInitialProductList(data);
@@ -58,7 +58,7 @@ export const Men = ({ title }) => {
   const { isLoading, setUrl } = useFetch(URL, onProductFetch);
 
   useEffect(() => {
-    setUrl(`http://localhost:8000/products${queryTerm ? '?name_like=' + queryTerm : ""}`);
+    setUrl(`${process.env.REACT_APP_HOST}/products${queryTerm ? '?name_like=' + queryTerm : ""}`);
     dispatch({ type: "CLEAR_FILTER" });
   }, [queryTerm, setUrl, dispatch]);
 
@@ -113,7 +113,6 @@ export const Men = ({ title }) => {
               className="ml-3 inline-flex mt-[1px] items-center px-2 py-1 me-2 text-sm font-medium bg-slate-50 rounded text-black"
             >
               {filter.label}
-              {console.log(filter)}
               <button
                 type="button"
                 className="inline-flex hover:bg-primary-500 dark:hover:bg-gray-400 hover:text-slate-100 rounded-lg items-center p-1 ms-2 text-sm text-black bg-transparent"

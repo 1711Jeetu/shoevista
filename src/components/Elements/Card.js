@@ -7,7 +7,6 @@ import './CardStyle.css';
 export const Card = ({ product }) => {
 
     const { cartList, addToCart, removeFromCart, count} = useCart();
-    // console.log(addToCart);
     const [inCart, setInCart] = useState();
     const token = JSON.parse(sessionStorage.getItem('token'));
     const navigate = useNavigate();
