@@ -50,7 +50,7 @@ export const Kids = ({ title }) => {
   }, [dropdownSortRef, dropdownCategoryRef, dropdownPriceRef, dropdownBrandRef]);
 
   const queryTerm = searchParams.get('q');
-  const URL = `http://localhost:8000/products${queryTerm ? '?name_like=' + queryTerm : ''}`;
+  const URL = `${process.env.REACT_APP_HOST}/products${queryTerm ? '?name_like=' + queryTerm : ''}`;
 
   function onProductFetch(data) {
     setInitialProductList(data);
@@ -58,7 +58,7 @@ export const Kids = ({ title }) => {
   const { isLoading, setUrl } = useFetch(URL, onProductFetch);
 
   useEffect(() => {
-    setUrl(`http://localhost:8000/products${queryTerm ? '?name_like=' + queryTerm : ""}`)
+    setUrl(`${process.env.REACT_APP_HOST}/products${queryTerm ? '?name_like=' + queryTerm : ""}`)
     dispatch({ type: "CLEAR_FILTER" })
   }, [queryTerm, setUrl,dispatch]);
   function renderSkeleton(count) {

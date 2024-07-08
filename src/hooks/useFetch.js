@@ -42,7 +42,8 @@ const useFetch = (initialUrl, onSucess=null) => {
     return () => {
       abortController.abort();
     };
-  }, [url,onSucess]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [url]);
   
   return { data, error, isLoading, setUrl };
 };

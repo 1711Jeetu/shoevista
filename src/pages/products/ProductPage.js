@@ -25,7 +25,7 @@ export const ProductPage = ({ title }) => {
   const dropdownBrandRef = useRef(null);
 
   const queryTerm = searchParams.get('q');
-  const URL = `http://localhost:8000/products${queryTerm ? '?brand_like=' + queryTerm : ''}`;
+  const URL = `${process.env.REACT_APP_HOST}/products${queryTerm ? '?brand_like=' + queryTerm : ''}`;
   console.log(URL);
 
   function renderSkeleton(count) {
@@ -68,8 +68,8 @@ export const ProductPage = ({ title }) => {
   }, [dropdownSortRef, dropdownCategoryRef, dropdownPriceRef, dropdownBrandRef]);
 
   useEffect(() => {
-    setUrl(`http://localhost:8000/products${queryTerm ? '?brand_like=' + queryTerm : ""}`)
-  }, [queryTerm, setUrl]);
+    setUrl(`${process.env.REACT_APP_HOST}/products${queryTerm ? '?brand_like=' + queryTerm : ""}`)
+  }, [queryTerm,setUrl]);
 
 
   return (
