@@ -25,7 +25,8 @@ export const ProductPage = ({ title }) => {
   const dropdownBrandRef = useRef(null);
 
   const queryTerm = searchParams.get('q');
-  const URL = `${process.env.REACT_APP_HOST}/products${queryTerm ? '?brand_like=' + queryTerm : ''}`;
+  const URL = `http://localhost:8000/products${queryTerm ? '?brand_like=' + queryTerm : ''}`;
+  console.log(URL);
 
   function renderSkeleton(count) {
     const skeletons = [];
