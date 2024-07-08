@@ -42,7 +42,7 @@ const useFetch = (initialUrl, onSucess=null) => {
     return () => {
       abortController.abort();
     };
-  }, [url]);
+  }, [url,onSucess]);
   
   return { data, error, isLoading, setUrl };
 };

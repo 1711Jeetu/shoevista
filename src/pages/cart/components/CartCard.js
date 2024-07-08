@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
 import { CartRow } from './CartRow'
 import { useCart } from '../../../context/CartContext'
-import { Checkout } from './Checkout';
 import { Link } from 'react-router-dom';
 
 export const CartCard = () => {
 
     const { cartList, total, increaseCount, decreaseCount, count, removeFromCart, setCountValue } = useCart();
-    const [checkout, setCheckout] = useState(false);
 
     const calculateTax = (total) => {
         return Math.ceil(total / 100) * 5;

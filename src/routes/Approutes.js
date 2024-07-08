@@ -10,7 +10,6 @@ import { Login } from '../pages/Auth/Login'
 import { Register } from '../pages/Auth/Register'
 import { CartPage } from '../pages/cart/CartPage'
 import { Checkout } from '../pages/cart/components/Checkout'
-import { DashboardCard } from '../dashboard/components/DashboardCard'
 import { DashboardPage } from '../dashboard/DashboardPage'
 
 export const Approutes = () => {

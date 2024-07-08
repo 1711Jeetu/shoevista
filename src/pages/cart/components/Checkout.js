@@ -28,6 +28,7 @@ export const Checkout = ({title}) => {
   async function handleOrderSubmit(event) {
     event.preventDefault();
     try {
+      //eslint-disable-next-line no-throw-literal
       const data = createOrder(cartList, total, user);
       clearCart();
       navigate("/dashboard");

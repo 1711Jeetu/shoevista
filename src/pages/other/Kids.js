@@ -60,7 +60,7 @@ export const Kids = ({ title }) => {
   useEffect(() => {
     setUrl(`http://localhost:8000/products${queryTerm ? '?name_like=' + queryTerm : ""}`)
     dispatch({ type: "CLEAR_FILTER" })
-  }, [queryTerm, setUrl]);
+  }, [queryTerm, setUrl,dispatch]);
   function renderSkeleton(count) {
     const skeletons = [];
     for (let i = 1; i <= count; i++) {

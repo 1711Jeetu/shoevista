@@ -61,7 +61,7 @@ export const Women = ({title}) => {
   useEffect(() => {
     setUrl(`http://localhost:8000/products${queryTerm ? '?name_like=' + queryTerm : ""}`)
       dispatch({type:"CLEAR_FILTER"})
-  }, [queryTerm, setUrl]);
+  }, [queryTerm, setUrl,dispatch]);
 
   function renderSkeleton(count) {
     const skeletons = [];

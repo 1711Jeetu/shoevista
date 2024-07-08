@@ -30,7 +30,7 @@ export const ProductDetailPage = () => {
 
     useEffect(() => {
         setUrl(`http://localhost:8000/products/${id}`);
-    }, [id]);
+    }, [id,setUrl]);
 
     const [activeImg, setActiveImg] = useState()
     useEffect(() => {
