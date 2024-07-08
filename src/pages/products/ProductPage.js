@@ -26,7 +26,6 @@ export const ProductPage = ({ title }) => {
 
   const queryTerm = searchParams.get('q');
   const URL = `http://localhost:8000/products${queryTerm ? '?brand_like=' + queryTerm : ''}`;
-  console.log(URL);
 
   function renderSkeleton(count) {
     const skeletons = [];
