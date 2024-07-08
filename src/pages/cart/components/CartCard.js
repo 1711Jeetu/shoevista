@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { CartRow } from './CartRow'
 import { useCart } from '../../../context/CartContext'
 import { Link } from 'react-router-dom';

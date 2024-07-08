@@ -29,7 +29,7 @@ export const Checkout = ({title}) => {
     event.preventDefault();
     try {
       //eslint-disable-next-line no-throw-literal
-      const data = createOrder(cartList, total, user);
+      createOrder(cartList, total, user);
       clearCart();
       navigate("/dashboard");
     } catch (e) {
