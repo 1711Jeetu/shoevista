@@ -108,6 +108,7 @@ export const Header = () => {
             onClick={() => setDarkMode(!darkMode)}
           >
           </span>
+          <Link to={`${token ? '/wishlist' : '/login'}`} className='hover:cursor-pointer text-xl mt-1 text-slate-800 dark:text-slate-50 mr-3 bi bi-heart'></Link>
           <Link to={`${token ? '/cart' : '/login'}`} className='hover:cursor-pointer text-xl mt-1 text-slate-800 dark:text-slate-50 mr-5 bi bi-cart'></Link>
           {
             user && (token ? <span className='hover:cursor-pointer uppercase dark:text-slate-50 mr-5 mt-1 border w-7 h-7 text-center userLight' onClick={() => setDropdown(!dropdown)} style={{borderRadius: '100%', paddingTop: '1px' }}>{userName && userName.substring(0,1)}</span> : <span

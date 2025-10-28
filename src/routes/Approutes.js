@@ -11,6 +11,7 @@ import { Register } from '../pages/Auth/Register'
 import { CartPage } from '../pages/cart/CartPage'
 import { Checkout } from '../pages/cart/components/Checkout'
 import { DashboardPage } from '../dashboard/DashboardPage'
+import { WishlistPage } from '../pages/wishlist/WishlistPage'
 
 export const Approutes = () => {
   return (
@@ -26,6 +27,7 @@ export const Approutes = () => {
         <Route path='/cart' element={<CartPage title="Your cart" />} />
         <Route path='/checkout' element={<Checkout title="Checkout" />} />
         <Route path='/dashboard' element={<DashboardPage title="Dashboard" />} />
+        <Route path='/wishlist' element={<WishlistPage title="Your Wishlist" />} />
     </Routes>
   )
 }
