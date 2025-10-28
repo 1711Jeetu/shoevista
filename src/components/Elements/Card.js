@@ -2,12 +2,15 @@ import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Rating } from './Rating'
 import { useCart } from '../../context/CartContext'
+import { useWishlist } from '../../context/WishlistContext'
 import './CardStyle.css';
 
 export const Card = ({ product }) => {
 
     const { cartList, addToCart, removeFromCart, count} = useCart();
+    const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
     const [inCart, setInCart] = useState();
+    const [inWishlist, setInWishlist] = useState(false);
     const token = JSON.parse(sessionStorage.getItem('token'));
     const navigate = useNavigate();
 
@@ -18,7 +21,8 @@ export const Card = ({ product }) => {
         } else {
             setInCart(false);
         }
-    }, [cartList, product.id]);
+        setInWishlist(isInWishlist(product.id));
+    }, [cartList, product.id, isInWishlist]);
 
       const handleAddToCart = () => {
         if(token){
@@ -57,25 +61,34 @@ export const Card = ({ product }) => {
                 <Rating rating={product.rating} />
                 <div className="flex items-center justify-between">
                     <span className="text-2xl font-bold text-gray-900 dark:text-white">${product.price}</span>
-                    {
-                        (!inCart || count === 0) &&
+                    <div className="flex items-center gap-2">
                         <button
-                            className={`inline-flex items-center py-1 px-2 text-sm font-medium text-center text-white rounded-lg ${product.is_in_inventory ? 'bg-primary-500 dark:bg-primary-700 ' : 'bg-gray-300 dark:bg-gray-500'} `} disabled={product.is_in_inventory ? false : true}
-                            onClick={handleAddToCart}
+                            onClick={() => token ? (inWishlist ? removeFromWishlist(product) : addToWishlist(product)) : navigate("/login")}
+                            className="text-2xl"
                         >
-                            <div className={` text-lg mt-1 ${product.is_in_inventory ? 'dark:text-slate-100 text-slate-100' : 'text-slate-800 dark:text-slate-100'} justify-center dark:text-slate-100  bi bi-cart`}></div>
-                            <i className={`ml-1 mt-1 bi bi-plus-lg ${product.is_in_inventory ? 'dark:text-slate-100 text-slate-100' : 'text-slate-800 dark:text-slate-100'}`}></i>
+                            <i className={`bi bi-heart${inWishlist ? '-fill text-red-500' : ''} hover:text-red-500`}></i>
                         </button>
-                    }
-                    {
-                        inCart && <button
-                        className={`inline-flex items-center py-1 px-2 text-sm font-medium text-center dark:bg-red-800 bg-red-800 rounded-lg `} disabled={product.is_in_inventory ? false : true}
-                        onClick={() => removeFromCart(product)}
-                    >
-                        <div className='hover:cursor-pointer text-lg mt-1 text-slate-100 justify-center dark:text-slate-50 bi bi-cart '></div>
-                        <i className="ml-1 mt-1 bi bi-dash-lg dark:text-slate-50 text-slate-100 "></i>
-                    </button>
-                    }
+                        {(!inCart || count === 0) && (
+                            <button
+                                className={`inline-flex items-center py-1 px-2 text-sm font-medium text-center text-white rounded-lg ${product.is_in_inventory ? 'bg-primary-500 dark:bg-primary-700 ' : 'bg-gray-300 dark:bg-gray-500'} `}
+                                disabled={!product.is_in_inventory}
+                                onClick={handleAddToCart}
+                            >
+                                <div className={`text-lg mt-1 ${product.is_in_inventory ? 'dark:text-slate-100 text-slate-100' : 'text-slate-800 dark:text-slate-100'} justify-center dark:text-slate-100 bi bi-cart`}></div>
+                                <i className={`ml-1 mt-1 bi bi-plus-lg ${product.is_in_inventory ? 'dark:text-slate-100 text-slate-100' : 'text-slate-800 dark:text-slate-100'}`}></i>
+                            </button>
+                        )}
+                        {inCart && (
+                            <button
+                                className="inline-flex items-center py-1 px-2 text-sm font-medium text-center dark:bg-red-800 bg-red-800 rounded-lg"
+                                disabled={!product.is_in_inventory}
+                                onClick={() => removeFromCart(product)}
+                            >
+                                <div className='hover:cursor-pointer text-lg mt-1 text-slate-100 justify-center dark:text-slate-50 bi bi-cart'></div>
+                                <i className="ml-1 mt-1 bi bi-dash-lg dark:text-slate-50 text-slate-100"></i>
+                            </button>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>
